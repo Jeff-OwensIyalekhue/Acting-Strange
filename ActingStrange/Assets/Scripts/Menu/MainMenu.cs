@@ -16,6 +16,8 @@ public class MainMenu : MonoBehaviour
         LoadSettings();
         gameManager = FindObjectOfType<GameManager>();
         musicManager = FindObjectOfType<MusicManager>();
+        SetMusicLevel(GameData.Instance.musicVolume);
+        SetSFXLevel(GameData.Instance.sfxVolume);
     }
 
     public void StartGame(int x)

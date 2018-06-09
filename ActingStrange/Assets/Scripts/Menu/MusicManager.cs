@@ -36,7 +36,6 @@ public class MusicManager : MonoBehaviour
 
         //Get a component reference to the AudioSource attached to the UI game object
         musicSource = GetComponent<AudioSource>();
-        //Call the PlayLevelMusic function to start playing music
     }
 
     void OnEnable()
