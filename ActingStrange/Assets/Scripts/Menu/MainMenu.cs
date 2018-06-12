@@ -8,16 +8,33 @@ public class MainMenu : MonoBehaviour
     public GameManager gameManager;
     public MusicManager musicManager;
 
+    public Text highscore1;
+    public Text highscore2;
+    public Text highscore3;
+
     public Slider musicSlider;
     public Slider sfxSlider;
 
     private void Start()
     {
         LoadSettings();
+        GameData.Instance.LoadHighscore();
         gameManager = FindObjectOfType<GameManager>();
         musicManager = FindObjectOfType<MusicManager>();
         SetMusicLevel(GameData.Instance.musicVolume);
         SetSFXLevel(GameData.Instance.sfxVolume);
+
+        highscore1.text = GameData.Instance.nameList1[0] + ": " + GameData.Instance.highscoreLevel1[0] + "\n"
+                            + GameData.Instance.nameList1[1] + ": " + GameData.Instance.highscoreLevel1[1] + "\n"
+                            + GameData.Instance.nameList1[2] + ": " + GameData.Instance.highscoreLevel1[2] + "\n";
+
+        highscore2.text = GameData.Instance.nameList2[0] + ": " + GameData.Instance.highscoreLevel2[0] + "\n"
+                            + GameData.Instance.nameList2[1] + ": " + GameData.Instance.highscoreLevel2[1] + "\n"
+                            + GameData.Instance.nameList2[2] + ": " + GameData.Instance.highscoreLevel2[2] + "\n";
+
+        highscore3.text = GameData.Instance.nameList3[0] + ": " + GameData.Instance.highscoreLevel3[0] + "\n"
+                            + GameData.Instance.nameList3[1] + ": " + GameData.Instance.highscoreLevel3[1] + "\n"
+                            + GameData.Instance.nameList3[2] + ": " + GameData.Instance.highscoreLevel3[2] + "\n";
     }
 
     public void StartGame(int x)

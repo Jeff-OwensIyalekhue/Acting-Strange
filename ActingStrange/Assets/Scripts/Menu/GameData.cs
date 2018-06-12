@@ -68,6 +68,68 @@ public class GameData
         }
     }
 
+    #region Highscore
+    public int[] highscoreLevel1;
+    public int[] highscoreLevel2;
+    public int[] highscoreLevel3;
+
+    public string[] nameList1;
+    public string[] nameList2;
+    public string[] nameList3;
+    #endregion
+
+    public void SaveHighscore()
+    {
+        BinaryFormatter bF = new BinaryFormatter();
+        FileStream file = File.Create(Application.persistentDataPath + "/highscores.dat");
+
+        SaveDataHighScore data = new SaveDataHighScore();
+
+        data.highscoreLevel1 = highscoreLevel1;
+        data.nameList1 = nameList1;
+
+        data.highscoreLevel2 = highscoreLevel2;
+        data.nameList2 = nameList2;
+
+        data.highscoreLevel3 = highscoreLevel3;
+        data.nameList3 = nameList3;
+
+        bF.Serialize(file, data);
+        file.Close();
+    }
+
+    public void LoadHighscore()
+    {
+        if (File.Exists(Application.persistentDataPath + "/highscores.dat"))
+        {
+            BinaryFormatter bF = new BinaryFormatter();
+            FileStream file = File.Open(Application.persistentDataPath + "/highscores.dat", FileMode.Open);
+            SaveDataHighScore data = (SaveDataHighScore)bF.Deserialize(file);
+            file.Close();
+
+            highscoreLevel1 = data.highscoreLevel1;
+            nameList1 = data.nameList1;
+
+            highscoreLevel2 = data.highscoreLevel2;
+            nameList2 = data.nameList2;
+
+            highscoreLevel3 = data.highscoreLevel3;
+            nameList3 = data.nameList3;
+        }
+        else
+        {
+            highscoreLevel1 =  new int[] { 0, 0, 0};
+
+            nameList1 = new string[] { "default", "default", "default" };
+
+            highscoreLevel2 = new int[] { 0, 0, 0 };
+            nameList2 = new string[] { "default", "default", "default" };
+
+            highscoreLevel3 = new int[] { 0, 0, 0 };
+            nameList3 = new string[] { "default", "default", "default" };
+        }
+    }
+
 }
 
 [Serializable]
@@ -80,5 +142,11 @@ class SaveDataSettings
 [Serializable]
 class SaveDataHighScore
 {
-    public int[] highScores;
+    public int[] highscoreLevel1;
+    public int[] highscoreLevel2;
+    public int[] highscoreLevel3;
+
+    public string[] nameList1;
+    public string[] nameList2;
+    public string[] nameList3;
 }
