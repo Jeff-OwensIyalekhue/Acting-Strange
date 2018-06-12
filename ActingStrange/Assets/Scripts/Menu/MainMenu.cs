@@ -44,6 +44,7 @@ public class MainMenu : MonoBehaviour
 
     public void EndGame()
     {
+        GameData.Instance.SaveHighscore();
         gameManager.EndGame();
     }
 
