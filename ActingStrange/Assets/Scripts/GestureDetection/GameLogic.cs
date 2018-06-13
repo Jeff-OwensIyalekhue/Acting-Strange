@@ -16,14 +16,16 @@ public class GameLogic : MonoBehaviour {
             new SwipeToLeftSegment2(),
             new SwipeToLeftSegment1() };
         gc.AddGesture("SwipeLeftBack", swipeLeftBack);
-        IRelativeGestureSegment[] waveLeft = { new WaveLeftSegment1(), new WaveLeftSegment2(),
-                                             new WaveLeftSegment1(),new WaveLeftSegment2(),
-                                             new WaveLeftSegment1(),new WaveLeftSegment2() };
-        gc.AddGesture("WaveLeft", waveLeft);
 
         IRelativeGestureSegment[] pullLeft = { new PullToLeftSegment1(), new PullToLeftSegment2(), new PullToLeftSegment3(), };
         gc.AddGesture("PullLeft", pullLeft);
-	}
+
+        //IRelativeGestureSegment[] pushFwrd = { new PushFwrdSegment1(), new PushFwrdSegment2()};
+        //gc.AddGesture("PushFwrd", pushFwrd);
+
+        IRelativeGestureSegment[] punchDown = { new PunchDownSegment1(), new PunchDownSegment2(), new PunchDownSegment3() };
+        gc.AddGesture("PunchDown", punchDown);
+    }
 
     void OnGestureRecognized(object sender, GestureEventArgs e)
     {
@@ -32,10 +34,6 @@ public class GameLogic : MonoBehaviour {
             Debug.Log("Swipe Recognized");
 
         }
-        if (e.GestureName == "WaveLeft")
-        {
-            Debug.Log("Wave Recognized");
-        }
         if (e.GestureName == "PullLeft")
         {
             Debug.Log("PullLeft Recognized");
@@ -43,6 +41,16 @@ public class GameLogic : MonoBehaviour {
         if (e.GestureName == "SwipeLeftBack")
         {
             Debug.Log("SwipeBack Recognized");
+
+        }
+        if (e.GestureName == "PushFwrd")
+        {
+            Debug.Log("pushFwrd Recognized");
+
+        }
+        if (e.GestureName == "PunchDown")
+        {
+            Debug.Log("PunchDown Recognized");
 
         }
 
