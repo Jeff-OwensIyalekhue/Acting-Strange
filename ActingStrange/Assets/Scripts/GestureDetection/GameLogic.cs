@@ -25,6 +25,15 @@ public class GameLogic : MonoBehaviour {
 
         IRelativeGestureSegment[] punchDown = { new PunchDownSegment1(), new PunchDownSegment2(), new PunchDownSegment3() };
         gc.AddGesture("PunchDown", punchDown);
+
+        IRelativeGestureSegment[] pullUp = { new PullUpSegment1(), new PullUpSegment2(), new PullUpSegment3() };
+        gc.AddGesture("PullUp", pullUp);
+
+        IRelativeGestureSegment[] circle = { new CircleSegment1(), new CircleSegment2(), new CircleSegment3() ,new CircleSegment4(), new CircleSegment1() };
+        gc.AddGesture("Circle", circle);
+
+        IRelativeGestureSegment[] cross = { new CrossSegment1(), new CrossSegment2()};
+        gc.AddGesture("Cross", cross);
     }
 
     void OnGestureRecognized(object sender, GestureEventArgs e)
@@ -52,6 +61,19 @@ public class GameLogic : MonoBehaviour {
         {
             Debug.Log("PunchDown Recognized");
 
+        }
+        if (e.GestureName == "PullUp")
+        {
+            Debug.Log("PullUp Recognized");
+
+        }
+        if (e.GestureName == "Circle")
+        {
+            Debug.Log("Circle Recognized");
+        }
+        if (e.GestureName == "Cross")
+        {
+            Debug.Log("Cross Recognized");
         }
 
     }
