@@ -27,6 +27,7 @@ ModelImporter:
     100038: Enemy_tus_skin_Teeth_shape04
     100040: Enemy_tus_Teeth_shape04
     100042: Plane
+    100044: Enemy_tus_Male_casualsuit02_010
     400000: //RootNode
     400002: Enemy_tus_Body
     400004: Enemy_tus_Body_001
@@ -49,6 +50,7 @@ ModelImporter:
     400038: Enemy_tus_skin_Teeth_shape04
     400040: Enemy_tus_Teeth_shape04
     400042: Plane
+    400044: Enemy_tus_Male_casualsuit02_010
     2100000: oberkoerper
     2100002: details
     2100004: Material_003
@@ -88,6 +90,7 @@ ModelImporter:
     2300036: Enemy_tus_skin_Teeth_shape04
     2300038: Enemy_tus_Teeth_shape04
     2300040: Plane
+    2300042: Enemy_tus_Male_casualsuit02_010
     3300000: Enemy_tus_Body
     3300002: Enemy_tus_Body_001
     3300004: Enemy_tus_High-poly
@@ -109,6 +112,7 @@ ModelImporter:
     3300036: Enemy_tus_skin_Teeth_shape04
     3300038: Enemy_tus_Teeth_shape04
     3300040: Plane
+    3300042: Enemy_tus_Male_casualsuit02_010
     4300000: Enemy_tus_Male_casualsuit02_009
     4300002: Enemy_tus_Male_casualsuit02_007
     4300004: Enemy_tus_Male_casualsuit02_008
@@ -130,6 +134,7 @@ ModelImporter:
     4300036: Enemy_tus_High-poly
     4300038: Enemy_tus_Short04
     4300040: Enemy_tus_Body
+    4300042: Enemy_tus_Male_casualsuit02_010
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
