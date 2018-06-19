@@ -25,7 +25,7 @@ public class PunchDownSegment1 : IRelativeGestureSegment
         //position detection
         if (leftHand.x >= leftShoulder.x && rightHand.x <= rightShoulder.x) {
 
-            if (leftHand.y >= shoulder.y && rightHand.y >= shoulder.y)
+            if (leftHand.y > shoulder.y && rightHand.y > shoulder.y)
             {
                 //Debug.Log("PunchDown seg1");
                 return GesturePartResult.Succeed;

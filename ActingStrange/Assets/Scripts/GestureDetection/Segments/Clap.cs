@@ -3,7 +3,7 @@ using System.Collections;
 using Windows.Kinect;
 
 
-public class CrossSegment1 : IRelativeGestureSegment
+public class ClapSegment1 : IRelativeGestureSegment
 {
 
     /// <summary>
@@ -18,22 +18,24 @@ public class CrossSegment1 : IRelativeGestureSegment
         Vector3 rightHand = skeleton.getRawWorldPosition(JointType.HandRight);
         Vector3 leftElbow = skeleton.getRawWorldPosition(JointType.ElbowLeft);
         Vector3 rightElbow = skeleton.getRawWorldPosition(JointType.ElbowRight);
+        Vector3 shoulder = skeleton.getRawWorldPosition(JointType.SpineShoulder);
+        Vector3 hip = skeleton.getRawWorldPosition(JointType.SpineBase);
 
         //position detection
-        if (leftHand.y < leftElbow.y && rightHand.y < rightElbow.y)
+        if (leftHand.y < shoulder.y && rightHand.y < shoulder.y && leftHand.y > hip.y && rightHand.y > hip.y)
         {
             //Debug.Log("HandL: "+leftHand.z+" ShoulderR: "+ rightShoulder.z);
-            if (leftHand.x > rightElbow.x && rightHand.x < leftElbow.x)
+            if (leftHand.x < leftElbow.x && rightHand.x > rightElbow.x)
             {
-                Debug.Log("Cross seg1"); 
-              return GesturePartResult.Succeed;
+                //Debug.Log("Clap seg1");
+                return GesturePartResult.Succeed;
             }
         }
         return GesturePartResult.Pausing;
     }
 }
 
-public class CrossSegment2 : IRelativeGestureSegment
+public class ClapSegment2 : IRelativeGestureSegment
 {
 
     /// <summary>
@@ -48,14 +50,16 @@ public class CrossSegment2 : IRelativeGestureSegment
         Vector3 rightHand = skeleton.getRawWorldPosition(JointType.HandRight);
         Vector3 leftShoulder = skeleton.getRawWorldPosition(JointType.ShoulderLeft);
         Vector3 rightShoulder = skeleton.getRawWorldPosition(JointType.ShoulderRight);
-        Vector3 shoulderMid = skeleton.getRawWorldPosition(JointType.SpineShoulder);
+        Vector3 shoulder = skeleton.getRawWorldPosition(JointType.SpineShoulder);
+        Vector3 hip = skeleton.getRawWorldPosition(JointType.SpineBase);
 
         //position detection
-        if (leftHand.y <= shoulderMid.y && rightHand.y <= shoulderMid.y)
+        if (leftHand.y < shoulder.y && rightHand.y < shoulder.y && leftHand.y > hip.y && rightHand.y > hip.y)
         {
-            if (leftHand.x < leftShoulder.x && rightHand.x > rightShoulder.x)
+            //Debug.Log("HandL: "+leftHand.z+" ShoulderR: "+ rightShoulder.z);
+            if (leftHand.x > leftShoulder.x && rightHand.x < rightShoulder.x && leftHand.x < rightShoulder.x && rightHand.x > leftShoulder.x)
             {
-                Debug.Log("Cross seg2");
+                //Debug.Log("Clap seg1");
                 return GesturePartResult.Succeed;
             }
         }
