@@ -22,9 +22,10 @@ public class CrossSegment1 : IRelativeGestureSegment
         //position detection
         if (leftHand.y < leftShoulder.y && rightHand.y < rightShoulder.y)
         {
-            if (leftHand.z > rightShoulder.z && rightHand.z <leftShoulder.z)
+            //Debug.Log("HandL: "+leftHand.z+" ShoulderR: "+ rightShoulder.z);
+            if (leftHand.x > rightShoulder.x && rightHand.x < leftShoulder.x)
             {
-                Debug.Log("Cross seg1");
+                //Debug.Log("Cross seg1"); 
               return GesturePartResult.Succeed;
             }
         }
@@ -49,11 +50,11 @@ public class CrossSegment2 : IRelativeGestureSegment
         Vector3 rightShoulder = skeleton.getRawWorldPosition(JointType.ShoulderRight);
 
         //position detection
-        if (leftHand.y < leftShoulder.y && rightHand.y < rightShoulder.y)
+        if (leftHand.y > leftShoulder.y && rightHand.y > rightShoulder.y)
         {
-            if (leftHand.z < rightShoulder.z && rightHand.z > leftShoulder.z)
+            if (leftHand.x < leftShoulder.x && rightHand.x > rightShoulder.x)
             {
-                Debug.Log("Cross seg2");
+                //Debug.Log("Cross seg2");
                 return GesturePartResult.Succeed;
             }
         }

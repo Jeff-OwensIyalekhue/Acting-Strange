@@ -20,14 +20,21 @@ public class Spellbook : MonoBehaviour {
     //methods
     void spendPoint(Spell spell)
     {
-        pointsToSpend--;
-        spell.addCurrPoints(1);
+        if (spell.getCurrPoints() < spell.getPointsToUnlock() && !spell.isUnlocked())
+        {
+            pointsToSpend--;
+            spell.addCurrPoints(1);
+        }
     }
 
     void returnPoint(Spell spell)
     {
-        spell.addCurrPoints(-1);
-        pointsToSpend++;
+        if (spell.getCurrPoints() > 0)
+        {
+            spell.addCurrPoints(-1);
+            pointsToSpend++;
+        }
+       
     }
 
     void commitPoints()
@@ -35,12 +42,13 @@ public class Spellbook : MonoBehaviour {
         for(int i = 0; i < spellList.Length; i++)
         {
             Spell spell = spellList[i];
-            if(spell.getCurrPoints() >= spell.getPointsToUnlock())
+            if(spell.getCurrPoints() == spell.getPointsToUnlock())
             {
                 spell.unlock();
+                spell.addCurrPoints((-1)* spell.getCurrPoints());
                 Debug.Log(spell.getName() +" successfully unlocked.");
                 //TODO: popup
-
+                //TODO check if latest spell in cache
             }
         }
     }

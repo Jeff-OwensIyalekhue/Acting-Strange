@@ -17,12 +17,19 @@ public class PunchDownSegment1 : IRelativeGestureSegment
         Vector3 leftHand = skeleton.getRawWorldPosition(JointType.HandLeft);
         Vector3 rightHand = skeleton.getRawWorldPosition(JointType.HandRight);
         Vector3 shoulder = skeleton.getRawWorldPosition(JointType.SpineShoulder);
-        
+        Vector3 leftShoulder = skeleton.getRawWorldPosition(JointType.ShoulderLeft);
+        Vector3 rightShoulder = skeleton.getRawWorldPosition(JointType.ShoulderRight);
+
+
+
         //position detection
-        if (leftHand.y >= shoulder.y && rightHand.y >= shoulder.y)
-        {
-            Debug.Log("PunchDown seg1");
-            return GesturePartResult.Succeed;
+        if (leftHand.x >= leftShoulder.x && rightHand.x <= rightShoulder.x) {
+
+            if (leftHand.y >= shoulder.y && rightHand.y >= shoulder.y)
+            {
+                //Debug.Log("PunchDown seg1");
+                return GesturePartResult.Succeed;
+            }
         }
         return GesturePartResult.Fail;
     }
@@ -49,7 +56,7 @@ public class PunchDownSegment2 : IRelativeGestureSegment
             
             if(leftHand.y >= hip.y && rightHand.y >= hip.y)
             {
-                Debug.Log("PunchDown seg2");
+                //Debug.Log("PunchDown seg2");
                 return GesturePartResult.Succeed;
             }
             //return GesturePartResult.Pausing;
@@ -75,7 +82,7 @@ public class PunchDownSegment3 : IRelativeGestureSegment
 
         if (leftHand.y < hip.y && rightHand.y < hip.y)
         {
-            Debug.Log("PunchDown succeed");
+            //Debug.Log("PunchDown succeed");
             return GesturePartResult.Succeed;
         }
         return GesturePartResult.Pausing;

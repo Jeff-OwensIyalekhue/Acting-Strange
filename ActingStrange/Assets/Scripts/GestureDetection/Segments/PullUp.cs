@@ -21,7 +21,7 @@ public class PullUpSegment1 : IRelativeGestureSegment
         //position detection
         if (leftHand.y < hip.y && rightHand.y < hip.y)
         {
-            Debug.Log("PullUp seg1");
+            //Debug.Log("PullUp seg1");
             return GesturePartResult.Succeed;
         }
         return GesturePartResult.Pausing;
@@ -45,9 +45,9 @@ public class PullUpSegment2 : IRelativeGestureSegment
         Vector3 shoulder = skeleton.getRawWorldPosition(JointType.SpineShoulder);
 
         //position detection
-        if (leftHand.y < hip.y && rightHand.y >= hip.y && rightHand.y <= shoulder.y)
+        if (rightHand.y < hip.y && leftHand.y >= hip.y && leftHand.y <= shoulder.y)
         {
-            Debug.Log("PullUp seg2");
+            //Debug.Log("PullUp seg2");
             return GesturePartResult.Succeed;
         }
         return GesturePartResult.Pausing;
@@ -71,9 +71,9 @@ public class PullUpSegment3 : IRelativeGestureSegment
         Vector3 shoulder = skeleton.getRawWorldPosition(JointType.SpineShoulder);
 
         //position detection
-        if (leftHand.y < hip.y && rightHand.y > shoulder.y)
+        if (rightHand.y < hip.y && leftHand.y > shoulder.y)
         {
-            Debug.Log("PullUp seg3");
+            //Debug.Log("PullUp seg3");
             return GesturePartResult.Succeed;
         }
         return GesturePartResult.Pausing;

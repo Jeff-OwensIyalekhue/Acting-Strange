@@ -12,11 +12,11 @@ public class Spell : MonoBehaviour {
     private bool unlocked = false;
 
     //spell attributes
-    private float cd;
+    private float cd;       //cooldown
     private float cdRemaining;
-    private float dmg;
-    private float dot;
-    private float slow;
+    private float dmg;  
+    private float dot;      //damageOverTime
+    private float slow;     //btw 0 & 1
     private float duration;
 
     //spell visuals
@@ -68,7 +68,7 @@ public class Spell : MonoBehaviour {
         return pointsToUnlock;
     }
 
-    public float getCurrPoints()
+    public int getCurrPoints()
     {
         return currPoints;
     }

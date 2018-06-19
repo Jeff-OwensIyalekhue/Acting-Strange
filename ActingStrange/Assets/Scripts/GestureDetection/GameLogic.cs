@@ -38,25 +38,25 @@ public class GameLogic : MonoBehaviour {
 
     void OnGestureRecognized(object sender, GestureEventArgs e)
     {
-        if (e.GestureName == "SwipeLeft")
-        {
-            Debug.Log("Swipe Recognized");
+        //if (e.GestureName == "SwipeLeft")
+        //{
+        //    Debug.Log("Swipe Recognized");
 
-        }
-        if (e.GestureName == "PullLeft")
-        {
-            Debug.Log("PullLeft Recognized");
-        }
-        if (e.GestureName == "SwipeLeftBack")
-        {
-            Debug.Log("SwipeBack Recognized");
+        //}
+        //if (e.GestureName == "PullLeft")
+        //{
+        //    Debug.Log("PullLeft Recognized");
+        //}
+        //if (e.GestureName == "SwipeLeftBack")
+        //{
+        //    Debug.Log("SwipeBack Recognized");
 
-        }
-        if (e.GestureName == "PushFwrd")
-        {
-            Debug.Log("pushFwrd Recognized");
+        //}
+        //if (e.GestureName == "PushFwrd")
+        //{
+        //    Debug.Log("pushFwrd Recognized");
 
-        }
+        //}
         if (e.GestureName == "PunchDown")
         {
             Debug.Log("PunchDown Recognized");

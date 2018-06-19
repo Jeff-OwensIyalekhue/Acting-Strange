@@ -20,7 +20,7 @@ public class CircleSegment1 : IRelativeGestureSegment
         //position detection
         if (rightHand.y >= head.y)
         {
-            Debug.Log("Cirlce seg1");
+            //Debug.Log("Cirlce seg1");
             return GesturePartResult.Succeed;
             //ggf. add hand.z betw. shoulders
         }
@@ -47,9 +47,9 @@ public class CircleSegment2 : IRelativeGestureSegment
         if ( rightHand.y < head.y && rightHand.y >hip.y)
         {
 
-            if (rightHand.z > rightElbow.y)
+            if (rightHand.x > rightElbow.x)
             {
-                Debug.Log("Circle seg2");
+                //Debug.Log("Circle seg2");
                 return GesturePartResult.Succeed;
             }
             //return GesturePartResult.Pausing;
@@ -70,12 +70,12 @@ public class CircleSegment3 : IRelativeGestureSegment
     {
         //get necessary joint positions
         Vector3 rightHand = skeleton.getRawWorldPosition(JointType.HandRight);
-        Vector3 head = skeleton.getRawWorldPosition(JointType.SpineBase);
+        Vector3 hip = skeleton.getRawWorldPosition(JointType.SpineBase);
 
         //position detection
-        if (rightHand.y <= head.y)
+        if (rightHand.y <= hip.y)
         {
-            Debug.Log("Cirlce seg3");
+            //Debug.Log("Cirlce seg3");
             return GesturePartResult.Succeed;
             //ggf. add hand.z betw. shoulders
         }
@@ -102,9 +102,9 @@ public class CircleSegment4 : IRelativeGestureSegment
         if (rightHand.y < head.y && rightHand.y > hip.y)
         {
 
-            if (rightHand.z < leftShoulder.y)
+            if (rightHand.x < leftShoulder.x)
             {
-                Debug.Log("Circle seg4");
+                //Debug.Log("Circle seg4");
                 return GesturePartResult.Succeed;
             }
         }
