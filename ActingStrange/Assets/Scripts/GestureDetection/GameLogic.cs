@@ -4,6 +4,7 @@ using System.Collections;
 public class GameLogic : MonoBehaviour {
 
     public GestureController gc;
+    public GameObject playerAvatar;
 
 	// Use this for initialization
 	void Start () {
@@ -55,11 +56,29 @@ public class GameLogic : MonoBehaviour {
         if (e.GestureName == "SwipeLeft")
         {
             Debug.Log("SwipeLeft Recognized");
+            if (playerAvatar.transform.position.x > -5)
+            {
+                playerAvatar.transform.position += new Vector3(-5, 0, 0);
+                playerAvatar.transform.Rotate(0, -45, 0);
+            }
+            else
+            {
+                Debug.Log("right border");
+            }
 
         }
         if (e.GestureName == "SwipeRight")
         {
             Debug.Log("SwipeRight Recognized");
+            if (playerAvatar.transform.position.x < 5)
+            {
+                playerAvatar.transform.position += new Vector3(5, 0, 0);
+                playerAvatar.transform.Rotate(0, 45, 0);
+            }
+            else
+            {
+                Debug.Log("left border");
+            }
 
         }
         //if (e.GestureName == "PullLeft")
