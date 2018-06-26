@@ -1,0 +1,4556 @@
+fileFormatVersion: 2
+guid: 9a17e9ee0c6e2c7468546a381cafb2ac
+timeCreated: 1530046308
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: breast_L
+    100002: breast_R
+    100004: brow_B_L
+    100006: brow_B_L_0
+    100008: brow_B_L_001
+    100010: brow_B_L_002
+    100012: brow_B_L_003
+    100014: brow_B_L_2
+    100016: brow_B_L_3
+    100018: brow_B_L_4
+    100020: brow_B_R
+    100022: brow_B_R_0
+    100024: brow_B_R_001
+    100026: brow_B_R_002
+    100028: brow_B_R_003
+    100030: brow_B_R_2
+    100032: brow_B_R_3
+    100034: brow_B_R_4
+    100036: brow_T_L
+    100038: brow_T_L_0
+    100040: brow_T_L_001
+    100042: brow_T_L_002
+    100044: brow_T_L_003
+    100046: brow_T_L_2
+    100048: brow_T_L_3
+    100050: brow_T_L_4
+    100052: brow_T_R
+    100054: brow_T_R_0
+    100056: brow_T_R_001
+    100058: brow_T_R_002
+    100060: brow_T_R_003
+    100062: brow_T_R_2
+    100064: brow_T_R_3
+    100066: brow_T_R_4
+    100068: cheek_B_L
+    100070: cheek_B_L_001
+    100072: cheek_B_L_2
+    100074: cheek_B_R
+    100076: cheek_B_R_001
+    100078: cheek_B_R_2
+    100080: cheek_T_L
+    100082: cheek_T_L_001
+    100084: cheek_T_L_2
+    100086: cheek_T_R
+    100088: cheek_T_R_001
+    100090: cheek_T_R_2
+    100092: chin
+    100094: chin_0
+    100096: chin_001
+    100098: chin_2
+    100100: chin_L
+    100102: chin_L_0
+    100104: chin_R
+    100106: chin_R_0
+    100108: Cylinder
+    100110: DEF-breast_L
+    100112: DEF-breast_R
+    100114: DEF-brow_B_L
+    100116: DEF-brow_B_L_001
+    100118: DEF-brow_B_L_002
+    100120: DEF-brow_B_L_003
+    100122: DEF-brow_B_R
+    100124: DEF-brow_B_R_001
+    100126: DEF-brow_B_R_002
+    100128: DEF-brow_B_R_003
+    100130: DEF-brow_T_L
+    100132: DEF-brow_T_L_001
+    100134: DEF-brow_T_L_002
+    100136: DEF-brow_T_L_003
+    100138: DEF-brow_T_R
+    100140: DEF-brow_T_R_001
+    100142: DEF-brow_T_R_002
+    100144: DEF-brow_T_R_003
+    100146: DEF-cheek_B_L
+    100148: DEF-cheek_B_L_001
+    100150: DEF-cheek_B_R
+    100152: DEF-cheek_B_R_001
+    100154: DEF-cheek_T_L
+    100156: DEF-cheek_T_L_001
+    100158: DEF-cheek_T_R
+    100160: DEF-cheek_T_R_001
+    100162: DEF-chin
+    100164: DEF-chin_001
+    100166: DEF-chin_L
+    100168: DEF-chin_R
+    100170: DEF-ear_L
+    100172: DEF-ear_L_001
+    100174: DEF-ear_L_002
+    100176: DEF-ear_L_003
+    100178: DEF-ear_L_004
+    100180: DEF-ear_R
+    100182: DEF-ear_R_001
+    100184: DEF-ear_R_002
+    100186: DEF-ear_R_003
+    100188: DEF-ear_R_004
+    100190: DEF-f_index_01_L
+    100192: DEF-f_index_01_R
+    100194: DEF-f_index_02_L
+    100196: DEF-f_index_02_R
+    100198: DEF-f_index_03_L
+    100200: DEF-f_index_03_R
+    100202: DEF-f_middle_01_L
+    100204: DEF-f_middle_01_R
+    100206: DEF-f_middle_02_L
+    100208: DEF-f_middle_02_R
+    100210: DEF-f_middle_03_L
+    100212: DEF-f_middle_03_R
+    100214: DEF-f_pinky_01_L
+    100216: DEF-f_pinky_01_R
+    100218: DEF-f_pinky_02_L
+    100220: DEF-f_pinky_02_R
+    100222: DEF-f_pinky_03_L
+    100224: DEF-f_pinky_03_R
+    100226: DEF-f_ring_01_L
+    100228: DEF-f_ring_01_R
+    100230: DEF-f_ring_02_L
+    100232: DEF-f_ring_02_R
+    100234: DEF-f_ring_03_L
+    100236: DEF-f_ring_03_R
+    100238: DEF-foot_L
+    100240: DEF-foot_R
+    100242: DEF-forearm_L
+    100244: DEF-forearm_L_001
+    100246: DEF-forearm_R
+    100248: DEF-forearm_R_001
+    100250: DEF-forehead_L
+    100252: DEF-forehead_L_001
+    100254: DEF-forehead_L_002
+    100256: DEF-forehead_R
+    100258: DEF-forehead_R_001
+    100260: DEF-forehead_R_002
+    100262: DEF-hand_L
+    100264: DEF-hand_R
+    100266: DEF-jaw
+    100268: DEF-jaw_L
+    100270: DEF-jaw_L_001
+    100272: DEF-jaw_R
+    100274: DEF-jaw_R_001
+    100276: DEF-lid_B_L
+    100278: DEF-lid_B_L_001
+    100280: DEF-lid_B_L_002
+    100282: DEF-lid_B_L_003
+    100284: DEF-lid_B_R
+    100286: DEF-lid_B_R_001
+    100288: DEF-lid_B_R_002
+    100290: DEF-lid_B_R_003
+    100292: DEF-lid_T_L
+    100294: DEF-lid_T_L_001
+    100296: DEF-lid_T_L_002
+    100298: DEF-lid_T_L_003
+    100300: DEF-lid_T_R
+    100302: DEF-lid_T_R_001
+    100304: DEF-lid_T_R_002
+    100306: DEF-lid_T_R_003
+    100308: DEF-lip_B_L
+    100310: DEF-lip_B_L_001
+    100312: DEF-lip_B_R
+    100314: DEF-lip_B_R_001
+    100316: DEF-lip_T_L
+    100318: DEF-lip_T_L_001
+    100320: DEF-lip_T_R
+    100322: DEF-lip_T_R_001
+    100324: DEF-nose
+    100326: DEF-nose_001
+    100328: DEF-nose_002
+    100330: DEF-nose_003
+    100332: DEF-nose_004
+    100334: DEF-nose_L
+    100336: DEF-nose_L_001
+    100338: DEF-nose_R
+    100340: DEF-nose_R_001
+    100342: DEF-palm_01_L
+    100344: DEF-palm_01_R
+    100346: DEF-palm_02_L
+    100348: DEF-palm_02_R
+    100350: DEF-palm_03_L
+    100352: DEF-palm_03_R
+    100354: DEF-palm_04_L
+    100356: DEF-palm_04_R
+    100358: DEF-pelvis_L
+    100360: DEF-pelvis_R
+    100362: DEF-shin_L
+    100364: DEF-shin_L_001
+    100366: DEF-shin_R
+    100368: DEF-shin_R_001
+    100370: DEF-shoulder_L
+    100372: DEF-shoulder_R
+    100374: DEF-spine
+    100376: DEF-spine_001
+    100378: DEF-spine_002
+    100380: DEF-spine_003
+    100382: DEF-spine_004
+    100384: DEF-spine_005
+    100386: DEF-spine_006
+    100388: DEF-temple_L
+    100390: DEF-temple_R
+    100392: DEF-thigh_L
+    100394: DEF-thigh_L_001
+    100396: DEF-thigh_R
+    100398: DEF-thigh_R_001
+    100400: DEF-thumb_01_L
+    100402: DEF-thumb_01_R
+    100404: DEF-thumb_02_L
+    100406: DEF-thumb_02_R
+    100408: DEF-thumb_03_L
+    100410: DEF-thumb_03_R
+    100412: DEF-toe_L
+    100414: DEF-toe_R
+    100416: DEF-tongue
+    100418: DEF-tongue_001
+    100420: DEF-tongue_002
+    100422: DEF-upper_arm_L
+    100424: DEF-upper_arm_L_001
+    100426: DEF-upper_arm_R
+    100428: DEF-upper_arm_R_001
+    100430: ear_L
+    100432: ear_L_0
+    100434: ear_L_001
+    100436: ear_L_002
+    100438: ear_L_003
+    100440: ear_L_004
+    100442: ear_L_3
+    100444: ear_L_4
+    100446: ear_L_5
+    100448: ear_R
+    100450: ear_R_0
+    100452: ear_R_001
+    100454: ear_R_002
+    100456: ear_R_003
+    100458: ear_R_004
+    100460: ear_R_3
+    100462: ear_R_4
+    100464: ear_R_5
+    100466: //RootNode
+    100468: Enemy_tus_Body_001
+    100470: Enemy_tus_High-poly
+    100472: Enemy_tus_Male_casualsuit02_003
+    100474: Enemy_tus_Male_casualsuit02_006
+    100476: Enemy_tus_Male_casualsuit02_007
+    100478: Enemy_tus_Male_casualsuit02_008
+    100480: Enemy_tus_Male_casualsuit02_009
+    100482: Enemy_tus_Male_casualsuit02_010
+    100484: Enemy_tus_skin_Body
+    100486: Enemy_tus_skin_Body_001
+    100488: Enemy_tus_Teeth_shape04
+    100490: eye_L
+    100492: eye_R
+    100494: f_index_01_L
+    100496: f_index_01_R
+    100498: f_index_02_L
+    100500: f_index_02_R
+    100502: f_index_03_L
+    100504: f_index_03_R
+    100506: f_middle_01_L
+    100508: f_middle_01_R
+    100510: f_middle_02_L
+    100512: f_middle_02_R
+    100514: f_middle_03_L
+    100516: f_middle_03_R
+    100518: f_pinky_01_L
+    100520: f_pinky_01_R
+    100522: f_pinky_02_L
+    100524: f_pinky_02_R
+    100526: f_pinky_03_L
+    100528: f_pinky_03_R
+    100530: f_ring_01_L
+    100532: f_ring_01_R
+    100534: f_ring_02_L
+    100536: f_ring_02_R
+    100538: f_ring_03_L
+    100540: f_ring_03_R
+    100542: face
+    100544: foot_L
+    100546: foot_R
+    100548: forearm_L
+    100550: forearm_R
+    100552: forehead_L
+    100554: forehead_L_001
+    100556: forehead_L_002
+    100558: forehead_R
+    100560: forehead_R_001
+    100562: forehead_R_002
+    100564: hand_L
+    100566: hand_R
+    100568: head
+    100570: heel_02_L
+    100572: heel_02_R
+    100574: jaw
+    100576: jaw_0
+    100578: jaw_L
+    100580: jaw_L_0
+    100582: jaw_L_001
+    100584: jaw_L_2
+    100586: jaw_master
+    100588: jaw_R
+    100590: jaw_R_0
+    100592: jaw_R_001
+    100594: jaw_R_2
+    100596: lid_B_L
+    100598: lid_B_L_001
+    100600: lid_B_L_002
+    100602: lid_B_L_003
+    100604: lid_B_R
+    100606: lid_B_R_001
+    100608: lid_B_R_002
+    100610: lid_B_R_003
+    100612: lid_T_L
+    100614: lid_T_L_001
+    100616: lid_T_L_002
+    100618: lid_T_L_003
+    100620: lid_T_R
+    100622: lid_T_R_001
+    100624: lid_T_R_002
+    100626: lid_T_R_003
+    100628: lip_B
+    100630: lip_B_L
+    100632: lip_B_L_001
+    100634: lip_B_L_2
+    100636: lip_B_R
+    100638: lip_B_R_001
+    100640: lip_B_R_2
+    100642: lip_T
+    100644: lip_T_L
+    100646: lip_T_L_001
+    100648: lip_T_L_2
+    100650: lip_T_R
+    100652: lip_T_R_001
+    100654: lip_T_R_2
+    100656: lips_L
+    100658: lips_R
+    100660: master_eye_L
+    100662: master_eye_R
+    100664: MCH-jaw_master
+    100666: MCH-jaw_master_001
+    100668: MCH-jaw_master_002
+    100670: MCH-jaw_master_003
+    100672: MCH-jaw_master_004
+    100674: MCH-lid_B_L
+    100676: MCH-lid_B_L_001
+    100678: MCH-lid_B_L_002
+    100680: MCH-lid_B_L_003
+    100682: MCH-lid_B_R
+    100684: MCH-lid_B_R_001
+    100686: MCH-lid_B_R_002
+    100688: MCH-lid_B_R_003
+    100690: MCH-lid_T_L
+    100692: MCH-lid_T_L_001
+    100694: MCH-lid_T_L_002
+    100696: MCH-lid_T_L_003
+    100698: MCH-lid_T_R
+    100700: MCH-lid_T_R_001
+    100702: MCH-lid_T_R_002
+    100704: MCH-lid_T_R_003
+    100706: MCH-ROT-head
+    100708: MCH-ROT-neck
+    100710: MCH-spine
+    100712: MCH-spine_001
+    100714: MCH-spine_002
+    100716: MCH-spine_003
+    100718: MCH-tongue_001
+    100720: MCH-tongue_002
+    100722: metarig
+    100724: neck
+    100726: nose
+    100728: nose_0
+    100730: nose_001
+    100732: nose_002
+    100734: nose_003
+    100736: nose_004
+    100738: nose_2
+    100740: nose_3
+    100742: nose_4
+    100744: nose_5
+    100746: nose_L
+    100748: nose_L_0
+    100750: nose_L_001
+    100752: nose_L_2
+    100754: nose_master
+    100756: nose_R
+    100758: nose_R_0
+    100760: nose_R_001
+    100762: nose_R_2
+    100764: ORG-breast_L
+    100766: ORG-breast_R
+    100768: ORG-face
+    100770: ORG-palm_01_L
+    100772: ORG-palm_01_R
+    100774: ORG-palm_02_L
+    100776: ORG-palm_02_R
+    100778: ORG-palm_03_L
+    100780: ORG-palm_03_R
+    100782: ORG-palm_04_L
+    100784: ORG-palm_04_R
+    100786: ORG-pelvis_L
+    100788: ORG-pelvis_R
+    100790: ORG-shoulder_L
+    100792: ORG-shoulder_R
+    100794: ORG-spine
+    100796: ORG-spine_003
+    100798: ORG-spine_006
+    100800: palm_01_L
+    100802: palm_01_R
+    100804: palm_02_L
+    100806: palm_02_R
+    100808: palm_03_L
+    100810: palm_03_R
+    100812: palm_04_L
+    100814: palm_04_R
+    100816: pelvis_L
+    100818: pelvis_R
+    100820: Plane
+    100822: rig
+    100824: root
+    100826: shin_L
+    100828: shin_R
+    100830: shoulder_L
+    100832: shoulder_R
+    100834: spine
+    100836: spine_001
+    100838: spine_002
+    100840: spine_003
+    100842: spine_004
+    100844: spine_005
+    100846: spine_006
+    100848: teeth_B
+    100850: teeth_T
+    100852: temple_L
+    100854: temple_R
+    100856: thigh_L
+    100858: thigh_R
+    100860: thumb_01_L
+    100862: thumb_01_R
+    100864: thumb_02_L
+    100866: thumb_02_R
+    100868: thumb_03_L
+    100870: thumb_03_R
+    100872: toe_L
+    100874: toe_R
+    100876: tongue
+    100878: tongue_0
+    100880: tongue_001
+    100882: tongue_002
+    100884: tongue_2
+    100886: tongue_3
+    100888: tongue_master
+    100890: torso
+    100892: tweak_spine
+    100894: tweak_spine_003
+    100896: upper_arm_L
+    100898: upper_arm_R
+    100900: WGT-rig_belly_C
+    100902: WGT-rig_Breast_C
+    100904: WGT-rig_breast_L
+    100906: WGT-rig_breast_R
+    100908: WGT-rig_brow_B_L
+    100910: WGT-rig_brow_B_L_001
+    100912: WGT-rig_brow_B_L_002
+    100914: WGT-rig_brow_B_L_003
+    100916: WGT-rig_brow_B_L_004
+    100918: WGT-rig_brow_B_R
+    100920: WGT-rig_brow_B_R_001
+    100922: WGT-rig_brow_B_R_002
+    100924: WGT-rig_brow_B_R_003
+    100926: WGT-rig_brow_B_R_004
+    100928: WGT-rig_brow_T_L
+    100930: WGT-rig_brow_T_L_001
+    100932: WGT-rig_brow_T_L_002
+    100934: WGT-rig_brow_T_L_003
+    100936: WGT-rig_brow_T_R
+    100938: WGT-rig_brow_T_R_001
+    100940: WGT-rig_brow_T_R_002
+    100942: WGT-rig_brow_T_R_003
+    100944: WGT-rig_cheek_B_L_001
+    100946: WGT-rig_cheek_B_R_001
+    100948: WGT-rig_cheek_T_L_001
+    100950: WGT-rig_cheek_T_R_001
+    100952: WGT-rig_chest
+    100954: WGT-rig_chin
+    100956: WGT-rig_chin_001
+    100958: WGT-rig_chin_002
+    100960: WGT-rig_chin_L
+    100962: WGT-rig_chin_R
+    100964: WGT-rig_ear_L
+    100966: WGT-rig_ear_L_002
+    100968: WGT-rig_ear_L_003
+    100970: WGT-rig_ear_L_004
+    100972: WGT-rig_ear_R
+    100974: WGT-rig_ear_R_002
+    100976: WGT-rig_ear_R_003
+    100978: WGT-rig_ear_R_004
+    100980: WGT-rig_eye_L
+    100982: WGT-rig_eye_R
+    100984: WGT-rig_eyes
+    100986: WGT-rig_f_index_001_L
+    100988: WGT-rig_f_index_001_R
+    100990: WGT-rig_f_index_002_L
+    100992: WGT-rig_f_index_002_R
+    100994: WGT-rig_f_index_01_L
+    100996: WGT-rig_f_index_01_R
+    100998: WGT-rig_f_index_02_L
+    101000: WGT-rig_f_index_02_R
+    101002: WGT-rig_f_index_03_L
+    101004: WGT-rig_f_index_03_R
+    101006: WGT-rig_f_middle_001_L
+    101008: WGT-rig_f_middle_001_R
+    101010: WGT-rig_f_middle_002_L
+    101012: WGT-rig_f_middle_002_R
+    101014: WGT-rig_f_middle_01_L
+    101016: WGT-rig_f_middle_01_R
+    101018: WGT-rig_f_middle_02_L
+    101020: WGT-rig_f_middle_02_R
+    101022: WGT-rig_f_middle_03_L
+    101024: WGT-rig_f_middle_03_R
+    101026: WGT-rig_f_palm_L
+    101028: WGT-rig_f_palm_L_001
+    101030: WGT-rig_f_palm_R
+    101032: WGT-rig_f_palm_R_001
+    101034: WGT-rig_f_pinky_001_L
+    101036: WGT-rig_f_pinky_001_R
+    101038: WGT-rig_f_pinky_002_L
+    101040: WGT-rig_f_pinky_002_R
+    101042: WGT-rig_f_pinky_01_L
+    101044: WGT-rig_f_pinky_01_R
+    101046: WGT-rig_f_pinky_02_L
+    101048: WGT-rig_f_pinky_02_R
+    101050: WGT-rig_f_pinky_03_L
+    101052: WGT-rig_f_pinky_03_R
+    101054: WGT-rig_f_ring_001_L
+    101056: WGT-rig_f_ring_001_R
+    101058: WGT-rig_f_ring_002_L
+    101060: WGT-rig_f_ring_002_R
+    101062: WGT-rig_f_ring_01_L
+    101064: WGT-rig_f_ring_01_R
+    101066: WGT-rig_f_ring_02_L
+    101068: WGT-rig_f_ring_02_R
+    101070: WGT-rig_f_ring_03_L
+    101072: WGT-rig_f_ring_03_R
+    101074: WGT-rig_f_toe_L
+    101076: WGT-rig_f_toe_R
+    101078: WGT-rig_f_toe_tweak_L
+    101080: WGT-rig_f_toe_tweak_R
+    101082: WGT-rig_foot_fk_L
+    101084: WGT-rig_foot_fk_R
+    101086: WGT-rig_foot_heel_ik_L
+    101088: WGT-rig_foot_heel_ik_R
+    101090: WGT-rig_foot_ik_L
+    101092: WGT-rig_foot_ik_R
+    101094: WGT-rig_foot_tweak_L
+    101096: WGT-rig_foot_tweak_L_001
+    101098: WGT-rig_foot_tweak_R
+    101100: WGT-rig_foot_tweak_R_001
+    101102: WGT-rig_forearm_fk_L
+    101104: WGT-rig_forearm_fk_R
+    101106: WGT-rig_forearm_tweak_L
+    101108: WGT-rig_forearm_tweak_L_001
+    101110: WGT-rig_forearm_tweak_R
+    101112: WGT-rig_forearm_tweak_R_001
+    101114: WGT-rig_hand_fk_L
+    101116: WGT-rig_hand_fk_R
+    101118: WGT-rig_hand_heel_ik_L
+    101120: WGT-rig_hand_heel_ik_R
+    101122: WGT-rig_hand_ik_L
+    101124: WGT-rig_hand_ik_R
+    101126: WGT-rig_hand_tweak_L
+    101128: WGT-rig_hand_tweak_L_001
+    101130: WGT-rig_hand_tweak_R
+    101132: WGT-rig_hand_tweak_R_001
+    101134: WGT-rig_head
+    101136: WGT-rig_hips
+    101138: WGT-rig_jaw
+    101140: WGT-rig_jaw_L
+    101142: WGT-rig_jaw_L_001
+    101144: WGT-rig_jaw_master
+    101146: WGT-rig_jaw_R
+    101148: WGT-rig_jaw_R_001
+    101150: WGT-rig_lid_B_L
+    101152: WGT-rig_lid_B_L_001
+    101154: WGT-rig_lid_B_L_002
+    101156: WGT-rig_lid_B_L_003
+    101158: WGT-rig_lid_B_R
+    101160: WGT-rig_lid_B_R_001
+    101162: WGT-rig_lid_B_R_002
+    101164: WGT-rig_lid_B_R_003
+    101166: WGT-rig_lid_T_L
+    101168: WGT-rig_lid_T_L_001
+    101170: WGT-rig_lid_T_L_002
+    101172: WGT-rig_lid_T_L_003
+    101174: WGT-rig_lid_T_R
+    101176: WGT-rig_lid_T_R_001
+    101178: WGT-rig_lid_T_R_002
+    101180: WGT-rig_lid_T_R_003
+    101182: WGT-rig_lip_B
+    101184: WGT-rig_lip_B_L_001
+    101186: WGT-rig_lip_B_R_001
+    101188: WGT-rig_lip_T
+    101190: WGT-rig_lip_T_L_001
+    101192: WGT-rig_lip_T_R_001
+    101194: WGT-rig_lips_L
+    101196: WGT-rig_lips_R
+    101198: WGT-rig_master_eye_L
+    101200: WGT-rig_master_eye_R
+    101202: WGT-rig_neck
+    101204: WGT-rig_nose
+    101206: WGT-rig_nose_001
+    101208: WGT-rig_nose_002
+    101210: WGT-rig_nose_003
+    101212: WGT-rig_nose_004
+    101214: WGT-rig_nose_005
+    101216: WGT-rig_nose_L
+    101218: WGT-rig_nose_L_001
+    101220: WGT-rig_nose_master
+    101222: WGT-rig_nose_R
+    101224: WGT-rig_nose_R_001
+    101226: WGT-rig_palm_L
+    101228: WGT-rig_palm_R
+    101230: WGT-rig_r_index_001_L
+    101232: WGT-rig_r_index_001_R
+    101234: WGT-rig_r_index_002_L
+    101236: WGT-rig_r_index_002_R
+    101238: WGT-rig_r_middle_001_L
+    101240: WGT-rig_r_middle_001_R
+    101242: WGT-rig_r_middle_002_L
+    101244: WGT-rig_r_middle_002_R
+    101246: WGT-rig_r_palm_L
+    101248: WGT-rig_r_palm_L_001
+    101250: WGT-rig_r_palm_R
+    101252: WGT-rig_r_palm_R_001
+    101254: WGT-rig_r_pinky_001_L
+    101256: WGT-rig_r_pinky_001_R
+    101258: WGT-rig_r_pinky_002_L
+    101260: WGT-rig_r_pinky_002_R
+    101262: WGT-rig_r_ring_001_L
+    101264: WGT-rig_r_ring_001_R
+    101266: WGT-rig_r_ring_002_L
+    101268: WGT-rig_r_ring_002_R
+    101270: WGT-rig_r_toe_L
+    101272: WGT-rig_r_toe_R
+    101274: WGT-rig_r_toe_tweak_L
+    101276: WGT-rig_r_toe_tweak_R
+    101278: WGT-rig_root
+    101280: WGT-rig_shin_fk_L
+    101282: WGT-rig_shin_fk_R
+    101284: WGT-rig_shin_tweak_L
+    101286: WGT-rig_shin_tweak_L_001
+    101288: WGT-rig_shin_tweak_R
+    101290: WGT-rig_shin_tweak_R_001
+    101292: WGT-rig_shoulder_L
+    101294: WGT-rig_shoulder_R
+    101296: WGT-rig_tail_001
+    101298: WGT-rig_tail_002
+    101300: WGT-rig_tail_003
+    101302: WGT-rig_tail_004
+    101304: WGT-rig_tail_master
+    101306: WGT-rig_teeth_B
+    101308: WGT-rig_teeth_T
+    101310: WGT-rig_thigh_fk_L
+    101312: WGT-rig_thigh_fk_R
+    101314: WGT-rig_thigh_ik_L
+    101316: WGT-rig_thigh_ik_R
+    101318: WGT-rig_thigh_ik_target_L
+    101320: WGT-rig_thigh_ik_target_R
+    101322: WGT-rig_thigh_parent_L
+    101324: WGT-rig_thigh_parent_R
+    101326: WGT-rig_thigh_tweak_L
+    101328: WGT-rig_thigh_tweak_L_001
+    101330: WGT-rig_thigh_tweak_R
+    101332: WGT-rig_thigh_tweak_R_001
+    101334: WGT-rig_thumb_01_L
+    101336: WGT-rig_thumb_01_R
+    101338: WGT-rig_thumb_02_L
+    101340: WGT-rig_thumb_02_R
+    101342: WGT-rig_thumb_03_L
+    101344: WGT-rig_thumb_03_R
+    101346: WGT-rig_toe_L
+    101348: WGT-rig_toe_R
+    101350: WGT-rig_tongue
+    101352: WGT-rig_tongue_001
+    101354: WGT-rig_tongue_002
+    101356: WGT-rig_tongue_003
+    101358: WGT-rig_tongue_master
+    101360: WGT-rig_torso
+    101362: WGT-rig_tweak_f_index_001_L
+    101364: WGT-rig_tweak_f_index_001_R
+    101366: WGT-rig_tweak_f_index_002_L
+    101368: WGT-rig_tweak_f_index_002_L_001
+    101370: WGT-rig_tweak_f_index_002_R
+    101372: WGT-rig_tweak_f_index_002_R_001
+    101374: WGT-rig_tweak_f_index_01_L
+    101376: WGT-rig_tweak_f_index_01_R
+    101378: WGT-rig_tweak_f_index_02_L
+    101380: WGT-rig_tweak_f_index_02_R
+    101382: WGT-rig_tweak_f_index_03_L
+    101384: WGT-rig_tweak_f_index_03_L_001
+    101386: WGT-rig_tweak_f_index_03_R
+    101388: WGT-rig_tweak_f_index_03_R_001
+    101390: WGT-rig_tweak_f_middle_001_L
+    101392: WGT-rig_tweak_f_middle_001_R
+    101394: WGT-rig_tweak_f_middle_002_L
+    101396: WGT-rig_tweak_f_middle_002_L_001
+    101398: WGT-rig_tweak_f_middle_002_R
+    101400: WGT-rig_tweak_f_middle_002_R_001
+    101402: WGT-rig_tweak_f_middle_01_L
+    101404: WGT-rig_tweak_f_middle_01_R
+    101406: WGT-rig_tweak_f_middle_02_L
+    101408: WGT-rig_tweak_f_middle_02_R
+    101410: WGT-rig_tweak_f_middle_03_L
+    101412: WGT-rig_tweak_f_middle_03_L_001
+    101414: WGT-rig_tweak_f_middle_03_R
+    101416: WGT-rig_tweak_f_middle_03_R_001
+    101418: WGT-rig_tweak_f_pinky_001_L
+    101420: WGT-rig_tweak_f_pinky_001_R
+    101422: WGT-rig_tweak_f_pinky_002_L
+    101424: WGT-rig_tweak_f_pinky_002_L_001
+    101426: WGT-rig_tweak_f_pinky_002_R
+    101428: WGT-rig_tweak_f_pinky_002_R_001
+    101430: WGT-rig_tweak_f_pinky_01_L
+    101432: WGT-rig_tweak_f_pinky_01_R
+    101434: WGT-rig_tweak_f_pinky_02_L
+    101436: WGT-rig_tweak_f_pinky_02_R
+    101438: WGT-rig_tweak_f_pinky_03_L
+    101440: WGT-rig_tweak_f_pinky_03_L_001
+    101442: WGT-rig_tweak_f_pinky_03_R
+    101444: WGT-rig_tweak_f_pinky_03_R_001
+    101446: WGT-rig_tweak_f_ring_001_L
+    101448: WGT-rig_tweak_f_ring_001_R
+    101450: WGT-rig_tweak_f_ring_002_L
+    101452: WGT-rig_tweak_f_ring_002_L_001
+    101454: WGT-rig_tweak_f_ring_002_R
+    101456: WGT-rig_tweak_f_ring_002_R_001
+    101458: WGT-rig_tweak_f_ring_01_L
+    101460: WGT-rig_tweak_f_ring_01_R
+    101462: WGT-rig_tweak_f_ring_02_L
+    101464: WGT-rig_tweak_f_ring_02_R
+    101466: WGT-rig_tweak_f_ring_03_L
+    101468: WGT-rig_tweak_f_ring_03_L_001
+    101470: WGT-rig_tweak_f_ring_03_R
+    101472: WGT-rig_tweak_f_ring_03_R_001
+    101474: WGT-rig_tweak_r_index_001_L
+    101476: WGT-rig_tweak_r_index_001_R
+    101478: WGT-rig_tweak_r_index_002_L
+    101480: WGT-rig_tweak_r_index_002_L_001
+    101482: WGT-rig_tweak_r_index_002_R
+    101484: WGT-rig_tweak_r_index_002_R_001
+    101486: WGT-rig_tweak_r_middle_001_L
+    101488: WGT-rig_tweak_r_middle_001_R
+    101490: WGT-rig_tweak_r_middle_002_L
+    101492: WGT-rig_tweak_r_middle_002_L_001
+    101494: WGT-rig_tweak_r_middle_002_R
+    101496: WGT-rig_tweak_r_middle_002_R_001
+    101498: WGT-rig_tweak_r_pinky_001_L
+    101500: WGT-rig_tweak_r_pinky_001_R
+    101502: WGT-rig_tweak_r_pinky_002_L
+    101504: WGT-rig_tweak_r_pinky_002_L_001
+    101506: WGT-rig_tweak_r_pinky_002_R
+    101508: WGT-rig_tweak_r_pinky_002_R_001
+    101510: WGT-rig_tweak_r_ring_001_L
+    101512: WGT-rig_tweak_r_ring_001_R
+    101514: WGT-rig_tweak_r_ring_002_L
+    101516: WGT-rig_tweak_r_ring_002_L_001
+    101518: WGT-rig_tweak_r_ring_002_R
+    101520: WGT-rig_tweak_r_ring_002_R_001
+    101522: WGT-rig_tweak_spine
+    101524: WGT-rig_tweak_spine_001
+    101526: WGT-rig_tweak_spine_002
+    101528: WGT-rig_tweak_spine_003
+    101530: WGT-rig_tweak_spine_004
+    101532: WGT-rig_tweak_spine_005
+    101534: WGT-rig_tweak_tail_001
+    101536: WGT-rig_tweak_tail_002
+    101538: WGT-rig_tweak_tail_003
+    101540: WGT-rig_tweak_tail_004
+    101542: WGT-rig_tweak_thumb_01_L
+    101544: WGT-rig_tweak_thumb_01_R
+    101546: WGT-rig_tweak_thumb_02_L
+    101548: WGT-rig_tweak_thumb_02_R
+    101550: WGT-rig_tweak_thumb_03_L
+    101552: WGT-rig_tweak_thumb_03_L_001
+    101554: WGT-rig_tweak_thumb_03_R
+    101556: WGT-rig_tweak_thumb_03_R_001
+    101558: WGT-rig_upper_arm_fk_L
+    101560: WGT-rig_upper_arm_fk_R
+    101562: WGT-rig_upper_arm_ik_L
+    101564: WGT-rig_upper_arm_ik_R
+    101566: WGT-rig_upper_arm_ik_target_L
+    101568: WGT-rig_upper_arm_ik_target_R
+    101570: WGT-rig_upper_arm_parent_L
+    101572: WGT-rig_upper_arm_parent_R
+    101574: WGT-rig_upper_arm_tweak_L
+    101576: WGT-rig_upper_arm_tweak_L_001
+    101578: WGT-rig_upper_arm_tweak_R
+    101580: WGT-rig_upper_arm_tweak_R_001
+    101582: WGT-rig_VIS_thigh_ik_pole_L
+    101584: WGT-rig_VIS_thigh_ik_pole_R
+    101586: WGT-rig_VIS_upper_arm_ik_pole_L
+    101588: WGT-rig_VIS_upper_arm_ik_pole_R
+    101590: WGTS_rig
+    400000: breast_L
+    400002: breast_R
+    400004: brow_B_L
+    400006: brow_B_L_0
+    400008: brow_B_L_001
+    400010: brow_B_L_002
+    400012: brow_B_L_003
+    400014: brow_B_L_2
+    400016: brow_B_L_3
+    400018: brow_B_L_4
+    400020: brow_B_R
+    400022: brow_B_R_0
+    400024: brow_B_R_001
+    400026: brow_B_R_002
+    400028: brow_B_R_003
+    400030: brow_B_R_2
+    400032: brow_B_R_3
+    400034: brow_B_R_4
+    400036: brow_T_L
+    400038: brow_T_L_0
+    400040: brow_T_L_001
+    400042: brow_T_L_002
+    400044: brow_T_L_003
+    400046: brow_T_L_2
+    400048: brow_T_L_3
+    400050: brow_T_L_4
+    400052: brow_T_R
+    400054: brow_T_R_0
+    400056: brow_T_R_001
+    400058: brow_T_R_002
+    400060: brow_T_R_003
+    400062: brow_T_R_2
+    400064: brow_T_R_3
+    400066: brow_T_R_4
+    400068: cheek_B_L
+    400070: cheek_B_L_001
+    400072: cheek_B_L_2
+    400074: cheek_B_R
+    400076: cheek_B_R_001
+    400078: cheek_B_R_2
+    400080: cheek_T_L
+    400082: cheek_T_L_001
+    400084: cheek_T_L_2
+    400086: cheek_T_R
+    400088: cheek_T_R_001
+    400090: cheek_T_R_2
+    400092: chin
+    400094: chin_0
+    400096: chin_001
+    400098: chin_2
+    400100: chin_L
+    400102: chin_L_0
+    400104: chin_R
+    400106: chin_R_0
+    400108: Cylinder
+    400110: DEF-breast_L
+    400112: DEF-breast_R
+    400114: DEF-brow_B_L
+    400116: DEF-brow_B_L_001
+    400118: DEF-brow_B_L_002
+    400120: DEF-brow_B_L_003
+    400122: DEF-brow_B_R
+    400124: DEF-brow_B_R_001
+    400126: DEF-brow_B_R_002
+    400128: DEF-brow_B_R_003
+    400130: DEF-brow_T_L
+    400132: DEF-brow_T_L_001
+    400134: DEF-brow_T_L_002
+    400136: DEF-brow_T_L_003
+    400138: DEF-brow_T_R
+    400140: DEF-brow_T_R_001
+    400142: DEF-brow_T_R_002
+    400144: DEF-brow_T_R_003
+    400146: DEF-cheek_B_L
+    400148: DEF-cheek_B_L_001
+    400150: DEF-cheek_B_R
+    400152: DEF-cheek_B_R_001
+    400154: DEF-cheek_T_L
+    400156: DEF-cheek_T_L_001
+    400158: DEF-cheek_T_R
+    400160: DEF-cheek_T_R_001
+    400162: DEF-chin
+    400164: DEF-chin_001
+    400166: DEF-chin_L
+    400168: DEF-chin_R
+    400170: DEF-ear_L
+    400172: DEF-ear_L_001
+    400174: DEF-ear_L_002
+    400176: DEF-ear_L_003
+    400178: DEF-ear_L_004
+    400180: DEF-ear_R
+    400182: DEF-ear_R_001
+    400184: DEF-ear_R_002
+    400186: DEF-ear_R_003
+    400188: DEF-ear_R_004
+    400190: DEF-f_index_01_L
+    400192: DEF-f_index_01_R
+    400194: DEF-f_index_02_L
+    400196: DEF-f_index_02_R
+    400198: DEF-f_index_03_L
+    400200: DEF-f_index_03_R
+    400202: DEF-f_middle_01_L
+    400204: DEF-f_middle_01_R
+    400206: DEF-f_middle_02_L
+    400208: DEF-f_middle_02_R
+    400210: DEF-f_middle_03_L
+    400212: DEF-f_middle_03_R
+    400214: DEF-f_pinky_01_L
+    400216: DEF-f_pinky_01_R
+    400218: DEF-f_pinky_02_L
+    400220: DEF-f_pinky_02_R
+    400222: DEF-f_pinky_03_L
+    400224: DEF-f_pinky_03_R
+    400226: DEF-f_ring_01_L
+    400228: DEF-f_ring_01_R
+    400230: DEF-f_ring_02_L
+    400232: DEF-f_ring_02_R
+    400234: DEF-f_ring_03_L
+    400236: DEF-f_ring_03_R
+    400238: DEF-foot_L
+    400240: DEF-foot_R
+    400242: DEF-forearm_L
+    400244: DEF-forearm_L_001
+    400246: DEF-forearm_R
+    400248: DEF-forearm_R_001
+    400250: DEF-forehead_L
+    400252: DEF-forehead_L_001
+    400254: DEF-forehead_L_002
+    400256: DEF-forehead_R
+    400258: DEF-forehead_R_001
+    400260: DEF-forehead_R_002
+    400262: DEF-hand_L
+    400264: DEF-hand_R
+    400266: DEF-jaw
+    400268: DEF-jaw_L
+    400270: DEF-jaw_L_001
+    400272: DEF-jaw_R
+    400274: DEF-jaw_R_001
+    400276: DEF-lid_B_L
+    400278: DEF-lid_B_L_001
+    400280: DEF-lid_B_L_002
+    400282: DEF-lid_B_L_003
+    400284: DEF-lid_B_R
+    400286: DEF-lid_B_R_001
+    400288: DEF-lid_B_R_002
+    400290: DEF-lid_B_R_003
+    400292: DEF-lid_T_L
+    400294: DEF-lid_T_L_001
+    400296: DEF-lid_T_L_002
+    400298: DEF-lid_T_L_003
+    400300: DEF-lid_T_R
+    400302: DEF-lid_T_R_001
+    400304: DEF-lid_T_R_002
+    400306: DEF-lid_T_R_003
+    400308: DEF-lip_B_L
+    400310: DEF-lip_B_L_001
+    400312: DEF-lip_B_R
+    400314: DEF-lip_B_R_001
+    400316: DEF-lip_T_L
+    400318: DEF-lip_T_L_001
+    400320: DEF-lip_T_R
+    400322: DEF-lip_T_R_001
+    400324: DEF-nose
+    400326: DEF-nose_001
+    400328: DEF-nose_002
+    400330: DEF-nose_003
+    400332: DEF-nose_004
+    400334: DEF-nose_L
+    400336: DEF-nose_L_001
+    400338: DEF-nose_R
+    400340: DEF-nose_R_001
+    400342: DEF-palm_01_L
+    400344: DEF-palm_01_R
+    400346: DEF-palm_02_L
+    400348: DEF-palm_02_R
+    400350: DEF-palm_03_L
+    400352: DEF-palm_03_R
+    400354: DEF-palm_04_L
+    400356: DEF-palm_04_R
+    400358: DEF-pelvis_L
+    400360: DEF-pelvis_R
+    400362: DEF-shin_L
+    400364: DEF-shin_L_001
+    400366: DEF-shin_R
+    400368: DEF-shin_R_001
+    400370: DEF-shoulder_L
+    400372: DEF-shoulder_R
+    400374: DEF-spine
+    400376: DEF-spine_001
+    400378: DEF-spine_002
+    400380: DEF-spine_003
+    400382: DEF-spine_004
+    400384: DEF-spine_005
+    400386: DEF-spine_006
+    400388: DEF-temple_L
+    400390: DEF-temple_R
+    400392: DEF-thigh_L
+    400394: DEF-thigh_L_001
+    400396: DEF-thigh_R
+    400398: DEF-thigh_R_001
+    400400: DEF-thumb_01_L
+    400402: DEF-thumb_01_R
+    400404: DEF-thumb_02_L
+    400406: DEF-thumb_02_R
+    400408: DEF-thumb_03_L
+    400410: DEF-thumb_03_R
+    400412: DEF-toe_L
+    400414: DEF-toe_R
+    400416: DEF-tongue
+    400418: DEF-tongue_001
+    400420: DEF-tongue_002
+    400422: DEF-upper_arm_L
+    400424: DEF-upper_arm_L_001
+    400426: DEF-upper_arm_R
+    400428: DEF-upper_arm_R_001
+    400430: ear_L
+    400432: ear_L_0
+    400434: ear_L_001
+    400436: ear_L_002
+    400438: ear_L_003
+    400440: ear_L_004
+    400442: ear_L_3
+    400444: ear_L_4
+    400446: ear_L_5
+    400448: ear_R
+    400450: ear_R_0
+    400452: ear_R_001
+    400454: ear_R_002
+    400456: ear_R_003
+    400458: ear_R_004
+    400460: ear_R_3
+    400462: ear_R_4
+    400464: ear_R_5
+    400466: //RootNode
+    400468: Enemy_tus_Body_001
+    400470: Enemy_tus_High-poly
+    400472: Enemy_tus_Male_casualsuit02_003
+    400474: Enemy_tus_Male_casualsuit02_006
+    400476: Enemy_tus_Male_casualsuit02_007
+    400478: Enemy_tus_Male_casualsuit02_008
+    400480: Enemy_tus_Male_casualsuit02_009
+    400482: Enemy_tus_Male_casualsuit02_010
+    400484: Enemy_tus_skin_Body
+    400486: Enemy_tus_skin_Body_001
+    400488: Enemy_tus_Teeth_shape04
+    400490: eye_L
+    400492: eye_R
+    400494: f_index_01_L
+    400496: f_index_01_R
+    400498: f_index_02_L
+    400500: f_index_02_R
+    400502: f_index_03_L
+    400504: f_index_03_R
+    400506: f_middle_01_L
+    400508: f_middle_01_R
+    400510: f_middle_02_L
+    400512: f_middle_02_R
+    400514: f_middle_03_L
+    400516: f_middle_03_R
+    400518: f_pinky_01_L
+    400520: f_pinky_01_R
+    400522: f_pinky_02_L
+    400524: f_pinky_02_R
+    400526: f_pinky_03_L
+    400528: f_pinky_03_R
+    400530: f_ring_01_L
+    400532: f_ring_01_R
+    400534: f_ring_02_L
+    400536: f_ring_02_R
+    400538: f_ring_03_L
+    400540: f_ring_03_R
+    400542: face
+    400544: foot_L
+    400546: foot_R
+    400548: forearm_L
+    400550: forearm_R
+    400552: forehead_L
+    400554: forehead_L_001
+    400556: forehead_L_002
+    400558: forehead_R
+    400560: forehead_R_001
+    400562: forehead_R_002
+    400564: hand_L
+    400566: hand_R
+    400568: head
+    400570: heel_02_L
+    400572: heel_02_R
+    400574: jaw
+    400576: jaw_0
+    400578: jaw_L
+    400580: jaw_L_0
+    400582: jaw_L_001
+    400584: jaw_L_2
+    400586: jaw_master
+    400588: jaw_R
+    400590: jaw_R_0
+    400592: jaw_R_001
+    400594: jaw_R_2
+    400596: lid_B_L
+    400598: lid_B_L_001
+    400600: lid_B_L_002
+    400602: lid_B_L_003
+    400604: lid_B_R
+    400606: lid_B_R_001
+    400608: lid_B_R_002
+    400610: lid_B_R_003
+    400612: lid_T_L
+    400614: lid_T_L_001
+    400616: lid_T_L_002
+    400618: lid_T_L_003
+    400620: lid_T_R
+    400622: lid_T_R_001
+    400624: lid_T_R_002
+    400626: lid_T_R_003
+    400628: lip_B
+    400630: lip_B_L
+    400632: lip_B_L_001
+    400634: lip_B_L_2
+    400636: lip_B_R
+    400638: lip_B_R_001
+    400640: lip_B_R_2
+    400642: lip_T
+    400644: lip_T_L
+    400646: lip_T_L_001
+    400648: lip_T_L_2
+    400650: lip_T_R
+    400652: lip_T_R_001
+    400654: lip_T_R_2
+    400656: lips_L
+    400658: lips_R
+    400660: master_eye_L
+    400662: master_eye_R
+    400664: MCH-jaw_master
+    400666: MCH-jaw_master_001
+    400668: MCH-jaw_master_002
+    400670: MCH-jaw_master_003
+    400672: MCH-jaw_master_004
+    400674: MCH-lid_B_L
+    400676: MCH-lid_B_L_001
+    400678: MCH-lid_B_L_002
+    400680: MCH-lid_B_L_003
+    400682: MCH-lid_B_R
+    400684: MCH-lid_B_R_001
+    400686: MCH-lid_B_R_002
+    400688: MCH-lid_B_R_003
+    400690: MCH-lid_T_L
+    400692: MCH-lid_T_L_001
+    400694: MCH-lid_T_L_002
+    400696: MCH-lid_T_L_003
+    400698: MCH-lid_T_R
+    400700: MCH-lid_T_R_001
+    400702: MCH-lid_T_R_002
+    400704: MCH-lid_T_R_003
+    400706: MCH-ROT-head
+    400708: MCH-ROT-neck
+    400710: MCH-spine
+    400712: MCH-spine_001
+    400714: MCH-spine_002
+    400716: MCH-spine_003
+    400718: MCH-tongue_001
+    400720: MCH-tongue_002
+    400722: metarig
+    400724: neck
+    400726: nose
+    400728: nose_0
+    400730: nose_001
+    400732: nose_002
+    400734: nose_003
+    400736: nose_004
+    400738: nose_2
+    400740: nose_3
+    400742: nose_4
+    400744: nose_5
+    400746: nose_L
+    400748: nose_L_0
+    400750: nose_L_001
+    400752: nose_L_2
+    400754: nose_master
+    400756: nose_R
+    400758: nose_R_0
+    400760: nose_R_001
+    400762: nose_R_2
+    400764: ORG-breast_L
+    400766: ORG-breast_R
+    400768: ORG-face
+    400770: ORG-palm_01_L
+    400772: ORG-palm_01_R
+    400774: ORG-palm_02_L
+    400776: ORG-palm_02_R
+    400778: ORG-palm_03_L
+    400780: ORG-palm_03_R
+    400782: ORG-palm_04_L
+    400784: ORG-palm_04_R
+    400786: ORG-pelvis_L
+    400788: ORG-pelvis_R
+    400790: ORG-shoulder_L
+    400792: ORG-shoulder_R
+    400794: ORG-spine
+    400796: ORG-spine_003
+    400798: ORG-spine_006
+    400800: palm_01_L
+    400802: palm_01_R
+    400804: palm_02_L
+    400806: palm_02_R
+    400808: palm_03_L
+    400810: palm_03_R
+    400812: palm_04_L
+    400814: palm_04_R
+    400816: pelvis_L
+    400818: pelvis_R
+    400820: Plane
+    400822: rig
+    400824: root
+    400826: shin_L
+    400828: shin_R
+    400830: shoulder_L
+    400832: shoulder_R
+    400834: spine
+    400836: spine_001
+    400838: spine_002
+    400840: spine_003
+    400842: spine_004
+    400844: spine_005
+    400846: spine_006
+    400848: teeth_B
+    400850: teeth_T
+    400852: temple_L
+    400854: temple_R
+    400856: thigh_L
+    400858: thigh_R
+    400860: thumb_01_L
+    400862: thumb_01_R
+    400864: thumb_02_L
+    400866: thumb_02_R
+    400868: thumb_03_L
+    400870: thumb_03_R
+    400872: toe_L
+    400874: toe_R
+    400876: tongue
+    400878: tongue_0
+    400880: tongue_001
+    400882: tongue_002
+    400884: tongue_2
+    400886: tongue_3
+    400888: tongue_master
+    400890: torso
+    400892: tweak_spine
+    400894: tweak_spine_003
+    400896: upper_arm_L
+    400898: upper_arm_R
+    400900: WGT-rig_belly_C
+    400902: WGT-rig_Breast_C
+    400904: WGT-rig_breast_L
+    400906: WGT-rig_breast_R
+    400908: WGT-rig_brow_B_L
+    400910: WGT-rig_brow_B_L_001
+    400912: WGT-rig_brow_B_L_002
+    400914: WGT-rig_brow_B_L_003
+    400916: WGT-rig_brow_B_L_004
+    400918: WGT-rig_brow_B_R
+    400920: WGT-rig_brow_B_R_001
+    400922: WGT-rig_brow_B_R_002
+    400924: WGT-rig_brow_B_R_003
+    400926: WGT-rig_brow_B_R_004
+    400928: WGT-rig_brow_T_L
+    400930: WGT-rig_brow_T_L_001
+    400932: WGT-rig_brow_T_L_002
+    400934: WGT-rig_brow_T_L_003
+    400936: WGT-rig_brow_T_R
+    400938: WGT-rig_brow_T_R_001
+    400940: WGT-rig_brow_T_R_002
+    400942: WGT-rig_brow_T_R_003
+    400944: WGT-rig_cheek_B_L_001
+    400946: WGT-rig_cheek_B_R_001
+    400948: WGT-rig_cheek_T_L_001
+    400950: WGT-rig_cheek_T_R_001
+    400952: WGT-rig_chest
+    400954: WGT-rig_chin
+    400956: WGT-rig_chin_001
+    400958: WGT-rig_chin_002
+    400960: WGT-rig_chin_L
+    400962: WGT-rig_chin_R
+    400964: WGT-rig_ear_L
+    400966: WGT-rig_ear_L_002
+    400968: WGT-rig_ear_L_003
+    400970: WGT-rig_ear_L_004
+    400972: WGT-rig_ear_R
+    400974: WGT-rig_ear_R_002
+    400976: WGT-rig_ear_R_003
+    400978: WGT-rig_ear_R_004
+    400980: WGT-rig_eye_L
+    400982: WGT-rig_eye_R
+    400984: WGT-rig_eyes
+    400986: WGT-rig_f_index_001_L
+    400988: WGT-rig_f_index_001_R
+    400990: WGT-rig_f_index_002_L
+    400992: WGT-rig_f_index_002_R
+    400994: WGT-rig_f_index_01_L
+    400996: WGT-rig_f_index_01_R
+    400998: WGT-rig_f_index_02_L
+    401000: WGT-rig_f_index_02_R
+    401002: WGT-rig_f_index_03_L
+    401004: WGT-rig_f_index_03_R
+    401006: WGT-rig_f_middle_001_L
+    401008: WGT-rig_f_middle_001_R
+    401010: WGT-rig_f_middle_002_L
+    401012: WGT-rig_f_middle_002_R
+    401014: WGT-rig_f_middle_01_L
+    401016: WGT-rig_f_middle_01_R
+    401018: WGT-rig_f_middle_02_L
+    401020: WGT-rig_f_middle_02_R
+    401022: WGT-rig_f_middle_03_L
+    401024: WGT-rig_f_middle_03_R
+    401026: WGT-rig_f_palm_L
+    401028: WGT-rig_f_palm_L_001
+    401030: WGT-rig_f_palm_R
+    401032: WGT-rig_f_palm_R_001
+    401034: WGT-rig_f_pinky_001_L
+    401036: WGT-rig_f_pinky_001_R
+    401038: WGT-rig_f_pinky_002_L
+    401040: WGT-rig_f_pinky_002_R
+    401042: WGT-rig_f_pinky_01_L
+    401044: WGT-rig_f_pinky_01_R
+    401046: WGT-rig_f_pinky_02_L
+    401048: WGT-rig_f_pinky_02_R
+    401050: WGT-rig_f_pinky_03_L
+    401052: WGT-rig_f_pinky_03_R
+    401054: WGT-rig_f_ring_001_L
+    401056: WGT-rig_f_ring_001_R
+    401058: WGT-rig_f_ring_002_L
+    401060: WGT-rig_f_ring_002_R
+    401062: WGT-rig_f_ring_01_L
+    401064: WGT-rig_f_ring_01_R
+    401066: WGT-rig_f_ring_02_L
+    401068: WGT-rig_f_ring_02_R
+    401070: WGT-rig_f_ring_03_L
+    401072: WGT-rig_f_ring_03_R
+    401074: WGT-rig_f_toe_L
+    401076: WGT-rig_f_toe_R
+    401078: WGT-rig_f_toe_tweak_L
+    401080: WGT-rig_f_toe_tweak_R
+    401082: WGT-rig_foot_fk_L
+    401084: WGT-rig_foot_fk_R
+    401086: WGT-rig_foot_heel_ik_L
+    401088: WGT-rig_foot_heel_ik_R
+    401090: WGT-rig_foot_ik_L
+    401092: WGT-rig_foot_ik_R
+    401094: WGT-rig_foot_tweak_L
+    401096: WGT-rig_foot_tweak_L_001
+    401098: WGT-rig_foot_tweak_R
+    401100: WGT-rig_foot_tweak_R_001
+    401102: WGT-rig_forearm_fk_L
+    401104: WGT-rig_forearm_fk_R
+    401106: WGT-rig_forearm_tweak_L
+    401108: WGT-rig_forearm_tweak_L_001
+    401110: WGT-rig_forearm_tweak_R
+    401112: WGT-rig_forearm_tweak_R_001
+    401114: WGT-rig_hand_fk_L
+    401116: WGT-rig_hand_fk_R
+    401118: WGT-rig_hand_heel_ik_L
+    401120: WGT-rig_hand_heel_ik_R
+    401122: WGT-rig_hand_ik_L
+    401124: WGT-rig_hand_ik_R
+    401126: WGT-rig_hand_tweak_L
+    401128: WGT-rig_hand_tweak_L_001
+    401130: WGT-rig_hand_tweak_R
+    401132: WGT-rig_hand_tweak_R_001
+    401134: WGT-rig_head
+    401136: WGT-rig_hips
+    401138: WGT-rig_jaw
+    401140: WGT-rig_jaw_L
+    401142: WGT-rig_jaw_L_001
+    401144: WGT-rig_jaw_master
+    401146: WGT-rig_jaw_R
+    401148: WGT-rig_jaw_R_001
+    401150: WGT-rig_lid_B_L
+    401152: WGT-rig_lid_B_L_001
+    401154: WGT-rig_lid_B_L_002
+    401156: WGT-rig_lid_B_L_003
+    401158: WGT-rig_lid_B_R
+    401160: WGT-rig_lid_B_R_001
+    401162: WGT-rig_lid_B_R_002
+    401164: WGT-rig_lid_B_R_003
+    401166: WGT-rig_lid_T_L
+    401168: WGT-rig_lid_T_L_001
+    401170: WGT-rig_lid_T_L_002
+    401172: WGT-rig_lid_T_L_003
+    401174: WGT-rig_lid_T_R
+    401176: WGT-rig_lid_T_R_001
+    401178: WGT-rig_lid_T_R_002
+    401180: WGT-rig_lid_T_R_003
+    401182: WGT-rig_lip_B
+    401184: WGT-rig_lip_B_L_001
+    401186: WGT-rig_lip_B_R_001
+    401188: WGT-rig_lip_T
+    401190: WGT-rig_lip_T_L_001
+    401192: WGT-rig_lip_T_R_001
+    401194: WGT-rig_lips_L
+    401196: WGT-rig_lips_R
+    401198: WGT-rig_master_eye_L
+    401200: WGT-rig_master_eye_R
+    401202: WGT-rig_neck
+    401204: WGT-rig_nose
+    401206: WGT-rig_nose_001
+    401208: WGT-rig_nose_002
+    401210: WGT-rig_nose_003
+    401212: WGT-rig_nose_004
+    401214: WGT-rig_nose_005
+    401216: WGT-rig_nose_L
+    401218: WGT-rig_nose_L_001
+    401220: WGT-rig_nose_master
+    401222: WGT-rig_nose_R
+    401224: WGT-rig_nose_R_001
+    401226: WGT-rig_palm_L
+    401228: WGT-rig_palm_R
+    401230: WGT-rig_r_index_001_L
+    401232: WGT-rig_r_index_001_R
+    401234: WGT-rig_r_index_002_L
+    401236: WGT-rig_r_index_002_R
+    401238: WGT-rig_r_middle_001_L
+    401240: WGT-rig_r_middle_001_R
+    401242: WGT-rig_r_middle_002_L
+    401244: WGT-rig_r_middle_002_R
+    401246: WGT-rig_r_palm_L
+    401248: WGT-rig_r_palm_L_001
+    401250: WGT-rig_r_palm_R
+    401252: WGT-rig_r_palm_R_001
+    401254: WGT-rig_r_pinky_001_L
+    401256: WGT-rig_r_pinky_001_R
+    401258: WGT-rig_r_pinky_002_L
+    401260: WGT-rig_r_pinky_002_R
+    401262: WGT-rig_r_ring_001_L
+    401264: WGT-rig_r_ring_001_R
+    401266: WGT-rig_r_ring_002_L
+    401268: WGT-rig_r_ring_002_R
+    401270: WGT-rig_r_toe_L
+    401272: WGT-rig_r_toe_R
+    401274: WGT-rig_r_toe_tweak_L
+    401276: WGT-rig_r_toe_tweak_R
+    401278: WGT-rig_root
+    401280: WGT-rig_shin_fk_L
+    401282: WGT-rig_shin_fk_R
+    401284: WGT-rig_shin_tweak_L
+    401286: WGT-rig_shin_tweak_L_001
+    401288: WGT-rig_shin_tweak_R
+    401290: WGT-rig_shin_tweak_R_001
+    401292: WGT-rig_shoulder_L
+    401294: WGT-rig_shoulder_R
+    401296: WGT-rig_tail_001
+    401298: WGT-rig_tail_002
+    401300: WGT-rig_tail_003
+    401302: WGT-rig_tail_004
+    401304: WGT-rig_tail_master
+    401306: WGT-rig_teeth_B
+    401308: WGT-rig_teeth_T
+    401310: WGT-rig_thigh_fk_L
+    401312: WGT-rig_thigh_fk_R
+    401314: WGT-rig_thigh_ik_L
+    401316: WGT-rig_thigh_ik_R
+    401318: WGT-rig_thigh_ik_target_L
+    401320: WGT-rig_thigh_ik_target_R
+    401322: WGT-rig_thigh_parent_L
+    401324: WGT-rig_thigh_parent_R
+    401326: WGT-rig_thigh_tweak_L
+    401328: WGT-rig_thigh_tweak_L_001
+    401330: WGT-rig_thigh_tweak_R
+    401332: WGT-rig_thigh_tweak_R_001
+    401334: WGT-rig_thumb_01_L
+    401336: WGT-rig_thumb_01_R
+    401338: WGT-rig_thumb_02_L
+    401340: WGT-rig_thumb_02_R
+    401342: WGT-rig_thumb_03_L
+    401344: WGT-rig_thumb_03_R
+    401346: WGT-rig_toe_L
+    401348: WGT-rig_toe_R
+    401350: WGT-rig_tongue
+    401352: WGT-rig_tongue_001
+    401354: WGT-rig_tongue_002
+    401356: WGT-rig_tongue_003
+    401358: WGT-rig_tongue_master
+    401360: WGT-rig_torso
+    401362: WGT-rig_tweak_f_index_001_L
+    401364: WGT-rig_tweak_f_index_001_R
+    401366: WGT-rig_tweak_f_index_002_L
+    401368: WGT-rig_tweak_f_index_002_L_001
+    401370: WGT-rig_tweak_f_index_002_R
+    401372: WGT-rig_tweak_f_index_002_R_001
+    401374: WGT-rig_tweak_f_index_01_L
+    401376: WGT-rig_tweak_f_index_01_R
+    401378: WGT-rig_tweak_f_index_02_L
+    401380: WGT-rig_tweak_f_index_02_R
+    401382: WGT-rig_tweak_f_index_03_L
+    401384: WGT-rig_tweak_f_index_03_L_001
+    401386: WGT-rig_tweak_f_index_03_R
+    401388: WGT-rig_tweak_f_index_03_R_001
+    401390: WGT-rig_tweak_f_middle_001_L
+    401392: WGT-rig_tweak_f_middle_001_R
+    401394: WGT-rig_tweak_f_middle_002_L
+    401396: WGT-rig_tweak_f_middle_002_L_001
+    401398: WGT-rig_tweak_f_middle_002_R
+    401400: WGT-rig_tweak_f_middle_002_R_001
+    401402: WGT-rig_tweak_f_middle_01_L
+    401404: WGT-rig_tweak_f_middle_01_R
+    401406: WGT-rig_tweak_f_middle_02_L
+    401408: WGT-rig_tweak_f_middle_02_R
+    401410: WGT-rig_tweak_f_middle_03_L
+    401412: WGT-rig_tweak_f_middle_03_L_001
+    401414: WGT-rig_tweak_f_middle_03_R
+    401416: WGT-rig_tweak_f_middle_03_R_001
+    401418: WGT-rig_tweak_f_pinky_001_L
+    401420: WGT-rig_tweak_f_pinky_001_R
+    401422: WGT-rig_tweak_f_pinky_002_L
+    401424: WGT-rig_tweak_f_pinky_002_L_001
+    401426: WGT-rig_tweak_f_pinky_002_R
+    401428: WGT-rig_tweak_f_pinky_002_R_001
+    401430: WGT-rig_tweak_f_pinky_01_L
+    401432: WGT-rig_tweak_f_pinky_01_R
+    401434: WGT-rig_tweak_f_pinky_02_L
+    401436: WGT-rig_tweak_f_pinky_02_R
+    401438: WGT-rig_tweak_f_pinky_03_L
+    401440: WGT-rig_tweak_f_pinky_03_L_001
+    401442: WGT-rig_tweak_f_pinky_03_R
+    401444: WGT-rig_tweak_f_pinky_03_R_001
+    401446: WGT-rig_tweak_f_ring_001_L
+    401448: WGT-rig_tweak_f_ring_001_R
+    401450: WGT-rig_tweak_f_ring_002_L
+    401452: WGT-rig_tweak_f_ring_002_L_001
+    401454: WGT-rig_tweak_f_ring_002_R
+    401456: WGT-rig_tweak_f_ring_002_R_001
+    401458: WGT-rig_tweak_f_ring_01_L
+    401460: WGT-rig_tweak_f_ring_01_R
+    401462: WGT-rig_tweak_f_ring_02_L
+    401464: WGT-rig_tweak_f_ring_02_R
+    401466: WGT-rig_tweak_f_ring_03_L
+    401468: WGT-rig_tweak_f_ring_03_L_001
+    401470: WGT-rig_tweak_f_ring_03_R
+    401472: WGT-rig_tweak_f_ring_03_R_001
+    401474: WGT-rig_tweak_r_index_001_L
+    401476: WGT-rig_tweak_r_index_001_R
+    401478: WGT-rig_tweak_r_index_002_L
+    401480: WGT-rig_tweak_r_index_002_L_001
+    401482: WGT-rig_tweak_r_index_002_R
+    401484: WGT-rig_tweak_r_index_002_R_001
+    401486: WGT-rig_tweak_r_middle_001_L
+    401488: WGT-rig_tweak_r_middle_001_R
+    401490: WGT-rig_tweak_r_middle_002_L
+    401492: WGT-rig_tweak_r_middle_002_L_001
+    401494: WGT-rig_tweak_r_middle_002_R
+    401496: WGT-rig_tweak_r_middle_002_R_001
+    401498: WGT-rig_tweak_r_pinky_001_L
+    401500: WGT-rig_tweak_r_pinky_001_R
+    401502: WGT-rig_tweak_r_pinky_002_L
+    401504: WGT-rig_tweak_r_pinky_002_L_001
+    401506: WGT-rig_tweak_r_pinky_002_R
+    401508: WGT-rig_tweak_r_pinky_002_R_001
+    401510: WGT-rig_tweak_r_ring_001_L
+    401512: WGT-rig_tweak_r_ring_001_R
+    401514: WGT-rig_tweak_r_ring_002_L
+    401516: WGT-rig_tweak_r_ring_002_L_001
+    401518: WGT-rig_tweak_r_ring_002_R
+    401520: WGT-rig_tweak_r_ring_002_R_001
+    401522: WGT-rig_tweak_spine
+    401524: WGT-rig_tweak_spine_001
+    401526: WGT-rig_tweak_spine_002
+    401528: WGT-rig_tweak_spine_003
+    401530: WGT-rig_tweak_spine_004
+    401532: WGT-rig_tweak_spine_005
+    401534: WGT-rig_tweak_tail_001
+    401536: WGT-rig_tweak_tail_002
+    401538: WGT-rig_tweak_tail_003
+    401540: WGT-rig_tweak_tail_004
+    401542: WGT-rig_tweak_thumb_01_L
+    401544: WGT-rig_tweak_thumb_01_R
+    401546: WGT-rig_tweak_thumb_02_L
+    401548: WGT-rig_tweak_thumb_02_R
+    401550: WGT-rig_tweak_thumb_03_L
+    401552: WGT-rig_tweak_thumb_03_L_001
+    401554: WGT-rig_tweak_thumb_03_R
+    401556: WGT-rig_tweak_thumb_03_R_001
+    401558: WGT-rig_upper_arm_fk_L
+    401560: WGT-rig_upper_arm_fk_R
+    401562: WGT-rig_upper_arm_ik_L
+    401564: WGT-rig_upper_arm_ik_R
+    401566: WGT-rig_upper_arm_ik_target_L
+    401568: WGT-rig_upper_arm_ik_target_R
+    401570: WGT-rig_upper_arm_parent_L
+    401572: WGT-rig_upper_arm_parent_R
+    401574: WGT-rig_upper_arm_tweak_L
+    401576: WGT-rig_upper_arm_tweak_L_001
+    401578: WGT-rig_upper_arm_tweak_R
+    401580: WGT-rig_upper_arm_tweak_R_001
+    401582: WGT-rig_VIS_thigh_ik_pole_L
+    401584: WGT-rig_VIS_thigh_ik_pole_R
+    401586: WGT-rig_VIS_upper_arm_ik_pole_L
+    401588: WGT-rig_VIS_upper_arm_ik_pole_R
+    401590: WGTS_rig
+    2100000: skin
+    2100002: gold
+    2100004: oberkoerper_001
+    2100006: Material_006
+    2100008: element_3
+    2100010: detail_cloth
+    2100012: oberkoerper__normal
+    2100014: oberkoerper
+    2100016: Material_004__normal_guertel
+    2100018: Material_005__Untitled
+    2100020: Material_005__futuristic_techno_nolines_jpg
+    2100022: Mantel__mantel_normal
+    2100024: Material_008
+    2100026: Enemy_tus_Teeth_shape04_Teethmaterial
+    2100028: Enemy_tus_High-poly_Eye_brown
+    2300000: Enemy_tus_High-poly
+    2300002: Enemy_tus_Teeth_shape04
+    2300004: Plane
+    2300006: WGT-rig_belly_C
+    2300008: WGT-rig_Breast_C
+    2300010: WGT-rig_breast_L
+    2300012: WGT-rig_breast_R
+    2300014: WGT-rig_brow_B_L
+    2300016: WGT-rig_brow_B_L_001
+    2300018: WGT-rig_brow_B_L_002
+    2300020: WGT-rig_brow_B_L_003
+    2300022: WGT-rig_brow_B_L_004
+    2300024: WGT-rig_brow_B_R
+    2300026: WGT-rig_brow_B_R_001
+    2300028: WGT-rig_brow_B_R_002
+    2300030: WGT-rig_brow_B_R_003
+    2300032: WGT-rig_brow_B_R_004
+    2300034: WGT-rig_brow_T_L
+    2300036: WGT-rig_brow_T_L_001
+    2300038: WGT-rig_brow_T_L_002
+    2300040: WGT-rig_brow_T_L_003
+    2300042: WGT-rig_brow_T_R
+    2300044: WGT-rig_brow_T_R_001
+    2300046: WGT-rig_brow_T_R_002
+    2300048: WGT-rig_brow_T_R_003
+    2300050: WGT-rig_cheek_B_L_001
+    2300052: WGT-rig_cheek_B_R_001
+    2300054: WGT-rig_cheek_T_L_001
+    2300056: WGT-rig_cheek_T_R_001
+    2300058: WGT-rig_chest
+    2300060: WGT-rig_chin
+    2300062: WGT-rig_chin_001
+    2300064: WGT-rig_chin_002
+    2300066: WGT-rig_chin_L
+    2300068: WGT-rig_chin_R
+    2300070: WGT-rig_ear_L
+    2300072: WGT-rig_ear_L_002
+    2300074: WGT-rig_ear_L_003
+    2300076: WGT-rig_ear_L_004
+    2300078: WGT-rig_ear_R
+    2300080: WGT-rig_ear_R_002
+    2300082: WGT-rig_ear_R_003
+    2300084: WGT-rig_ear_R_004
+    2300086: WGT-rig_eye_L
+    2300088: WGT-rig_eye_R
+    2300090: WGT-rig_eyes
+    2300092: WGT-rig_f_index_001_L
+    2300094: WGT-rig_f_index_001_R
+    2300096: WGT-rig_f_index_002_L
+    2300098: WGT-rig_f_index_002_R
+    2300100: WGT-rig_f_index_01_L
+    2300102: WGT-rig_f_index_01_R
+    2300104: WGT-rig_f_index_02_L
+    2300106: WGT-rig_f_index_02_R
+    2300108: WGT-rig_f_index_03_L
+    2300110: WGT-rig_f_index_03_R
+    2300112: WGT-rig_f_middle_001_L
+    2300114: WGT-rig_f_middle_001_R
+    2300116: WGT-rig_f_middle_002_L
+    2300118: WGT-rig_f_middle_002_R
+    2300120: WGT-rig_f_middle_01_L
+    2300122: WGT-rig_f_middle_01_R
+    2300124: WGT-rig_f_middle_02_L
+    2300126: WGT-rig_f_middle_02_R
+    2300128: WGT-rig_f_middle_03_L
+    2300130: WGT-rig_f_middle_03_R
+    2300132: WGT-rig_f_palm_L
+    2300134: WGT-rig_f_palm_L_001
+    2300136: WGT-rig_f_palm_R
+    2300138: WGT-rig_f_palm_R_001
+    2300140: WGT-rig_f_pinky_001_L
+    2300142: WGT-rig_f_pinky_001_R
+    2300144: WGT-rig_f_pinky_002_L
+    2300146: WGT-rig_f_pinky_002_R
+    2300148: WGT-rig_f_pinky_01_L
+    2300150: WGT-rig_f_pinky_01_R
+    2300152: WGT-rig_f_pinky_02_L
+    2300154: WGT-rig_f_pinky_02_R
+    2300156: WGT-rig_f_pinky_03_L
+    2300158: WGT-rig_f_pinky_03_R
+    2300160: WGT-rig_f_ring_001_L
+    2300162: WGT-rig_f_ring_001_R
+    2300164: WGT-rig_f_ring_002_L
+    2300166: WGT-rig_f_ring_002_R
+    2300168: WGT-rig_f_ring_01_L
+    2300170: WGT-rig_f_ring_01_R
+    2300172: WGT-rig_f_ring_02_L
+    2300174: WGT-rig_f_ring_02_R
+    2300176: WGT-rig_f_ring_03_L
+    2300178: WGT-rig_f_ring_03_R
+    2300180: WGT-rig_f_toe_L
+    2300182: WGT-rig_f_toe_R
+    2300184: WGT-rig_f_toe_tweak_L
+    2300186: WGT-rig_f_toe_tweak_R
+    2300188: WGT-rig_foot_fk_L
+    2300190: WGT-rig_foot_fk_R
+    2300192: WGT-rig_foot_heel_ik_L
+    2300194: WGT-rig_foot_heel_ik_R
+    2300196: WGT-rig_foot_ik_L
+    2300198: WGT-rig_foot_ik_R
+    2300200: WGT-rig_foot_tweak_L
+    2300202: WGT-rig_foot_tweak_L_001
+    2300204: WGT-rig_foot_tweak_R
+    2300206: WGT-rig_foot_tweak_R_001
+    2300208: WGT-rig_forearm_fk_L
+    2300210: WGT-rig_forearm_fk_R
+    2300212: WGT-rig_forearm_tweak_L
+    2300214: WGT-rig_forearm_tweak_L_001
+    2300216: WGT-rig_forearm_tweak_R
+    2300218: WGT-rig_forearm_tweak_R_001
+    2300220: WGT-rig_hand_fk_L
+    2300222: WGT-rig_hand_fk_R
+    2300224: WGT-rig_hand_heel_ik_L
+    2300226: WGT-rig_hand_heel_ik_R
+    2300228: WGT-rig_hand_ik_L
+    2300230: WGT-rig_hand_ik_R
+    2300232: WGT-rig_hand_tweak_L
+    2300234: WGT-rig_hand_tweak_L_001
+    2300236: WGT-rig_hand_tweak_R
+    2300238: WGT-rig_hand_tweak_R_001
+    2300240: WGT-rig_head
+    2300242: WGT-rig_hips
+    2300244: WGT-rig_jaw
+    2300246: WGT-rig_jaw_L
+    2300248: WGT-rig_jaw_L_001
+    2300250: WGT-rig_jaw_master
+    2300252: WGT-rig_jaw_R
+    2300254: WGT-rig_jaw_R_001
+    2300256: WGT-rig_lid_B_L
+    2300258: WGT-rig_lid_B_L_001
+    2300260: WGT-rig_lid_B_L_002
+    2300262: WGT-rig_lid_B_L_003
+    2300264: WGT-rig_lid_B_R
+    2300266: WGT-rig_lid_B_R_001
+    2300268: WGT-rig_lid_B_R_002
+    2300270: WGT-rig_lid_B_R_003
+    2300272: WGT-rig_lid_T_L
+    2300274: WGT-rig_lid_T_L_001
+    2300276: WGT-rig_lid_T_L_002
+    2300278: WGT-rig_lid_T_L_003
+    2300280: WGT-rig_lid_T_R
+    2300282: WGT-rig_lid_T_R_001
+    2300284: WGT-rig_lid_T_R_002
+    2300286: WGT-rig_lid_T_R_003
+    2300288: WGT-rig_lip_B
+    2300290: WGT-rig_lip_B_L_001
+    2300292: WGT-rig_lip_B_R_001
+    2300294: WGT-rig_lip_T
+    2300296: WGT-rig_lip_T_L_001
+    2300298: WGT-rig_lip_T_R_001
+    2300300: WGT-rig_lips_L
+    2300302: WGT-rig_lips_R
+    2300304: WGT-rig_master_eye_L
+    2300306: WGT-rig_master_eye_R
+    2300308: WGT-rig_neck
+    2300310: WGT-rig_nose
+    2300312: WGT-rig_nose_001
+    2300314: WGT-rig_nose_002
+    2300316: WGT-rig_nose_003
+    2300318: WGT-rig_nose_004
+    2300320: WGT-rig_nose_005
+    2300322: WGT-rig_nose_L
+    2300324: WGT-rig_nose_L_001
+    2300326: WGT-rig_nose_master
+    2300328: WGT-rig_nose_R
+    2300330: WGT-rig_nose_R_001
+    2300332: WGT-rig_palm_L
+    2300334: WGT-rig_palm_R
+    2300336: WGT-rig_r_index_001_L
+    2300338: WGT-rig_r_index_001_R
+    2300340: WGT-rig_r_index_002_L
+    2300342: WGT-rig_r_index_002_R
+    2300344: WGT-rig_r_middle_001_L
+    2300346: WGT-rig_r_middle_001_R
+    2300348: WGT-rig_r_middle_002_L
+    2300350: WGT-rig_r_middle_002_R
+    2300352: WGT-rig_r_palm_L
+    2300354: WGT-rig_r_palm_L_001
+    2300356: WGT-rig_r_palm_R
+    2300358: WGT-rig_r_palm_R_001
+    2300360: WGT-rig_r_pinky_001_L
+    2300362: WGT-rig_r_pinky_001_R
+    2300364: WGT-rig_r_pinky_002_L
+    2300366: WGT-rig_r_pinky_002_R
+    2300368: WGT-rig_r_ring_001_L
+    2300370: WGT-rig_r_ring_001_R
+    2300372: WGT-rig_r_ring_002_L
+    2300374: WGT-rig_r_ring_002_R
+    2300376: WGT-rig_r_toe_L
+    2300378: WGT-rig_r_toe_R
+    2300380: WGT-rig_r_toe_tweak_L
+    2300382: WGT-rig_r_toe_tweak_R
+    2300384: WGT-rig_root
+    2300386: WGT-rig_shin_fk_L
+    2300388: WGT-rig_shin_fk_R
+    2300390: WGT-rig_shin_tweak_L
+    2300392: WGT-rig_shin_tweak_L_001
+    2300394: WGT-rig_shin_tweak_R
+    2300396: WGT-rig_shin_tweak_R_001
+    2300398: WGT-rig_shoulder_L
+    2300400: WGT-rig_shoulder_R
+    2300402: WGT-rig_tail_001
+    2300404: WGT-rig_tail_002
+    2300406: WGT-rig_tail_003
+    2300408: WGT-rig_tail_004
+    2300410: WGT-rig_tail_master
+    2300412: WGT-rig_teeth_B
+    2300414: WGT-rig_teeth_T
+    2300416: WGT-rig_thigh_fk_L
+    2300418: WGT-rig_thigh_fk_R
+    2300420: WGT-rig_thigh_ik_L
+    2300422: WGT-rig_thigh_ik_R
+    2300424: WGT-rig_thigh_ik_target_L
+    2300426: WGT-rig_thigh_ik_target_R
+    2300428: WGT-rig_thigh_parent_L
+    2300430: WGT-rig_thigh_parent_R
+    2300432: WGT-rig_thigh_tweak_L
+    2300434: WGT-rig_thigh_tweak_L_001
+    2300436: WGT-rig_thigh_tweak_R
+    2300438: WGT-rig_thigh_tweak_R_001
+    2300440: WGT-rig_thumb_01_L
+    2300442: WGT-rig_thumb_01_R
+    2300444: WGT-rig_thumb_02_L
+    2300446: WGT-rig_thumb_02_R
+    2300448: WGT-rig_thumb_03_L
+    2300450: WGT-rig_thumb_03_R
+    2300452: WGT-rig_toe_L
+    2300454: WGT-rig_toe_R
+    2300456: WGT-rig_tongue
+    2300458: WGT-rig_tongue_001
+    2300460: WGT-rig_tongue_002
+    2300462: WGT-rig_tongue_003
+    2300464: WGT-rig_tongue_master
+    2300466: WGT-rig_torso
+    2300468: WGT-rig_tweak_f_index_001_L
+    2300470: WGT-rig_tweak_f_index_001_R
+    2300472: WGT-rig_tweak_f_index_002_L
+    2300474: WGT-rig_tweak_f_index_002_L_001
+    2300476: WGT-rig_tweak_f_index_002_R
+    2300478: WGT-rig_tweak_f_index_002_R_001
+    2300480: WGT-rig_tweak_f_index_01_L
+    2300482: WGT-rig_tweak_f_index_01_R
+    2300484: WGT-rig_tweak_f_index_02_L
+    2300486: WGT-rig_tweak_f_index_02_R
+    2300488: WGT-rig_tweak_f_index_03_L
+    2300490: WGT-rig_tweak_f_index_03_L_001
+    2300492: WGT-rig_tweak_f_index_03_R
+    2300494: WGT-rig_tweak_f_index_03_R_001
+    2300496: WGT-rig_tweak_f_middle_001_L
+    2300498: WGT-rig_tweak_f_middle_001_R
+    2300500: WGT-rig_tweak_f_middle_002_L
+    2300502: WGT-rig_tweak_f_middle_002_L_001
+    2300504: WGT-rig_tweak_f_middle_002_R
+    2300506: WGT-rig_tweak_f_middle_002_R_001
+    2300508: WGT-rig_tweak_f_middle_01_L
+    2300510: WGT-rig_tweak_f_middle_01_R
+    2300512: WGT-rig_tweak_f_middle_02_L
+    2300514: WGT-rig_tweak_f_middle_02_R
+    2300516: WGT-rig_tweak_f_middle_03_L
+    2300518: WGT-rig_tweak_f_middle_03_L_001
+    2300520: WGT-rig_tweak_f_middle_03_R
+    2300522: WGT-rig_tweak_f_middle_03_R_001
+    2300524: WGT-rig_tweak_f_pinky_001_L
+    2300526: WGT-rig_tweak_f_pinky_001_R
+    2300528: WGT-rig_tweak_f_pinky_002_L
+    2300530: WGT-rig_tweak_f_pinky_002_L_001
+    2300532: WGT-rig_tweak_f_pinky_002_R
+    2300534: WGT-rig_tweak_f_pinky_002_R_001
+    2300536: WGT-rig_tweak_f_pinky_01_L
+    2300538: WGT-rig_tweak_f_pinky_01_R
+    2300540: WGT-rig_tweak_f_pinky_02_L
+    2300542: WGT-rig_tweak_f_pinky_02_R
+    2300544: WGT-rig_tweak_f_pinky_03_L
+    2300546: WGT-rig_tweak_f_pinky_03_L_001
+    2300548: WGT-rig_tweak_f_pinky_03_R
+    2300550: WGT-rig_tweak_f_pinky_03_R_001
+    2300552: WGT-rig_tweak_f_ring_001_L
+    2300554: WGT-rig_tweak_f_ring_001_R
+    2300556: WGT-rig_tweak_f_ring_002_L
+    2300558: WGT-rig_tweak_f_ring_002_L_001
+    2300560: WGT-rig_tweak_f_ring_002_R
+    2300562: WGT-rig_tweak_f_ring_002_R_001
+    2300564: WGT-rig_tweak_f_ring_01_L
+    2300566: WGT-rig_tweak_f_ring_01_R
+    2300568: WGT-rig_tweak_f_ring_02_L
+    2300570: WGT-rig_tweak_f_ring_02_R
+    2300572: WGT-rig_tweak_f_ring_03_L
+    2300574: WGT-rig_tweak_f_ring_03_L_001
+    2300576: WGT-rig_tweak_f_ring_03_R
+    2300578: WGT-rig_tweak_f_ring_03_R_001
+    2300580: WGT-rig_tweak_r_index_001_L
+    2300582: WGT-rig_tweak_r_index_001_R
+    2300584: WGT-rig_tweak_r_index_002_L
+    2300586: WGT-rig_tweak_r_index_002_L_001
+    2300588: WGT-rig_tweak_r_index_002_R
+    2300590: WGT-rig_tweak_r_index_002_R_001
+    2300592: WGT-rig_tweak_r_middle_001_L
+    2300594: WGT-rig_tweak_r_middle_001_R
+    2300596: WGT-rig_tweak_r_middle_002_L
+    2300598: WGT-rig_tweak_r_middle_002_L_001
+    2300600: WGT-rig_tweak_r_middle_002_R
+    2300602: WGT-rig_tweak_r_middle_002_R_001
+    2300604: WGT-rig_tweak_r_pinky_001_L
+    2300606: WGT-rig_tweak_r_pinky_001_R
+    2300608: WGT-rig_tweak_r_pinky_002_L
+    2300610: WGT-rig_tweak_r_pinky_002_L_001
+    2300612: WGT-rig_tweak_r_pinky_002_R
+    2300614: WGT-rig_tweak_r_pinky_002_R_001
+    2300616: WGT-rig_tweak_r_ring_001_L
+    2300618: WGT-rig_tweak_r_ring_001_R
+    2300620: WGT-rig_tweak_r_ring_002_L
+    2300622: WGT-rig_tweak_r_ring_002_L_001
+    2300624: WGT-rig_tweak_r_ring_002_R
+    2300626: WGT-rig_tweak_r_ring_002_R_001
+    2300628: WGT-rig_tweak_spine
+    2300630: WGT-rig_tweak_spine_001
+    2300632: WGT-rig_tweak_spine_002
+    2300634: WGT-rig_tweak_spine_003
+    2300636: WGT-rig_tweak_spine_004
+    2300638: WGT-rig_tweak_spine_005
+    2300640: WGT-rig_tweak_tail_001
+    2300642: WGT-rig_tweak_tail_002
+    2300644: WGT-rig_tweak_tail_003
+    2300646: WGT-rig_tweak_tail_004
+    2300648: WGT-rig_tweak_thumb_01_L
+    2300650: WGT-rig_tweak_thumb_01_R
+    2300652: WGT-rig_tweak_thumb_02_L
+    2300654: WGT-rig_tweak_thumb_02_R
+    2300656: WGT-rig_tweak_thumb_03_L
+    2300658: WGT-rig_tweak_thumb_03_L_001
+    2300660: WGT-rig_tweak_thumb_03_R
+    2300662: WGT-rig_tweak_thumb_03_R_001
+    2300664: WGT-rig_upper_arm_fk_L
+    2300666: WGT-rig_upper_arm_fk_R
+    2300668: WGT-rig_upper_arm_ik_L
+    2300670: WGT-rig_upper_arm_ik_R
+    2300672: WGT-rig_upper_arm_ik_target_L
+    2300674: WGT-rig_upper_arm_ik_target_R
+    2300676: WGT-rig_upper_arm_parent_L
+    2300678: WGT-rig_upper_arm_parent_R
+    2300680: WGT-rig_upper_arm_tweak_L
+    2300682: WGT-rig_upper_arm_tweak_L_001
+    2300684: WGT-rig_upper_arm_tweak_R
+    2300686: WGT-rig_upper_arm_tweak_R_001
+    2300688: WGT-rig_VIS_thigh_ik_pole_L
+    2300690: WGT-rig_VIS_thigh_ik_pole_R
+    2300692: WGT-rig_VIS_upper_arm_ik_pole_L
+    2300694: WGT-rig_VIS_upper_arm_ik_pole_R
+    2300696: WGTS_rig
+    3300000: Enemy_tus_High-poly
+    3300002: Enemy_tus_Teeth_shape04
+    3300004: Plane
+    3300006: WGT-rig_belly_C
+    3300008: WGT-rig_Breast_C
+    3300010: WGT-rig_breast_L
+    3300012: WGT-rig_breast_R
+    3300014: WGT-rig_brow_B_L
+    3300016: WGT-rig_brow_B_L_001
+    3300018: WGT-rig_brow_B_L_002
+    3300020: WGT-rig_brow_B_L_003
+    3300022: WGT-rig_brow_B_L_004
+    3300024: WGT-rig_brow_B_R
+    3300026: WGT-rig_brow_B_R_001
+    3300028: WGT-rig_brow_B_R_002
+    3300030: WGT-rig_brow_B_R_003
+    3300032: WGT-rig_brow_B_R_004
+    3300034: WGT-rig_brow_T_L
+    3300036: WGT-rig_brow_T_L_001
+    3300038: WGT-rig_brow_T_L_002
+    3300040: WGT-rig_brow_T_L_003
+    3300042: WGT-rig_brow_T_R
+    3300044: WGT-rig_brow_T_R_001
+    3300046: WGT-rig_brow_T_R_002
+    3300048: WGT-rig_brow_T_R_003
+    3300050: WGT-rig_cheek_B_L_001
+    3300052: WGT-rig_cheek_B_R_001
+    3300054: WGT-rig_cheek_T_L_001
+    3300056: WGT-rig_cheek_T_R_001
+    3300058: WGT-rig_chest
+    3300060: WGT-rig_chin
+    3300062: WGT-rig_chin_001
+    3300064: WGT-rig_chin_002
+    3300066: WGT-rig_chin_L
+    3300068: WGT-rig_chin_R
+    3300070: WGT-rig_ear_L
+    3300072: WGT-rig_ear_L_002
+    3300074: WGT-rig_ear_L_003
+    3300076: WGT-rig_ear_L_004
+    3300078: WGT-rig_ear_R
+    3300080: WGT-rig_ear_R_002
+    3300082: WGT-rig_ear_R_003
+    3300084: WGT-rig_ear_R_004
+    3300086: WGT-rig_eye_L
+    3300088: WGT-rig_eye_R
+    3300090: WGT-rig_eyes
+    3300092: WGT-rig_f_index_001_L
+    3300094: WGT-rig_f_index_001_R
+    3300096: WGT-rig_f_index_002_L
+    3300098: WGT-rig_f_index_002_R
+    3300100: WGT-rig_f_index_01_L
+    3300102: WGT-rig_f_index_01_R
+    3300104: WGT-rig_f_index_02_L
+    3300106: WGT-rig_f_index_02_R
+    3300108: WGT-rig_f_index_03_L
+    3300110: WGT-rig_f_index_03_R
+    3300112: WGT-rig_f_middle_001_L
+    3300114: WGT-rig_f_middle_001_R
+    3300116: WGT-rig_f_middle_002_L
+    3300118: WGT-rig_f_middle_002_R
+    3300120: WGT-rig_f_middle_01_L
+    3300122: WGT-rig_f_middle_01_R
+    3300124: WGT-rig_f_middle_02_L
+    3300126: WGT-rig_f_middle_02_R
+    3300128: WGT-rig_f_middle_03_L
+    3300130: WGT-rig_f_middle_03_R
+    3300132: WGT-rig_f_palm_L
+    3300134: WGT-rig_f_palm_L_001
+    3300136: WGT-rig_f_palm_R
+    3300138: WGT-rig_f_palm_R_001
+    3300140: WGT-rig_f_pinky_001_L
+    3300142: WGT-rig_f_pinky_001_R
+    3300144: WGT-rig_f_pinky_002_L
+    3300146: WGT-rig_f_pinky_002_R
+    3300148: WGT-rig_f_pinky_01_L
+    3300150: WGT-rig_f_pinky_01_R
+    3300152: WGT-rig_f_pinky_02_L
+    3300154: WGT-rig_f_pinky_02_R
+    3300156: WGT-rig_f_pinky_03_L
+    3300158: WGT-rig_f_pinky_03_R
+    3300160: WGT-rig_f_ring_001_L
+    3300162: WGT-rig_f_ring_001_R
+    3300164: WGT-rig_f_ring_002_L
+    3300166: WGT-rig_f_ring_002_R
+    3300168: WGT-rig_f_ring_01_L
+    3300170: WGT-rig_f_ring_01_R
+    3300172: WGT-rig_f_ring_02_L
+    3300174: WGT-rig_f_ring_02_R
+    3300176: WGT-rig_f_ring_03_L
+    3300178: WGT-rig_f_ring_03_R
+    3300180: WGT-rig_f_toe_L
+    3300182: WGT-rig_f_toe_R
+    3300184: WGT-rig_f_toe_tweak_L
+    3300186: WGT-rig_f_toe_tweak_R
+    3300188: WGT-rig_foot_fk_L
+    3300190: WGT-rig_foot_fk_R
+    3300192: WGT-rig_foot_heel_ik_L
+    3300194: WGT-rig_foot_heel_ik_R
+    3300196: WGT-rig_foot_ik_L
+    3300198: WGT-rig_foot_ik_R
+    3300200: WGT-rig_foot_tweak_L
+    3300202: WGT-rig_foot_tweak_L_001
+    3300204: WGT-rig_foot_tweak_R
+    3300206: WGT-rig_foot_tweak_R_001
+    3300208: WGT-rig_forearm_fk_L
+    3300210: WGT-rig_forearm_fk_R
+    3300212: WGT-rig_forearm_tweak_L
+    3300214: WGT-rig_forearm_tweak_L_001
+    3300216: WGT-rig_forearm_tweak_R
+    3300218: WGT-rig_forearm_tweak_R_001
+    3300220: WGT-rig_hand_fk_L
+    3300222: WGT-rig_hand_fk_R
+    3300224: WGT-rig_hand_heel_ik_L
+    3300226: WGT-rig_hand_heel_ik_R
+    3300228: WGT-rig_hand_ik_L
+    3300230: WGT-rig_hand_ik_R
+    3300232: WGT-rig_hand_tweak_L
+    3300234: WGT-rig_hand_tweak_L_001
+    3300236: WGT-rig_hand_tweak_R
+    3300238: WGT-rig_hand_tweak_R_001
+    3300240: WGT-rig_head
+    3300242: WGT-rig_hips
+    3300244: WGT-rig_jaw
+    3300246: WGT-rig_jaw_L
+    3300248: WGT-rig_jaw_L_001
+    3300250: WGT-rig_jaw_master
+    3300252: WGT-rig_jaw_R
+    3300254: WGT-rig_jaw_R_001
+    3300256: WGT-rig_lid_B_L
+    3300258: WGT-rig_lid_B_L_001
+    3300260: WGT-rig_lid_B_L_002
+    3300262: WGT-rig_lid_B_L_003
+    3300264: WGT-rig_lid_B_R
+    3300266: WGT-rig_lid_B_R_001
+    3300268: WGT-rig_lid_B_R_002
+    3300270: WGT-rig_lid_B_R_003
+    3300272: WGT-rig_lid_T_L
+    3300274: WGT-rig_lid_T_L_001
+    3300276: WGT-rig_lid_T_L_002
+    3300278: WGT-rig_lid_T_L_003
+    3300280: WGT-rig_lid_T_R
+    3300282: WGT-rig_lid_T_R_001
+    3300284: WGT-rig_lid_T_R_002
+    3300286: WGT-rig_lid_T_R_003
+    3300288: WGT-rig_lip_B
+    3300290: WGT-rig_lip_B_L_001
+    3300292: WGT-rig_lip_B_R_001
+    3300294: WGT-rig_lip_T
+    3300296: WGT-rig_lip_T_L_001
+    3300298: WGT-rig_lip_T_R_001
+    3300300: WGT-rig_lips_L
+    3300302: WGT-rig_lips_R
+    3300304: WGT-rig_master_eye_L
+    3300306: WGT-rig_master_eye_R
+    3300308: WGT-rig_neck
+    3300310: WGT-rig_nose
+    3300312: WGT-rig_nose_001
+    3300314: WGT-rig_nose_002
+    3300316: WGT-rig_nose_003
+    3300318: WGT-rig_nose_004
+    3300320: WGT-rig_nose_005
+    3300322: WGT-rig_nose_L
+    3300324: WGT-rig_nose_L_001
+    3300326: WGT-rig_nose_master
+    3300328: WGT-rig_nose_R
+    3300330: WGT-rig_nose_R_001
+    3300332: WGT-rig_palm_L
+    3300334: WGT-rig_palm_R
+    3300336: WGT-rig_r_index_001_L
+    3300338: WGT-rig_r_index_001_R
+    3300340: WGT-rig_r_index_002_L
+    3300342: WGT-rig_r_index_002_R
+    3300344: WGT-rig_r_middle_001_L
+    3300346: WGT-rig_r_middle_001_R
+    3300348: WGT-rig_r_middle_002_L
+    3300350: WGT-rig_r_middle_002_R
+    3300352: WGT-rig_r_palm_L
+    3300354: WGT-rig_r_palm_L_001
+    3300356: WGT-rig_r_palm_R
+    3300358: WGT-rig_r_palm_R_001
+    3300360: WGT-rig_r_pinky_001_L
+    3300362: WGT-rig_r_pinky_001_R
+    3300364: WGT-rig_r_pinky_002_L
+    3300366: WGT-rig_r_pinky_002_R
+    3300368: WGT-rig_r_ring_001_L
+    3300370: WGT-rig_r_ring_001_R
+    3300372: WGT-rig_r_ring_002_L
+    3300374: WGT-rig_r_ring_002_R
+    3300376: WGT-rig_r_toe_L
+    3300378: WGT-rig_r_toe_R
+    3300380: WGT-rig_r_toe_tweak_L
+    3300382: WGT-rig_r_toe_tweak_R
+    3300384: WGT-rig_root
+    3300386: WGT-rig_shin_fk_L
+    3300388: WGT-rig_shin_fk_R
+    3300390: WGT-rig_shin_tweak_L
+    3300392: WGT-rig_shin_tweak_L_001
+    3300394: WGT-rig_shin_tweak_R
+    3300396: WGT-rig_shin_tweak_R_001
+    3300398: WGT-rig_shoulder_L
+    3300400: WGT-rig_shoulder_R
+    3300402: WGT-rig_tail_001
+    3300404: WGT-rig_tail_002
+    3300406: WGT-rig_tail_003
+    3300408: WGT-rig_tail_004
+    3300410: WGT-rig_tail_master
+    3300412: WGT-rig_teeth_B
+    3300414: WGT-rig_teeth_T
+    3300416: WGT-rig_thigh_fk_L
+    3300418: WGT-rig_thigh_fk_R
+    3300420: WGT-rig_thigh_ik_L
+    3300422: WGT-rig_thigh_ik_R
+    3300424: WGT-rig_thigh_ik_target_L
+    3300426: WGT-rig_thigh_ik_target_R
+    3300428: WGT-rig_thigh_parent_L
+    3300430: WGT-rig_thigh_parent_R
+    3300432: WGT-rig_thigh_tweak_L
+    3300434: WGT-rig_thigh_tweak_L_001
+    3300436: WGT-rig_thigh_tweak_R
+    3300438: WGT-rig_thigh_tweak_R_001
+    3300440: WGT-rig_thumb_01_L
+    3300442: WGT-rig_thumb_01_R
+    3300444: WGT-rig_thumb_02_L
+    3300446: WGT-rig_thumb_02_R
+    3300448: WGT-rig_thumb_03_L
+    3300450: WGT-rig_thumb_03_R
+    3300452: WGT-rig_toe_L
+    3300454: WGT-rig_toe_R
+    3300456: WGT-rig_tongue
+    3300458: WGT-rig_tongue_001
+    3300460: WGT-rig_tongue_002
+    3300462: WGT-rig_tongue_003
+    3300464: WGT-rig_tongue_master
+    3300466: WGT-rig_torso
+    3300468: WGT-rig_tweak_f_index_001_L
+    3300470: WGT-rig_tweak_f_index_001_R
+    3300472: WGT-rig_tweak_f_index_002_L
+    3300474: WGT-rig_tweak_f_index_002_L_001
+    3300476: WGT-rig_tweak_f_index_002_R
+    3300478: WGT-rig_tweak_f_index_002_R_001
+    3300480: WGT-rig_tweak_f_index_01_L
+    3300482: WGT-rig_tweak_f_index_01_R
+    3300484: WGT-rig_tweak_f_index_02_L
+    3300486: WGT-rig_tweak_f_index_02_R
+    3300488: WGT-rig_tweak_f_index_03_L
+    3300490: WGT-rig_tweak_f_index_03_L_001
+    3300492: WGT-rig_tweak_f_index_03_R
+    3300494: WGT-rig_tweak_f_index_03_R_001
+    3300496: WGT-rig_tweak_f_middle_001_L
+    3300498: WGT-rig_tweak_f_middle_001_R
+    3300500: WGT-rig_tweak_f_middle_002_L
+    3300502: WGT-rig_tweak_f_middle_002_L_001
+    3300504: WGT-rig_tweak_f_middle_002_R
+    3300506: WGT-rig_tweak_f_middle_002_R_001
+    3300508: WGT-rig_tweak_f_middle_01_L
+    3300510: WGT-rig_tweak_f_middle_01_R
+    3300512: WGT-rig_tweak_f_middle_02_L
+    3300514: WGT-rig_tweak_f_middle_02_R
+    3300516: WGT-rig_tweak_f_middle_03_L
+    3300518: WGT-rig_tweak_f_middle_03_L_001
+    3300520: WGT-rig_tweak_f_middle_03_R
+    3300522: WGT-rig_tweak_f_middle_03_R_001
+    3300524: WGT-rig_tweak_f_pinky_001_L
+    3300526: WGT-rig_tweak_f_pinky_001_R
+    3300528: WGT-rig_tweak_f_pinky_002_L
+    3300530: WGT-rig_tweak_f_pinky_002_L_001
+    3300532: WGT-rig_tweak_f_pinky_002_R
+    3300534: WGT-rig_tweak_f_pinky_002_R_001
+    3300536: WGT-rig_tweak_f_pinky_01_L
+    3300538: WGT-rig_tweak_f_pinky_01_R
+    3300540: WGT-rig_tweak_f_pinky_02_L
+    3300542: WGT-rig_tweak_f_pinky_02_R
+    3300544: WGT-rig_tweak_f_pinky_03_L
+    3300546: WGT-rig_tweak_f_pinky_03_L_001
+    3300548: WGT-rig_tweak_f_pinky_03_R
+    3300550: WGT-rig_tweak_f_pinky_03_R_001
+    3300552: WGT-rig_tweak_f_ring_001_L
+    3300554: WGT-rig_tweak_f_ring_001_R
+    3300556: WGT-rig_tweak_f_ring_002_L
+    3300558: WGT-rig_tweak_f_ring_002_L_001
+    3300560: WGT-rig_tweak_f_ring_002_R
+    3300562: WGT-rig_tweak_f_ring_002_R_001
+    3300564: WGT-rig_tweak_f_ring_01_L
+    3300566: WGT-rig_tweak_f_ring_01_R
+    3300568: WGT-rig_tweak_f_ring_02_L
+    3300570: WGT-rig_tweak_f_ring_02_R
+    3300572: WGT-rig_tweak_f_ring_03_L
+    3300574: WGT-rig_tweak_f_ring_03_L_001
+    3300576: WGT-rig_tweak_f_ring_03_R
+    3300578: WGT-rig_tweak_f_ring_03_R_001
+    3300580: WGT-rig_tweak_r_index_001_L
+    3300582: WGT-rig_tweak_r_index_001_R
+    3300584: WGT-rig_tweak_r_index_002_L
+    3300586: WGT-rig_tweak_r_index_002_L_001
+    3300588: WGT-rig_tweak_r_index_002_R
+    3300590: WGT-rig_tweak_r_index_002_R_001
+    3300592: WGT-rig_tweak_r_middle_001_L
+    3300594: WGT-rig_tweak_r_middle_001_R
+    3300596: WGT-rig_tweak_r_middle_002_L
+    3300598: WGT-rig_tweak_r_middle_002_L_001
+    3300600: WGT-rig_tweak_r_middle_002_R
+    3300602: WGT-rig_tweak_r_middle_002_R_001
+    3300604: WGT-rig_tweak_r_pinky_001_L
+    3300606: WGT-rig_tweak_r_pinky_001_R
+    3300608: WGT-rig_tweak_r_pinky_002_L
+    3300610: WGT-rig_tweak_r_pinky_002_L_001
+    3300612: WGT-rig_tweak_r_pinky_002_R
+    3300614: WGT-rig_tweak_r_pinky_002_R_001
+    3300616: WGT-rig_tweak_r_ring_001_L
+    3300618: WGT-rig_tweak_r_ring_001_R
+    3300620: WGT-rig_tweak_r_ring_002_L
+    3300622: WGT-rig_tweak_r_ring_002_L_001
+    3300624: WGT-rig_tweak_r_ring_002_R
+    3300626: WGT-rig_tweak_r_ring_002_R_001
+    3300628: WGT-rig_tweak_spine
+    3300630: WGT-rig_tweak_spine_001
+    3300632: WGT-rig_tweak_spine_002
+    3300634: WGT-rig_tweak_spine_003
+    3300636: WGT-rig_tweak_spine_004
+    3300638: WGT-rig_tweak_spine_005
+    3300640: WGT-rig_tweak_tail_001
+    3300642: WGT-rig_tweak_tail_002
+    3300644: WGT-rig_tweak_tail_003
+    3300646: WGT-rig_tweak_tail_004
+    3300648: WGT-rig_tweak_thumb_01_L
+    3300650: WGT-rig_tweak_thumb_01_R
+    3300652: WGT-rig_tweak_thumb_02_L
+    3300654: WGT-rig_tweak_thumb_02_R
+    3300656: WGT-rig_tweak_thumb_03_L
+    3300658: WGT-rig_tweak_thumb_03_L_001
+    3300660: WGT-rig_tweak_thumb_03_R
+    3300662: WGT-rig_tweak_thumb_03_R_001
+    3300664: WGT-rig_upper_arm_fk_L
+    3300666: WGT-rig_upper_arm_fk_R
+    3300668: WGT-rig_upper_arm_ik_L
+    3300670: WGT-rig_upper_arm_ik_R
+    3300672: WGT-rig_upper_arm_ik_target_L
+    3300674: WGT-rig_upper_arm_ik_target_R
+    3300676: WGT-rig_upper_arm_parent_L
+    3300678: WGT-rig_upper_arm_parent_R
+    3300680: WGT-rig_upper_arm_tweak_L
+    3300682: WGT-rig_upper_arm_tweak_L_001
+    3300684: WGT-rig_upper_arm_tweak_R
+    3300686: WGT-rig_upper_arm_tweak_R_001
+    3300688: WGT-rig_VIS_thigh_ik_pole_L
+    3300690: WGT-rig_VIS_thigh_ik_pole_R
+    3300692: WGT-rig_VIS_upper_arm_ik_pole_L
+    3300694: WGT-rig_VIS_upper_arm_ik_pole_R
+    3300696: WGTS_rig
+    4300000: Enemy_tus_skin_Body
+    4300002: Enemy_tus_Male_casualsuit02_006
+    4300004: Enemy_tus_skin_Body_001
+    4300006: Enemy_tus_Male_casualsuit02_009
+    4300008: Enemy_tus_Male_casualsuit02_003
+    4300010: Enemy_tus_Male_casualsuit02_008
+    4300012: Enemy_tus_Male_casualsuit02_010
+    4300014: Enemy_tus_Male_casualsuit02_007
+    4300016: Enemy_tus_Body_001
+    4300018: Cylinder
+    4300020: WGTS_rig
+    4300022: WGT-rig_tweak_thumb_03_R_001
+    4300024: WGT-rig_tweak_thumb_03_R
+    4300026: WGT-rig_tweak_thumb_02_R
+    4300028: WGT-rig_tweak_thumb_01_R
+    4300030: WGT-rig_thumb_03_R
+    4300032: WGT-rig_thumb_02_R
+    4300034: WGT-rig_thumb_01_R
+    4300036: WGT-rig_tweak_thumb_03_L_001
+    4300038: WGT-rig_tweak_thumb_03_L
+    4300040: WGT-rig_tweak_thumb_02_L
+    4300042: WGT-rig_tweak_thumb_01_L
+    4300044: WGT-rig_thumb_03_L
+    4300046: WGT-rig_thumb_02_L
+    4300048: WGT-rig_thumb_01_L
+    4300050: WGT-rig_tweak_f_ring_03_R_001
+    4300052: WGT-rig_tweak_f_ring_03_R
+    4300054: WGT-rig_tweak_f_ring_02_R
+    4300056: WGT-rig_tweak_f_ring_01_R
+    4300058: WGT-rig_f_ring_03_R
+    4300060: WGT-rig_f_ring_02_R
+    4300062: WGT-rig_f_ring_01_R
+    4300064: WGT-rig_tweak_f_ring_03_L_001
+    4300066: WGT-rig_tweak_f_ring_03_L
+    4300068: WGT-rig_tweak_f_ring_02_L
+    4300070: WGT-rig_tweak_f_ring_01_L
+    4300072: WGT-rig_f_ring_03_L
+    4300074: WGT-rig_f_ring_02_L
+    4300076: WGT-rig_f_ring_01_L
+    4300078: WGT-rig_tweak_f_pinky_03_R_001
+    4300080: WGT-rig_tweak_f_pinky_03_R
+    4300082: WGT-rig_tweak_f_pinky_02_R
+    4300084: WGT-rig_tweak_f_pinky_01_R
+    4300086: WGT-rig_f_pinky_03_R
+    4300088: WGT-rig_f_pinky_02_R
+    4300090: WGT-rig_f_pinky_01_R
+    4300092: WGT-rig_tweak_f_pinky_03_L_001
+    4300094: WGT-rig_tweak_f_pinky_03_L
+    4300096: WGT-rig_tweak_f_pinky_02_L
+    4300098: WGT-rig_tweak_f_pinky_01_L
+    4300100: WGT-rig_f_pinky_03_L
+    4300102: WGT-rig_f_pinky_02_L
+    4300104: WGT-rig_f_pinky_01_L
+    4300106: WGT-rig_tweak_f_middle_03_R_001
+    4300108: WGT-rig_tweak_f_middle_03_R
+    4300110: WGT-rig_tweak_f_middle_02_R
+    4300112: WGT-rig_tweak_f_middle_01_R
+    4300114: WGT-rig_f_middle_03_R
+    4300116: WGT-rig_f_middle_02_R
+    4300118: WGT-rig_f_middle_01_R
+    4300120: WGT-rig_tweak_f_middle_03_L_001
+    4300122: WGT-rig_tweak_f_middle_03_L
+    4300124: WGT-rig_tweak_f_middle_02_L
+    4300126: WGT-rig_tweak_f_middle_01_L
+    4300128: WGT-rig_f_middle_03_L
+    4300130: WGT-rig_f_middle_02_L
+    4300132: WGT-rig_f_middle_01_L
+    4300134: WGT-rig_tweak_f_index_03_R_001
+    4300136: WGT-rig_tweak_f_index_03_R
+    4300138: WGT-rig_tweak_f_index_02_R
+    4300140: WGT-rig_tweak_f_index_01_R
+    4300142: WGT-rig_f_index_03_R
+    4300144: WGT-rig_f_index_02_R
+    4300146: WGT-rig_f_index_01_R
+    4300148: WGT-rig_tweak_f_index_03_L_001
+    4300150: WGT-rig_tweak_f_index_03_L
+    4300152: WGT-rig_tweak_f_index_02_L
+    4300154: WGT-rig_tweak_f_index_01_L
+    4300156: WGT-rig_f_index_03_L
+    4300158: WGT-rig_f_index_02_L
+    4300160: WGT-rig_f_index_01_L
+    4300162: WGT-rig_palm_R
+    4300164: WGT-rig_palm_L
+    4300166: WGT-rig_breast_R
+    4300168: WGT-rig_breast_L
+    4300170: WGT-rig_toe_R
+    4300172: WGT-rig_toe_L
+    4300174: WGT-rig_root
+    4300176: WGT-rig_tweak_f_ring_002_R_001
+    4300178: WGT-rig_tweak_f_ring_002_R
+    4300180: WGT-rig_tweak_f_ring_001_R
+    4300182: WGT-rig_f_ring_002_R
+    4300184: WGT-rig_f_ring_001_R
+    4300186: WGT-rig_tweak_f_ring_002_L_001
+    4300188: WGT-rig_tweak_f_ring_002_L
+    4300190: WGT-rig_tweak_f_ring_001_L
+    4300192: WGT-rig_f_ring_002_L
+    4300194: WGT-rig_f_ring_001_L
+    4300196: WGT-rig_tweak_f_pinky_002_R_001
+    4300198: WGT-rig_tweak_f_pinky_002_R
+    4300200: WGT-rig_tweak_f_pinky_001_R
+    4300202: WGT-rig_f_pinky_002_R
+    4300204: WGT-rig_f_pinky_001_R
+    4300206: WGT-rig_tweak_f_pinky_002_L_001
+    4300208: WGT-rig_tweak_f_pinky_002_L
+    4300210: WGT-rig_tweak_f_pinky_001_L
+    4300212: WGT-rig_f_pinky_002_L
+    4300214: WGT-rig_f_pinky_001_L
+    4300216: WGT-rig_tweak_f_middle_002_R_001
+    4300218: WGT-rig_tweak_f_middle_002_R
+    4300220: WGT-rig_tweak_f_middle_001_R
+    4300222: WGT-rig_f_middle_002_R
+    4300224: WGT-rig_f_middle_001_R
+    4300226: WGT-rig_tweak_f_middle_002_L_001
+    4300228: WGT-rig_tweak_f_middle_002_L
+    4300230: WGT-rig_tweak_f_middle_001_L
+    4300232: WGT-rig_f_middle_002_L
+    4300234: WGT-rig_f_middle_001_L
+    4300236: WGT-rig_tweak_f_index_002_R_001
+    4300238: WGT-rig_tweak_f_index_002_R
+    4300240: WGT-rig_tweak_f_index_001_R
+    4300242: WGT-rig_f_index_002_R
+    4300244: WGT-rig_f_index_001_R
+    4300246: WGT-rig_tweak_f_index_002_L_001
+    4300248: WGT-rig_tweak_f_index_002_L
+    4300250: WGT-rig_tweak_f_index_001_L
+    4300252: WGT-rig_f_index_002_L
+    4300254: WGT-rig_f_index_001_L
+    4300256: WGT-rig_f_palm_R_001
+    4300258: WGT-rig_f_palm_L_001
+    4300260: WGT-rig_f_palm_R
+    4300262: WGT-rig_f_palm_L
+    4300264: WGT-rig_tweak_r_ring_002_R_001
+    4300266: WGT-rig_tweak_r_ring_002_R
+    4300268: WGT-rig_tweak_r_ring_001_R
+    4300270: WGT-rig_r_ring_002_R
+    4300272: WGT-rig_r_ring_001_R
+    4300274: WGT-rig_tweak_r_ring_002_L_001
+    4300276: WGT-rig_tweak_r_ring_002_L
+    4300278: WGT-rig_tweak_r_ring_001_L
+    4300280: WGT-rig_r_ring_002_L
+    4300282: WGT-rig_r_ring_001_L
+    4300284: WGT-rig_tweak_r_pinky_002_R_001
+    4300286: WGT-rig_tweak_r_pinky_002_R
+    4300288: WGT-rig_tweak_r_pinky_001_R
+    4300290: WGT-rig_r_pinky_002_R
+    4300292: WGT-rig_r_pinky_001_R
+    4300294: WGT-rig_tweak_r_pinky_002_L_001
+    4300296: WGT-rig_tweak_r_pinky_002_L
+    4300298: WGT-rig_tweak_r_pinky_001_L
+    4300300: WGT-rig_r_pinky_002_L
+    4300302: WGT-rig_r_pinky_001_L
+    4300304: WGT-rig_tweak_r_middle_002_R_001
+    4300306: WGT-rig_tweak_r_middle_002_R
+    4300308: WGT-rig_tweak_r_middle_001_R
+    4300310: WGT-rig_r_middle_002_R
+    4300312: WGT-rig_r_middle_001_R
+    4300314: WGT-rig_tweak_r_middle_002_L_001
+    4300316: WGT-rig_tweak_r_middle_002_L
+    4300318: WGT-rig_tweak_r_middle_001_L
+    4300320: WGT-rig_r_middle_002_L
+    4300322: WGT-rig_r_middle_001_L
+    4300324: WGT-rig_tweak_r_index_002_R_001
+    4300326: WGT-rig_tweak_r_index_002_R
+    4300328: WGT-rig_tweak_r_index_001_R
+    4300330: WGT-rig_r_index_002_R
+    4300332: WGT-rig_r_index_001_R
+    4300334: WGT-rig_tweak_r_index_002_L_001
+    4300336: WGT-rig_tweak_r_index_002_L
+    4300338: WGT-rig_tweak_r_index_001_L
+    4300340: WGT-rig_r_index_002_L
+    4300342: WGT-rig_r_index_001_L
+    4300344: WGT-rig_lip_B
+    4300346: WGT-rig_lip_T
+    4300348: WGT-rig_tongue_003
+    4300350: WGT-rig_tongue_002
+    4300352: WGT-rig_tongue_001
+    4300354: WGT-rig_tongue
+    4300356: WGT-rig_nose_R_001
+    4300358: WGT-rig_nose_R
+    4300360: WGT-rig_nose_L_001
+    4300362: WGT-rig_nose_L
+    4300364: WGT-rig_nose_005
+    4300366: WGT-rig_nose_004
+    4300368: WGT-rig_nose_003
+    4300370: WGT-rig_nose_002
+    4300372: WGT-rig_nose_001
+    4300374: WGT-rig_nose
+    4300376: WGT-rig_lips_R
+    4300378: WGT-rig_lip_T_R_001
+    4300380: WGT-rig_lips_L
+    4300382: WGT-rig_lip_T_L_001
+    4300384: WGT-rig_lip_B_R_001
+    4300386: WGT-rig_lip_B_L_001
+    4300388: WGT-rig_lid_T_R_003
+    4300390: WGT-rig_lid_T_R_002
+    4300392: WGT-rig_lid_T_R_001
+    4300394: WGT-rig_lid_T_R
+    4300396: WGT-rig_lid_T_L_003
+    4300398: WGT-rig_lid_T_L_002
+    4300400: WGT-rig_lid_T_L_001
+    4300402: WGT-rig_lid_T_L
+    4300404: WGT-rig_lid_B_R_003
+    4300406: WGT-rig_lid_B_R_002
+    4300408: WGT-rig_lid_B_R_001
+    4300410: WGT-rig_lid_B_R
+    4300412: WGT-rig_lid_B_L_003
+    4300414: WGT-rig_lid_B_L_002
+    4300416: WGT-rig_lid_B_L_001
+    4300418: WGT-rig_lid_B_L
+    4300420: WGT-rig_jaw_R_001
+    4300422: WGT-rig_jaw_R
+    4300424: WGT-rig_jaw_L_001
+    4300426: WGT-rig_jaw_L
+    4300428: WGT-rig_jaw
+    4300430: WGT-rig_ear_R_004
+    4300432: WGT-rig_ear_R_003
+    4300434: WGT-rig_ear_R_002
+    4300436: WGT-rig_ear_L_004
+    4300438: WGT-rig_ear_L_003
+    4300440: WGT-rig_ear_L_002
+    4300442: WGT-rig_chin_R
+    4300444: WGT-rig_chin_L
+    4300446: WGT-rig_chin_002
+    4300448: WGT-rig_chin_001
+    4300450: WGT-rig_chin
+    4300452: WGT-rig_cheek_T_R_001
+    4300454: WGT-rig_cheek_T_L_001
+    4300456: WGT-rig_cheek_B_R_001
+    4300458: WGT-rig_cheek_B_L_001
+    4300460: WGT-rig_brow_T_R_003
+    4300462: WGT-rig_brow_T_R_002
+    4300464: WGT-rig_brow_T_R_001
+    4300466: WGT-rig_brow_T_R
+    4300468: WGT-rig_brow_T_L_003
+    4300470: WGT-rig_brow_T_L_002
+    4300472: WGT-rig_brow_T_L_001
+    4300474: WGT-rig_brow_T_L
+    4300476: WGT-rig_brow_B_R_004
+    4300478: WGT-rig_brow_B_R_003
+    4300480: WGT-rig_brow_B_R_002
+    4300482: WGT-rig_brow_B_R_001
+    4300484: WGT-rig_brow_B_R
+    4300486: WGT-rig_brow_B_L_004
+    4300488: WGT-rig_brow_B_L_003
+    4300490: WGT-rig_brow_B_L_002
+    4300492: WGT-rig_brow_B_L_001
+    4300494: WGT-rig_brow_B_L
+    4300496: WGT-rig_tongue_master
+    4300498: WGT-rig_teeth_B
+    4300500: WGT-rig_teeth_T
+    4300502: WGT-rig_jaw_master
+    4300504: WGT-rig_ear_R
+    4300506: WGT-rig_ear_L
+    4300508: WGT-rig_nose_master
+    4300510: WGT-rig_master_eye_R
+    4300512: WGT-rig_master_eye_L
+    4300514: WGT-rig_eyes
+    4300516: WGT-rig_eye_R
+    4300518: WGT-rig_eye_L
+    4300520: WGT-rig_r_palm_R_001
+    4300522: WGT-rig_r_palm_L_001
+    4300524: WGT-rig_r_palm_R
+    4300526: WGT-rig_r_palm_L
+    4300528: WGT-rig_f_toe_R
+    4300530: WGT-rig_hand_heel_ik_R
+    4300532: WGT-rig_hand_ik_R
+    4300534: WGT-rig_hand_fk_R
+    4300536: WGT-rig_forearm_fk_R
+    4300538: WGT-rig_upper_arm_fk_R
+    4300540: WGT-rig_VIS_upper_arm_ik_pole_R
+    4300542: WGT-rig_upper_arm_ik_target_R
+    4300544: WGT-rig_upper_arm_ik_R
+    4300546: WGT-rig_f_toe_tweak_R
+    4300548: WGT-rig_hand_tweak_R_001
+    4300550: WGT-rig_hand_tweak_R
+    4300552: WGT-rig_forearm_tweak_R_001
+    4300554: WGT-rig_forearm_tweak_R
+    4300556: WGT-rig_upper_arm_tweak_R_001
+    4300558: WGT-rig_upper_arm_tweak_R
+    4300560: WGT-rig_upper_arm_parent_R
+    4300562: WGT-rig_f_toe_L
+    4300564: WGT-rig_hand_heel_ik_L
+    4300566: WGT-rig_hand_ik_L
+    4300568: WGT-rig_hand_fk_L
+    4300570: WGT-rig_forearm_fk_L
+    4300572: WGT-rig_upper_arm_fk_L
+    4300574: WGT-rig_VIS_upper_arm_ik_pole_L
+    4300576: WGT-rig_upper_arm_ik_target_L
+    4300578: WGT-rig_upper_arm_ik_L
+    4300580: WGT-rig_f_toe_tweak_L
+    4300582: WGT-rig_hand_tweak_L_001
+    4300584: WGT-rig_hand_tweak_L
+    4300586: WGT-rig_forearm_tweak_L_001
+    4300588: WGT-rig_forearm_tweak_L
+    4300590: WGT-rig_upper_arm_tweak_L_001
+    4300592: WGT-rig_upper_arm_tweak_L
+    4300594: WGT-rig_upper_arm_parent_L
+    4300596: WGT-rig_shoulder_R
+    4300598: WGT-rig_shoulder_L
+    4300600: WGT-rig_Breast_C
+    4300602: WGT-rig_belly_C
+    4300604: WGT-rig_r_toe_R
+    4300606: WGT-rig_foot_heel_ik_R
+    4300608: WGT-rig_foot_ik_R
+    4300610: WGT-rig_foot_fk_R
+    4300612: WGT-rig_shin_fk_R
+    4300614: WGT-rig_thigh_fk_R
+    4300616: WGT-rig_VIS_thigh_ik_pole_R
+    4300618: WGT-rig_thigh_ik_target_R
+    4300620: WGT-rig_thigh_ik_R
+    4300622: WGT-rig_r_toe_tweak_R
+    4300624: WGT-rig_foot_tweak_R_001
+    4300626: WGT-rig_foot_tweak_R
+    4300628: WGT-rig_shin_tweak_R_001
+    4300630: WGT-rig_shin_tweak_R
+    4300632: WGT-rig_thigh_tweak_R_001
+    4300634: WGT-rig_thigh_tweak_R
+    4300636: WGT-rig_thigh_parent_R
+    4300638: WGT-rig_r_toe_L
+    4300640: WGT-rig_foot_heel_ik_L
+    4300642: WGT-rig_foot_ik_L
+    4300644: WGT-rig_foot_fk_L
+    4300646: WGT-rig_shin_fk_L
+    4300648: WGT-rig_thigh_fk_L
+    4300650: WGT-rig_VIS_thigh_ik_pole_L
+    4300652: WGT-rig_thigh_ik_target_L
+    4300654: WGT-rig_thigh_ik_L
+    4300656: WGT-rig_r_toe_tweak_L
+    4300658: WGT-rig_foot_tweak_L_001
+    4300660: WGT-rig_foot_tweak_L
+    4300662: WGT-rig_shin_tweak_L_001
+    4300664: WGT-rig_shin_tweak_L
+    4300666: WGT-rig_thigh_tweak_L_001
+    4300668: WGT-rig_thigh_tweak_L
+    4300670: WGT-rig_thigh_parent_L
+    4300672: WGT-rig_tweak_tail_001
+    4300674: WGT-rig_tweak_tail_002
+    4300676: WGT-rig_tweak_tail_003
+    4300678: WGT-rig_tweak_tail_004
+    4300680: WGT-rig_tweak_spine_001
+    4300682: WGT-rig_tweak_spine
+    4300684: WGT-rig_tweak_spine_003
+    4300686: WGT-rig_tweak_spine_002
+    4300688: WGT-rig_tweak_spine_005
+    4300690: WGT-rig_tweak_spine_004
+    4300692: WGT-rig_head
+    4300694: WGT-rig_neck
+    4300696: WGT-rig_tail_001
+    4300698: WGT-rig_tail_002
+    4300700: WGT-rig_tail_003
+    4300702: WGT-rig_tail_004
+    4300704: WGT-rig_hips
+    4300706: WGT-rig_chest
+    4300708: WGT-rig_tail_master
+    4300710: WGT-rig_torso
+    4300712: Plane
+    4300714: Enemy_tus_Teeth_shape04
+    4300716: Enemy_tus_High-poly
+    7400000: Default Take
+    7400002: rigAction_001
+    9500000: //RootNode
+    13700000: Cylinder
+    13700002: Enemy_tus_Body_001
+    13700004: Enemy_tus_Male_casualsuit02_003
+    13700006: Enemy_tus_Male_casualsuit02_006
+    13700008: Enemy_tus_Male_casualsuit02_007
+    13700010: Enemy_tus_Male_casualsuit02_008
+    13700012: Enemy_tus_Male_casualsuit02_009
+    13700014: Enemy_tus_Male_casualsuit02_010
+    13700016: Enemy_tus_skin_Body
+    13700018: Enemy_tus_skin_Body_001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Default Take' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'DEF-upper_arm_L' has scale animation that
+      will be discarded.\n\t'DEF-forearm_L' has scale animation that will be discarded.\n\t'DEF-forearm_L_001'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-hand_L'
+      has scale animation that will be discarded.\n\t'DEF-f_index_02_L' has scale
+      animation that will be discarded.\n\t'DEF-f_index_03_L' has scale animation
+      that will be discarded.\n\t'DEF-f_middle_02_L' has scale animation that will
+      be discarded.\n\t'DEF-f_middle_03_L' has scale animation that will be discarded.\n\t'DEF-f_ring_02_L'
+      has scale animation that will be discarded.\n\t'DEF-f_ring_03_L' has scale animation
+      that will be discarded.\n\t'DEF-f_pinky_01_L' has scale animation that will
+      be discarded.\n\t'DEF-f_pinky_02_L' has scale animation that will be discarded.\n\t'DEF-f_pinky_03_L'
+      has scale animation that will be discarded.\n\t'DEF-upper_arm_R' has scale animation
+      that will be discarded.\n\t'DEF-upper_arm_R_001' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'DEF-forearm_R' has scale
+      animation that will be discarded.\n\t'DEF-forearm_R_001' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n\t'DEF-hand_R'
+      has scale animation that will be discarded.\n\t'DEF-f_index_02_R' has scale
+      animation that will be discarded.\n\t'DEF-f_index_03_R' has scale animation
+      that will be discarded.\n\t'DEF-f_middle_02_R' has scale animation that will
+      be discarded.\n\t'DEF-f_middle_03_R' has scale animation that will be discarded.\n\t'DEF-f_ring_01_R'
+      has scale animation that will be discarded.\n\t'DEF-f_ring_02_R' has scale animation
+      that will be discarded.\n\t'DEF-f_ring_03_R' has scale animation that will be
+      discarded.\n\t'DEF-f_pinky_01_R' has scale animation that will be discarded.\n\t'DEF-f_pinky_02_R'
+      has scale animation that will be discarded.\n\t'DEF-f_pinky_03_R' has scale
+      animation that will be discarded.\n\t'DEF-thigh_L' has scale animation that
+      will be discarded.\n\t'DEF-thigh_L_001' is inbetween humanoid transforms and
+      has rotation animation that will be discarded.\n\t'DEF-shin_L' has scale animation
+      that will be discarded.\n\t'DEF-shin_L_001' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'DEF-foot_L' has scale
+      animation that will be discarded.\n\t'DEF-thigh_R' has scale animation that
+      will be discarded.\n\t'DEF-shin_R' has scale animation that will be discarded.\n\t'DEF-shin_R_001'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-foot_R'
+      has scale animation that will be discarded.\n\nClip 'rigAction_001' has import
+      animation warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'DEF-upper_arm_L' has scale
+      animation that will be discarded.\n\t'DEF-forearm_L' has scale animation that
+      will be discarded.\n\t'DEF-forearm_L_001' is inbetween humanoid transforms and
+      has rotation animation that will be discarded.\n\t'DEF-hand_L' has scale animation
+      that will be discarded.\n\t'DEF-f_index_02_L' has scale animation that will
+      be discarded.\n\t'DEF-f_index_03_L' has scale animation that will be discarded.\n\t'DEF-f_middle_02_L'
+      has scale animation that will be discarded.\n\t'DEF-f_middle_03_L' has scale
+      animation that will be discarded.\n\t'DEF-f_ring_02_L' has scale animation that
+      will be discarded.\n\t'DEF-f_pinky_01_L' has scale animation that will be discarded.\n\t'DEF-f_pinky_02_L'
+      has scale animation that will be discarded.\n\t'DEF-f_pinky_03_L' has scale
+      animation that will be discarded.\n\t'DEF-upper_arm_R' has scale animation that
+      will be discarded.\n\t'DEF-upper_arm_R_001' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'DEF-forearm_R' has scale
+      animation that will be discarded.\n\t'DEF-forearm_R_001' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n\t'DEF-hand_R'
+      has scale animation that will be discarded.\n\t'DEF-f_index_01_R' has scale
+      animation that will be discarded.\n\t'DEF-f_index_02_R' has scale animation
+      that will be discarded.\n\t'DEF-f_index_03_R' has scale animation that will
+      be discarded.\n\t'DEF-f_middle_02_R' has scale animation that will be discarded.\n\t'DEF-f_middle_03_R'
+      has scale animation that will be discarded.\n\t'DEF-f_ring_01_R' has scale animation
+      that will be discarded.\n\t'DEF-f_ring_02_R' has scale animation that will be
+      discarded.\n\t'DEF-f_ring_03_R' has scale animation that will be discarded.\n\t'DEF-f_pinky_01_R'
+      has scale animation that will be discarded.\n\t'DEF-f_pinky_02_R' has scale
+      animation that will be discarded.\n\t'DEF-f_pinky_03_R' has scale animation
+      that will be discarded.\n\t'DEF-thigh_L' has scale animation that will be discarded.\n\t'DEF-thigh_L_001'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-shin_L'
+      has scale animation that will be discarded.\n\t'DEF-shin_L_001' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-foot_L'
+      has scale animation that will be discarded.\n\t'DEF-thigh_R' has scale animation
+      that will be discarded.\n\t'DEF-shin_R' has scale animation that will be discarded.\n\t'DEF-shin_R_001'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'DEF-foot_R'
+      has scale animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 1
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: Character1_Hips
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_Spine1
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_Spine2
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_L_HairSide_00
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_R_HairSide_00
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: J_L_HairFront_00
+      humanName: Jaw
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftHandIndex1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftHandIndex2
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftHandIndex3
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightHandIndex1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightHandIndex2
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightHandIndex3
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Character1_RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: unitychan_WIN00(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ambientLight1
+      parentName: 
+      position: {x: 0.3696383, y: 1.551789, z: 0.6800042}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ambientLight2
+      parentName: 
+      position: {x: 0.57342744, y: 0.36291462, z: -0.5865577}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_Reference
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_ChestEndEffector
+      parentName: 
+      position: {x: -0.008211512, y: 1.1533415, z: -0.05432935}
+      rotation: {x: -0.019904807, y: 0.048104197, z: 0.027195076, w: 0.9982736}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_ChestOriginEffector
+      parentName: 
+      position: {x: 0.045366514, y: 0.8696733, z: 0.025122536}
+      rotation: {x: -0.14358488, y: 0.021296099, z: 0.14672638, w: 0.97846884}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_HeadEffector
+      parentName: 
+      position: {x: -0.0027816044, y: 1.2666351, z: -0.057422273}
+      rotation: {x: 0.057739146, y: 0.007539025, z: -0.104711704, w: 0.9927965}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_Hips
+      parentName: 
+      position: {x: 0.049241092, y: 0.84615666, z: 0.021283401}
+      rotation: {x: -0.093658894, y: 0.005786894, z: 0.084639765, w: 0.9919832}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftUpLeg
+      parentName: 
+      position: {x: -0.07276832, y: -0.060578015, z: 0.0020788328}
+      rotation: {x: -0.17013808, y: -0.01115215, z: -0.2861146, w: 0.9429036}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftLeg
+      parentName: 
+      position: {x: 0.018231438, y: -0.35109302, z: -0.015960723}
+      rotation: {x: 0.37540612, y: 0.11673726, z: 0.050580148, w: 0.9180873}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftFoot
+      parentName: 
+      position: {x: 0.010311949, y: -0.37818262, z: -0.016995957}
+      rotation: {x: -0.23745261, y: 0.16802827, z: 0.063434154, w: 0.9546512}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftToeBase
+      parentName: 
+      position: {x: -0.00202457, y: -0.05287534, z: 0.081224315}
+      rotation: {x: 0.0000024568924, y: -0.0000018745526, z: 0.0000070782203, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightUpLeg
+      parentName: 
+      position: {x: 0.07276832, y: -0.060577635, z: 0.002078785}
+      rotation: {x: 0.015088182, y: -0.18640548, z: 0.07499843, w: 0.97949}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightLeg
+      parentName: 
+      position: {x: -0.01823197, y: -0.35109255, z: -0.015970526}
+      rotation: {x: 0.0045634364, y: 0.0681258, z: -0.006946035, w: 0.99764216}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightFoot
+      parentName: 
+      position: {x: -0.010312626, y: -0.37818253, z: -0.01700654}
+      rotation: {x: 0.0025173659, y: 0.04613849, z: -0.10564613, w: 0.9933297}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightToeBase
+      parentName: 
+      position: {x: 0.002024484, y: -0.052877616, z: 0.08122281}
+      rotation: {x: 0.0000024627773, y: 0.0000020748876, z: 0.0000045027127, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_Spine
+      parentName: 
+      position: {x: 0.00000001110118, y: 0.022713475, z: 0.008181548}
+      rotation: {x: -0.049838025, y: 0.013873835, z: 0.06389635, w: 0.99661475}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_Spine1
+      parentName: 
+      position: {x: 0.0000000069494837, y: 0.090859465, z: 0.009554452}
+      rotation: {x: 0.032897927, y: 0.02872668, z: -0.052219186, w: 0.9976802}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_Spine2
+      parentName: 
+      position: {x: 0.000000018625416, y: 0.087655656, z: -0.0014286664}
+      rotation: {x: 0.0996051, y: -0.00044224254, z: -0.058772113, w: 0.99328977}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftShoulder
+      parentName: 
+      position: {x: -0.042114895, y: 0.11612239, z: -0.038737968}
+      rotation: {x: -0.0056697275, y: -0.048086945, z: -0.11696428, w: 0.9919551}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftArm
+      parentName: 
+      position: {x: -0.05543733, y: 0.0000012207034, z: 0.0000000023841864}
+      rotation: {x: 0.47329223, y: 0.092393115, z: 0.55220574, w: 0.6800932}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftForeArm
+      parentName: 
+      position: {x: -0.23377468, y: -0.0012284091, z: 0.00032521493}
+      rotation: {x: -0.10147799, y: 0.7365881, z: 0.057676356, w: 0.66619337}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHand
+      parentName: 
+      position: {x: -0.16247742, y: -0.0011883548, z: 0.00035859054}
+      rotation: {x: 0.18697049, y: 0.16647334, z: -0.20628688, w: 0.9459252}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandIndex1
+      parentName: 
+      position: {x: -0.08043882, y: 0.009893191, z: 0.02480785}
+      rotation: {x: 0.028162386, y: -0.11895348, z: -0.016464654, w: 0.9923638}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandIndex2
+      parentName: 
+      position: {x: -0.024270214, y: 0.00011856082, z: 0.0026837592}
+      rotation: {x: 0.0037091193, y: -0.00019928567, z: 0.16006304, w: 0.9870998}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandIndex3
+      parentName: 
+      position: {x: -0.016075443, y: 0.0008797457, z: 0.00037363774}
+      rotation: {x: 0.011177449, y: -0.0048484704, z: 0.21156384, w: 0.97728825}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandIndex4
+      parentName: 
+      position: {x: -0.02124909, y: 0.0015544131, z: 0.0011445049}
+      rotation: {x: -0.000029333092, y: 0.000036614754, z: 0.000009092704, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandMiddle1
+      parentName: 
+      position: {x: -0.08038175, y: 0.010074313, z: 0.0043935287}
+      rotation: {x: -0.0036574875, y: -0.016998095, z: 0.04588092, w: 0.9987956}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandMiddle2
+      parentName: 
+      position: {x: -0.025270507, y: -0.0023444372, z: -0.00080972037}
+      rotation: {x: -0.011883822, y: -0.00058181427, z: 0.20199296, w: 0.9793147}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandMiddle3
+      parentName: 
+      position: {x: -0.019379048, y: -0.0008129122, z: -0.001179147}
+      rotation: {x: -0.020783449, y: -0.002680134, z: 0.28566697, w: 0.9580998}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandMiddle4
+      parentName: 
+      position: {x: -0.021921238, y: 0.0015254214, z: -0.0016087203}
+      rotation: {x: -0.000027672279, y: 0.000034368757, z: -0.0000093682165, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandPinky1
+      parentName: 
+      position: {x: -0.06585145, y: -0.0013899234, z: -0.027661486}
+      rotation: {x: -0.061526712, y: 0.15585105, z: -0.06013803, w: 0.9840266}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandPinky2
+      parentName: 
+      position: {x: -0.016314205, y: -0.006006318, z: -0.005028125}
+      rotation: {x: -0.031819407, y: -0.012154485, z: 0.09772775, w: 0.99463016}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandPinky3
+      parentName: 
+      position: {x: -0.012272418, y: -0.004689561, z: -0.004579016}
+      rotation: {x: -0.11301029, y: -0.04261661, z: 0.31265196, w: 0.94215775}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandPinky4
+      parentName: 
+      position: {x: -0.016960377, y: -0.005842286, z: -0.0068782535}
+      rotation: {x: -0.000005050545, y: 0.0000018569004, z: 0.0000024493838, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandRing1
+      parentName: 
+      position: {x: -0.076620884, y: 0.006165162, z: -0.013667113}
+      rotation: {x: -0.09966687, y: 0.05216348, z: -0.0036731104, w: 0.99364585}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandRing2
+      parentName: 
+      position: {x: -0.022498555, y: -0.0059263622, z: -0.0046192897}
+      rotation: {x: -0.008663693, y: -0.007812202, z: 0.24826913, w: 0.96862084}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandRing3
+      parentName: 
+      position: {x: -0.015337947, y: -0.003520356, z: -0.0024843651}
+      rotation: {x: -0.06651932, y: -0.024619307, z: 0.21994439, w: 0.9729304}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandRing4
+      parentName: 
+      position: {x: -0.024580617, y: -0.003171006, z: -0.00527469}
+      rotation: {x: -0.000029788722, y: 0.000013586744, z: -0.000008525185, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandThumb1
+      parentName: 
+      position: {x: -0.025104033, y: -0.0090404535, z: 0.020916069}
+      rotation: {x: -0.023376806, y: 0.013478372, z: -0.06512244, w: 0.9975124}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandThumb2
+      parentName: 
+      position: {x: -0.025704619, y: -0.0113047045, z: 0.015845252}
+      rotation: {x: 0.042738684, y: -0.12889981, z: -0.025080012, w: 0.99041873}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandThumb3
+      parentName: 
+      position: {x: -0.0142084155, y: -0.0060585034, z: 0.008426029}
+      rotation: {x: 0.05066659, y: -0.20049526, z: -0.032588415, w: 0.9778408}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandThumb4
+      parentName: 
+      position: {x: -0.02153458, y: -0.007577974, z: 0.013129683}
+      rotation: {x: -0.0000047271155, y: -0.00000939375, z: 0.000053530817, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_Neck
+      parentName: 
+      position: {x: -0.000000002642483, y: 0.15167767, z: -0.04080686}
+      rotation: {x: 0.039701514, y: -0.011150752, z: -0.0746677, w: 0.9963555}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_Head
+      parentName: 
+      position: {x: 0.0000000015196023, y: 0.07825304, z: -0.0020215742}
+      rotation: {x: 0.044669416, y: -0.027497029, z: -0.05374726, w: 0.99717593}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightShoulder
+      parentName: 
+      position: {x: 0.04211488, y: 0.11612239, z: -0.03873798}
+      rotation: {x: 0.0000008200728, y: -0.0000022321447, z: 0.19670366, w: 0.98046297}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightArm
+      parentName: 
+      position: {x: 0.055437353, y: 0.0000012207034, z: -0.000000008344652}
+      rotation: {x: -0.33137953, y: -0.19660132, z: -0.26833284, w: 0.8829117}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightForeArm
+      parentName: 
+      position: {x: 0.23377614, y: -0.0012303165, z: 0.0003251577}
+      rotation: {x: 0.12693357, y: 0.8605074, z: 0.13225776, w: -0.4753133}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHand
+      parentName: 
+      position: {x: 0.162476, y: -0.0011848452, z: 0.00035641735}
+      rotation: {x: 0.25441015, y: 0.0015566341, z: 0.03654852, w: 0.9664043}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandIndex1
+      parentName: 
+      position: {x: 0.08043871, y: 0.009890368, z: 0.024810055}
+      rotation: {x: 0.018203888, y: 0.10966984, z: -0.0009296624, w: 0.99380094}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandIndex2
+      parentName: 
+      position: {x: 0.024269985, y: 0.0001200104, z: 0.002683801}
+      rotation: {x: 0.0022361896, y: 0.00018960229, z: -0.024619557, w: 0.99969435}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandIndex3
+      parentName: 
+      position: {x: 0.016076015, y: 0.00087997457, z: 0.00037359959}
+      rotation: {x: 0.0000054149523, y: 0.0000033769131, z: 0.09518843, w: 0.99545926}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandIndex4
+      parentName: 
+      position: {x: 0.021249013, y: 0.0015500643, z: 0.0011445013}
+      rotation: {x: -0.000008819919, y: 0.000074942625, z: -0.00004169763, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandMiddle1
+      parentName: 
+      position: {x: 0.08038168, y: 0.010070422, z: 0.004395732}
+      rotation: {x: 0.016649337, y: -0.023131019, z: 0.05357479, w: 0.9981571}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandMiddle2
+      parentName: 
+      position: {x: 0.025270011, y: -0.0023400122, z: -0.00080972095}
+      rotation: {x: -0.010041276, y: 0.0020547495, z: -0.024711506, w: 0.9996421}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandMiddle3
+      parentName: 
+      position: {x: 0.019380001, y: -0.0008200075, z: -0.0011791501}
+      rotation: {x: -0.015227105, y: 0.010676501, z: 0.021875778, w: 0.9995877}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandMiddle4
+      parentName: 
+      position: {x: 0.021921009, y: 0.0015299991, z: -0.0016087209}
+      rotation: {x: -0.000007632797, y: 0.000023450984, z: 0.00003339522, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandPinky1
+      parentName: 
+      position: {x: 0.06585168, y: -0.0013896181, z: -0.027659254}
+      rotation: {x: 0.07270812, y: -0.17186575, z: 0.28218827, w: 0.94103426}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandPinky2
+      parentName: 
+      position: {x: 0.016314013, y: -0.00600998, z: -0.0050281035}
+      rotation: {x: -0.034642965, y: -0.0049029756, z: -0.051227234, w: 0.998074}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandPinky3
+      parentName: 
+      position: {x: 0.0122719975, y: -0.004690019, z: -0.0045791017}
+      rotation: {x: 0.10999714, y: -0.04347887, z: 0.0035022148, w: 0.99297434}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandPinky4
+      parentName: 
+      position: {x: 0.016960986, y: -0.0058399974, z: -0.0068782014}
+      rotation: {x: 0.00003582188, y: -0.000031958924, z: 0.00004591398, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandRing1
+      parentName: 
+      position: {x: 0.07662069, y: 0.0061603556, z: -0.0136649525}
+      rotation: {x: 0.13766973, y: -0.13316898, z: 0.12455756, w: 0.9735494}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandRing2
+      parentName: 
+      position: {x: 0.022499012, y: -0.0059199533, z: -0.004619201}
+      rotation: {x: -0.008638593, y: 0.002484541, z: -0.014069058, w: 0.99986064}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandRing3
+      parentName: 
+      position: {x: 0.015337985, y: -0.0035200508, z: -0.0024844008}
+      rotation: {x: -0.036325224, y: 0.018465705, z: 0.055810474, w: 0.9976095}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandRing4
+      parentName: 
+      position: {x: 0.024580006, y: -0.003169938, z: -0.0052747023}
+      rotation: {x: 0.000042734606, y: -0.000009270764, z: -0.00006419629, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandThumb1
+      parentName: 
+      position: {x: 0.025104873, y: -0.00904053, z: 0.020914614}
+      rotation: {x: -0.06634306, y: 0.052203346, z: 0.11643337, w: 0.98960435}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandThumb2
+      parentName: 
+      position: {x: 0.025795104, y: -0.011216433, z: 0.015373073}
+      rotation: {x: 0.062185556, y: -0.03134318, z: 0.020355877, w: 0.99736464}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandThumb3
+      parentName: 
+      position: {x: 0.014295924, y: -0.0061673746, z: 0.00819467}
+      rotation: {x: 0.08024064, y: -0.20967035, z: 0.005972522, w: 0.97445583}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandThumb4
+      parentName: 
+      position: {x: 0.021676792, y: -0.0077462024, z: 0.012794147}
+      rotation: {x: 0.000086354936, y: -0.000032456603, z: 0.000054911223, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_HipsEffector
+      parentName: 
+      position: {x: 0.059470043, y: 0.78789794, z: 0.034522574}
+      rotation: {x: -0.093658894, y: 0.005786894, z: 0.084639765, w: 0.9919832}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftAnkleEffector
+      parentName: 
+      position: {x: -0.20674482, y: 0.07759307, z: -0.053073205}
+      rotation: {x: -0.020250952, y: 0.20575224, z: -0.0034821036, w: 0.97838837}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftElbowEffector
+      parentName: 
+      position: {x: -0.22406814, y: 0.9777917, z: -0.13364951}
+      rotation: {x: -0.12606047, y: 0.51243633, z: 0.71154964, w: 0.46391252}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftFootEffector
+      parentName: 
+      position: {x: -0.17580436, y: 0.027895322, z: 0.024193171}
+      rotation: {x: -0.020247098, y: 0.20575054, z: -0.0034756458, w: 0.97838885}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandIndexEffector
+      parentName: 
+      position: {x: -0.32556728, y: 0.70365304, z: -0.042035498}
+      rotation: {x: 0.0055306526, y: -0.07878113, z: 0.74847925, w: 0.6584389}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandMiddleEffector
+      parentName: 
+      position: {x: -0.3086744, y: 0.69461936, z: -0.055049308}
+      rotation: {x: -0.07344613, y: 0.0052977875, z: 0.85384434, w: 0.51529366}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandPinkyEffector
+      parentName: 
+      position: {x: -0.28683433, y: 0.71218175, z: -0.08295625}
+      rotation: {x: -0.22556372, y: 0.076103054, z: 0.7444977, w: 0.62374073}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandRingEffector
+      parentName: 
+      position: {x: -0.29389387, y: 0.6962406, z: -0.06789854}
+      rotation: {x: -0.18546696, y: 0.017086677, z: 0.8113553, w: 0.5540872}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHandThumbEffector
+      parentName: 
+      position: {x: -0.28886738, y: 0.73223424, z: -0.019140506}
+      rotation: {x: 0.13233213, y: -0.2538335, z: 0.35657248, w: 0.88933283}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftHipEffector
+      parentName: 
+      position: {x: -0.032353133, y: 0.72880214, z: -0.009438535}
+      rotation: {x: -0.19676782, y: -0.034449667, z: -0.1630275, w: 0.9661872}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftKneeEffector
+      parentName: 
+      position: {x: -0.13044919, y: 0.41181862, z: 0.107828766}
+      rotation: {x: 0.19935146, y: 0.029913269, z: -0.1108411, w: 0.9731796}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftShoulderEffector
+      parentName: 
+      position: {x: -0.10463542, y: 1.1609036, z: -0.050836105}
+      rotation: {x: 0.4576598, y: 0.064605236, z: 0.48812655, w: 0.7403419}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_LeftWristEffector
+      parentName: 
+      position: {x: -0.13564548, y: 0.89187276, z: -0.027820453}
+      rotation: {x: -0.25666875, y: 0.6689897, z: 0.4605775, w: 0.5238725}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightAnkleEffector
+      parentName: 
+      position: {x: 0.26248884, y: 0.08459915, z: -0.015382786}
+      rotation: {x: -0.00030079487, y: -0.065106995, z: 0.013082656, w: 0.9977925}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightElbowEffector
+      parentName: 
+      position: {x: 0.30410329, y: 1.2049067, z: 0.06569982}
+      rotation: {x: 0.25295946, y: 0.9445797, z: -0.062359687, w: -0.19972958}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightFootEffector
+      parentName: 
+      position: {x: 0.25532025, y: 0.031702995, z: 0.06553627}
+      rotation: {x: -0.00029865783, y: -0.065104894, z: 0.013087308, w: 0.99779254}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandIndexEffector
+      parentName: 
+      position: {x: 0.2075287, y: 1.7109672, z: -0.15436861}
+      rotation: {x: -0.5209183, y: -0.2444941, z: 0.48755255, w: 0.6566273}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandMiddleEffector
+      parentName: 
+      position: {x: 0.22063509, y: 1.7134615, z: -0.15797208}
+      rotation: {x: -0.48324808, y: -0.3506285, z: 0.5210571, w: 0.609943}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandPinkyEffector
+      parentName: 
+      position: {x: 0.24079211, y: 1.6758578, z: -0.162486}
+      rotation: {x: -0.3224065, y: -0.271604, z: 0.7657828, w: 0.48565632}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandRingEffector
+      parentName: 
+      position: {x: 0.23223443, y: 1.7041869, z: -0.16003782}
+      rotation: {x: -0.3976112, y: -0.31596866, z: 0.6679226, w: 0.54401153}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHandThumbEffector
+      parentName: 
+      position: {x: 0.16299054, y: 1.6675047, z: -0.10915417}
+      rotation: {x: -0.34926194, y: -0.34482357, z: 0.6773918, w: 0.5479537}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightHipEffector
+      parentName: 
+      position: {x: 0.10708841, y: 0.7985032, z: -0.011905706}
+      rotation: {x: -0.0062793926, y: -0.17814915, z: 0.12494717, w: 0.97601825}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightKneeEffector
+      parentName: 
+      position: {x: 0.18100697, y: 0.4544284, z: -0.013245937}
+      rotation: {x: -0.009085286, y: -0.11071052, z: 0.11825829, w: 0.98675007}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightShoulderEffector
+      parentName: 
+      position: {x: 0.09749376, y: 1.1938909, z: -0.04312996}
+      rotation: {x: -0.2734716, y: -0.23573115, z: -0.04171843, w: 0.9316135}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Ctrl_RightWristEffector
+      parentName: 
+      position: {x: 0.17470138, y: 1.2855678, z: 0.12181474}
+      rotation: {x: 0.22826791, y: 0.88742477, z: -0.30748144, w: -0.2565662}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Reference
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Character1_Hips
+      parentName: 
+      position: {x: -0.000000001396992, y: 0.86858165, z: 0.0118268775}
+      rotation: {x: 0.50088733, y: -0.4991111, z: -0.4991111, w: 0.50088733}
+      scale: {x: 0.99999946, y: 0.99999934, z: 0.99999946}
+    - name: Character1_LeftUpLeg
+      parentName: 
+      position: {x: 0.060318917, y: 0.0020788386, z: 0.07298303}
+      rotation: {x: 0.0111884475, y: 0.9997958, z: 0.00023451447, w: -0.016829878}
+      scale: {x: 0.9999993, y: 1.0000002, z: 0.99999994}
+    - name: Character1_LeftLeg
+      parentName: 
+      position: {x: -0.35179847, y: -0.00800495, z: 0.005145315}
+      rotation: {x: -0.000003427267, y: 0.00000071525574, z: 0.016442388, w: 0.9998649}
+      scale: {x: 1.000001, y: 0.9999998, z: 1.0000002}
+    - name: Character1_LeftFoot
+      parentName: 
+      position: {x: -0.3786666, y: 0.003830528, z: -0.0037775983}
+      rotation: {x: 0.0000042915344, y: 0.0000015944242, z: -0.26428485, w: 0.96444476}
+      scale: {x: 1.0000021, y: 1.0000012, z: 0.9999992}
+    - name: Character1_LeftToeBase
+      parentName: 
+      position: {x: -0.08429432, y: 0.04771087, z: -0.003921542}
+      rotation: {x: -0.023459971, y: 0.014733794, z: -0.5186896, w: 0.8545137}
+      scale: {x: 0.9999962, y: 0.99999833, z: 0.9999981}
+    - name: Character1_RightUpLeg
+      parentName: 
+      position: {x: 0.060835995, y: 0.0020787753, z: -0.07255255}
+      rotation: {x: 0.0112057775, y: 0.9999356, z: 0.000013560057, w: 0.0017746687}
+      scale: {x: 1, y: 0.99999934, z: 0.99999946}
+    - name: Character1_RightLeg
+      parentName: 
+      position: {x: -0.35136274, y: -0.00800436, z: -0.018232735}
+      rotation: {x: -0.0000064969067, y: -0.00000005960465, z: 0.016441809, w: 0.9998649}
+      scale: {x: 1.0000006, y: 0.99999934, z: 1.0000013}
+    - name: Character1_RightFoot
+      parentName: 
+      position: {x: -0.37854546, y: 0.003826864, z: -0.010313562}
+      rotation: {x: 0.0000003874302, y: -0.0000011324883, z: -0.26428533, w: 0.9644445}
+      scale: {x: 0.99999994, y: 1, z: 1.0000002}
+    - name: Character1_RightToeBase
+      parentName: 
+      position: {x: -0.08439141, y: 0.047657736, z: 0.0020244916}
+      rotation: {x: -0.000000029802322, y: 0.000000021541476, z: -0.5189173, w: 0.8548245}
+      scale: {x: 0.9999954, y: 1.0000038, z: 0.9999999}
+    - name: Character1_Spine
+      parentName: 
+      position: {x: -0.022712147, y: 0.008181474, z: -0.00008069917}
+      rotation: {x: -0.00007598103, y: 0.0017746092, z: 0.04276635, w: -0.9990835}
+      scale: {x: 0.99999887, y: 0.9999978, z: 0.9999994}
+    - name: Character1_Spine1
+      parentName: 
+      position: {x: -0.091344714, y: 0.0017550485, z: 8.604246e-10}
+      rotation: {x: 0.000000029802322, y: -0.000000029802322, z: -0.049171716, w: -0.9987904}
+      scale: {x: 1.0000015, y: 1.0000008, z: 1.0000014}
+    - name: Character1_Spine2
+      parentName: 
+      position: {x: -0.0876654, y: -0.00030446285, z: -0.00000004008574}
+      rotation: {x: -0.007228583, y: -0.0016319156, z: 0.150848, w: 0.9885292}
+      scale: {x: 1.0000006, y: 1.0000011, z: 0.99999905}
+    - name: Character1_LeftShoulder
+      parentName: 
+      position: {x: -0.12236927, y: -0.0013942905, z: 0.042226803}
+      rotation: {x: 0.11624825, y: 0.6994765, z: -0.10604287, w: 0.69711834}
+      scale: {x: 1.0000006, y: 0.9999979, z: 1.0000015}
+    - name: Character1_LeftArm
+      parentName: 
+      position: {x: -0.055437222, y: -0.00000008546913, z: 0.0000004901819}
+      rotation: {x: 0.0002814533, y: 0.023861958, z: -0.00002273964, w: 0.9997152}
+      scale: {x: 1.000003, y: 1.0000023, z: 1.0000014}
+    - name: Character1_LeftForeArm
+      parentName: 
+      position: {x: -0.23377782, y: 0.000008472227, z: 0.000005748211}
+      rotation: {x: -0.00011816621, y: 0.0010298342, z: -0.00040780008, w: 0.9999994}
+      scale: {x: 0.99999845, y: 0.9999964, z: 1.0000001}
+    - name: Character1_LeftHand
+      parentName: 
+      position: {x: -0.16248204, y: -0.00000031595118, z: -0.00000020446087}
+      rotation: {x: -0.10859574, y: -0.02186692, z: -0.0013564826, w: 0.99384457}
+      scale: {x: 0.9999984, y: 1.0000021, z: 1.0000008}
+    - name: Character1_LeftHandIndex1
+      parentName: 
+      position: {x: -0.0807497, y: 0.025713488, z: -0.001428185}
+      rotation: {x: 0.10428139, y: 0.04083605, z: 0.00084124506, w: 0.9937088}
+      scale: {x: 1.0000036, y: 0.99999654, z: 1.0000002}
+    - name: Character1_LeftHandIndex2
+      parentName: 
+      position: {x: -0.024259167, y: 0.0025071993, z: -0.0011906425}
+      rotation: {x: 0.0023561253, y: -0.010654092, z: -0.006214605, w: 0.9999212}
+      scale: {x: 1.0000012, y: 1.0000029, z: 1.0000046}
+    - name: Character1_LeftHandIndex3
+      parentName: 
+      position: {x: -0.01609747, y: 0.00011818315, z: -0.00045655385}
+      rotation: {x: 0.0027491525, y: -0.061829, z: 0.0046093613, w: 0.9980723}
+      scale: {x: 0.999996, y: 0.9999989, z: 0.99999774}
+    - name: Character1_LeftHandIndex4
+      parentName: 
+      position: {x: -0.021251384, y: 0.0010068122, z: 0.0016463348}
+      rotation: {x: -0.7153497, y: -0.024095431, z: 0.023904946, w: 0.6979419}
+      scale: {x: 1.0000001, y: 1.0000002, z: 0.9999976}
+    - name: Character1_LeftHandMiddle1
+      parentName: 
+      position: {x: -0.08069524, y: 0.005822573, z: -0.006025204}
+      rotation: {x: 0.054578356, y: -0.04583024, z: 0.03329426, w: 0.9969014}
+      scale: {x: 1.0000018, y: 1.0000033, z: 1.000005}
+    - name: Character1_LeftHandMiddle2
+      parentName: 
+      position: {x: -0.025064394, y: 0.0014816781, z: 0.0037978827}
+      rotation: {x: -0.033577334, y: 0.06963723, z: -0.014093189, w: 0.99690753}
+      scale: {x: 1.0000007, y: 0.9999974, z: 0.9999952}
+    - name: Character1_LeftHandMiddle3
+      parentName: 
+      position: {x: -0.01942923, y: -0.00006714498, z: 0.00015678602}
+      rotation: {x: -0.022573495, y: -0.039090287, z: 0.018999778, w: 0.99880004}
+      scale: {x: 1.0000008, y: 1.0000014, z: 1.0000056}
+    - name: Character1_LeftHandMiddle4
+      parentName: 
+      position: {x: -0.022016065, y: 0.00090965675, z: 0.00012535686}
+      rotation: {x: -0.7059504, y: 0.033992708, z: 0.0064747464, w: 0.7074155}
+      scale: {x: 0.99999845, y: 0.9999963, z: 0.99999785}
+    - name: Character1_LeftHandPinky1
+      parentName: 
+      position: {x: -0.06575483, y: -0.027836574, z: -0.0022787475}
+      rotation: {x: -0.11445233, y: 0.009059362, z: 0.023240853, w: 0.99311554}
+      scale: {x: 1.0000069, y: 1.0000013, z: 0.9999952}
+    - name: Character1_LeftHandPinky2
+      parentName: 
+      position: {x: -0.018096669, y: 0.00013264408, z: -0.000014428282}
+      rotation: {x: 0.018954819, y: -0.016845552, z: 0.022771155, w: 0.99941903}
+      scale: {x: 0.99999785, y: 1.000001, z: 0.9999995}
+    - name: Character1_LeftHandPinky3
+      parentName: 
+      position: {x: -0.013911055, y: 0.000002782559, z: 0.00024826522}
+      rotation: {x: -0.010046631, y: -0.01149708, z: -0.001278691, w: 0.9998827}
+      scale: {x: 0.9999966, y: 0.9999959, z: 0.9999993}
+    - name: Character1_LeftHandPinky4
+      parentName: 
+      position: {x: -0.019210074, y: -0.0002994421, z: -0.000022469321}
+      rotation: {x: -0.047835708, y: -0.0038424432, z: 0.0030543283, w: 0.9988432}
+      scale: {x: 1.000002, y: 1.0000018, z: 0.9999995}
+    - name: Character1_LeftHandRing1
+      parentName: 
+      position: {x: -0.07679392, y: -0.012626995, z: -0.0062423013}
+      rotation: {x: -0.07971958, y: -0.01079688, z: 0.005934767, w: 0.99674124}
+      scale: {x: 1.0000039, y: 1.0000018, z: 0.9999963}
+    - name: Character1_LeftHandRing2
+      parentName: 
+      position: {x: -0.02368344, y: -0.00075441366, z: 0.001099777}
+      rotation: {x: 0.023209058, y: 0.057711393, z: 0.0028627515, w: 0.9980594}
+      scale: {x: 1, y: 0.9999977, z: 0.9999975}
+    - name: Character1_LeftHandRing3
+      parentName: 
+      position: {x: -0.015907127, y: 0.0001666979, z: -0.0008614404}
+      rotation: {x: -0.027976029, y: -0.020381304, z: -0.0042201867, w: 0.999392}
+      scale: {x: 1.0000011, y: 1.0000024, z: 1.0000007}
+    - name: Character1_LeftHandRing4
+      parentName: 
+      position: {x: -0.025226261, y: -0.00011527259, z: -0.0023853432}
+      rotation: {x: 0.003331624, y: -0.016953722, z: -0.0026205108, w: 0.9998473}
+      scale: {x: 0.99999815, y: 0.99999994, z: 1.0000011}
+    - name: Character1_LeftHandThumb1
+      parentName: 
+      position: {x: -0.024763186, y: 0.018265063, z: 0.014242461}
+      rotation: {x: 0.76214254, y: -0.27154836, z: -0.29387987, w: 0.5089546}
+      scale: {x: 0.9999985, y: 1.0000057, z: 0.9999963}
+    - name: Character1_LeftHandThumb2
+      parentName: 
+      position: {x: -0.032143977, y: 0.0019839192, z: 0.0015228279}
+      rotation: {x: -0.0018969178, y: 0.029820949, z: -0.05794671, w: 0.9978724}
+      scale: {x: 1.0000051, y: 1.0000013, z: 1.000003}
+    - name: Character1_LeftHandThumb3
+      parentName: 
+      position: {x: -0.017570172, y: -0.0009981084, z: 0.00008486584}
+      rotation: {x: 0.00047887862, y: 0.0148132, z: 0.037151724, w: 0.99919975}
+      scale: {x: 0.9999968, y: 0.999996, z: 0.9999921}
+    - name: Character1_LeftHandThumb4
+      parentName: 
+      position: {x: -0.026302844, y: -0.0011457745, z: -0.00057093427}
+      rotation: {x: -0.025575265, y: -0.010641679, z: 0.026150614, w: 0.99927413}
+      scale: {x: 0.99999976, y: 1.0000043, z: 1.0000031}
+    - name: J_L_Sode_A00
+      parentName: 
+      position: {x: -0.04704423, y: 0.03601051, z: 0.0010275665}
+      rotation: {x: -0.064481, y: -0.08748101, z: -0.08295052, w: 0.9906102}
+      scale: {x: 0.99999803, y: 1.0000023, z: 1.0000031}
+    - name: J_L_Sode_A01
+      parentName: 
+      position: {x: -0.14825276, y: -0.010896106, z: 0.018346798}
+      rotation: {x: -0.73015964, y: -0.000000044703487, z: -0.00000010989607, w: 0.68327665}
+      scale: {x: 1.000002, y: 0.9999999, z: 1.0000017}
+    - name: J_L_Sode_B00
+      parentName: 
+      position: {x: -0.044252787, y: 0.0002528488, z: -0.03772714}
+      rotation: {x: -0.70609546, y: -0.03620431, z: -0.035443265, w: 0.7063018}
+      scale: {x: 0.9999996, y: 1.000002, z: 1.0000036}
+    - name: J_L_Sode_B01
+      parentName: 
+      position: {x: -0.150873, y: 0.00000005088377, z: -0.000000008760253}
+      rotation: {x: -0.000000011874363, y: -5.7480065e-10, z: 0.00000011920483, w: 1}
+      scale: {x: 1.0000005, y: 1.0000019, z: 1}
+    - name: J_L_Sode_C00
+      parentName: 
+      position: {x: -0.041389856, y: -0.048910394, z: 0.012788765}
+      rotation: {x: -0.99050975, y: -0.13555768, z: 0.022467762, w: 0.0031346679}
+      scale: {x: 1.0000026, y: 1.0000033, z: 1.0000017}
+    - name: J_L_Sode_C01
+      parentName: 
+      position: {x: -0.16287816, y: 0.0000007227063, z: 0.000003225894}
+      rotation: {x: -0.000000029802319, y: 0.0000000074505797, z: 0.000000029802319,
+        w: 1}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000029}
+    - name: J_L_Sode_D00
+      parentName: 
+      position: {x: -0.043956164, y: 0.002718718, z: 0.038990006}
+      rotation: {x: 0.6148564, y: 0.11044628, z: -0.013765052, w: 0.7807456}
+      scale: {x: 1.0000037, y: 1.0000006, z: 1.0000049}
+    - name: J_L_Sode_D01
+      parentName: 
+      position: {x: -0.14457111, y: -0.0008164656, z: -0.007399086}
+      rotation: {x: 0.000000014901161, y: 0.000000007450581, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000001, z: 0.99999964}
+    - name: Character1_Neck
+      parentName: 
+      position: {x: -0.15685149, y: 0.008298524, z: 0.00028670684}
+      rotation: {x: -0.007178441, y: -0.0018398912, z: 0.1793288, w: -0.9837613}
+      scale: {x: 1.000003, y: 0.9999965, z: 1}
+    - name: Character1_Head
+      parentName: 
+      position: {x: -0.07808204, y: -0.0055344687, z: -0.000000002521435}
+      rotation: {x: -0.021434488, y: 0.0059299027, z: -0.090837546, w: -0.9956174}
+      scale: {x: 0.99999785, y: 0.99999994, z: 0.9999986}
+    - name: EB_DEF
+      parentName: 
+      position: {x: 1.289459, y: -0.16328037, z: -0.013468142}
+      rotation: {x: -0.47192204, y: 0.5467805, z: 0.45703653, w: 0.51907444}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000006}
+    - name: BLW_DEF
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: eye_base
+      parentName: 
+      position: {x: 1.289459, y: -0.16328037, z: -0.013468142}
+      rotation: {x: -0.47192204, y: 0.5467805, z: 0.45703653, w: 0.51907444}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000006}
+    - name: EYE_DEF
+      parentName: 
+      position: {x: 1.289459, y: -0.16328037, z: -0.013468142}
+      rotation: {x: -0.47192204, y: 0.5467805, z: 0.45703653, w: 0.51907444}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000006}
+    - name: EL_DEF
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: eye_L
+      parentName: 
+      position: {x: 1.289459, y: -0.16328037, z: -0.013468142}
+      rotation: {x: -0.47192204, y: 0.5467805, z: 0.45703653, w: 0.51907444}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000006}
+    - name: eye_R
+      parentName: 
+      position: {x: 1.289459, y: -0.16328037, z: -0.013468142}
+      rotation: {x: -0.47192204, y: 0.5467805, z: 0.45703653, w: 0.51907444}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000006}
+    - name: head_back
+      parentName: 
+      position: {x: 1.289459, y: -0.16328037, z: -0.013468142}
+      rotation: {x: -0.47192204, y: 0.5467805, z: 0.45703653, w: 0.51907444}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000006}
+    - name: J_L_HairFront_00
+      parentName: 
+      position: {x: -0.118354484, y: 0.11062724, z: -0.00064681284}
+      rotation: {x: -0.046010196, y: 0.9977064, z: 0.03890048, w: -0.030851737}
+      scale: {x: 1.0000013, y: 1.0000024, z: 1.0000019}
+    - name: J_L_HairFront_01
+      parentName: 
+      position: {x: -0.08693201, y: -0.0005547926, z: -0.00224324}
+      rotation: {x: 0.055760607, y: 0.115110844, z: 0.06385368, w: 0.9897288}
+      scale: {x: 1.0000029, y: 0.9999982, z: 1.0000025}
+    - name: J_L_HairSide_00
+      parentName: 
+      position: {x: -0.09529019, y: 0.084203914, z: 0.08411808}
+      rotation: {x: 0.15654895, y: 0.9750131, z: -0.017381549, w: 0.15665184}
+      scale: {x: 1.0000038, y: 0.99999535, z: 1.0000017}
+    - name: J_L_HairSide_01
+      parentName: 
+      position: {x: -0.071906365, y: -0.000000074505806, z: -0.0000003193152}
+      rotation: {x: 0.008650005, y: 0.04694757, z: -0.0062286556, w: 0.9988405}
+      scale: {x: 1.0000007, y: 1.0000021, z: 0.99999994}
+    - name: J_L_HairSide_02
+      parentName: 
+      position: {x: -0.07073956, y: 0.0000010961667, z: 0.0000023964863}
+      rotation: {x: -0.5187089, y: 0.07131513, z: -0.14153355, w: 0.84013295}
+      scale: {x: 1.0000025, y: 1.0000014, z: 0.999998}
+    - name: J_L_HairTail_00
+      parentName: 
+      position: {x: -0.031545565, y: -0.067548044, z: 0.065460324}
+      rotation: {x: -0.093113825, y: 0.01706706, z: 0.97876835, w: 0.18179959}
+      scale: {x: 1.0000056, y: 0.99999666, z: 1.0000018}
+    - name: J_L_HairTail_01
+      parentName: 
+      position: {x: -0.115974255, y: 0.00000090524554, z: 0.00000067106515}
+      rotation: {x: -0.00012405218, y: 0.0005253405, z: 0.0027394744, w: 0.9999961}
+      scale: {x: 1.0000019, y: 1.0000007, z: 1.0000024}
+    - name: J_L_HairTail_02
+      parentName: 
+      position: {x: -0.13655894, y: -0.00000025704503, z: -0.00000030736612}
+      rotation: {x: -0.0043129325, y: 0.020315185, z: 0.01981458, w: 0.999588}
+      scale: {x: 0.9999997, y: 0.9999995, z: 0.99999875}
+    - name: J_L_HairTail_03
+      parentName: 
+      position: {x: -0.1322909, y: 0.0000007003546, z: 0.0000008121133}
+      rotation: {x: 0.005637586, y: -0.03380476, z: 0.024108618, w: 0.9991218}
+      scale: {x: 1.0000001, y: 0.9999991, z: 1.0000024}
+    - name: J_L_HairTail_04
+      parentName: 
+      position: {x: -0.13752916, y: -0.0000011362135, z: -0.0000011562594}
+      rotation: {x: -0.008016378, y: 0.09734142, z: -0.05864148, w: -0.9934896}
+      scale: {x: 0.9999992, y: 0.99999815, z: 0.99999577}
+    - name: J_L_HairTail_05
+      parentName: 
+      position: {x: -0.14597706, y: 0.00000040675513, z: 0.00000021280721}
+      rotation: {x: 0.00013151765, y: 0.013670921, z: -0.03281699, w: -0.9993679}
+      scale: {x: 0.99999976, y: 1.0000025, z: 1.0000025}
+    - name: J_L_HairTail_06
+      parentName: 
+      position: {x: -0.15477847, y: 0.000000114087015, z: 0.00000012759119}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000006, z: 1}
+    - name: J_L_HeadRibbon_00
+      parentName: 
+      position: {x: -0.17970859, y: 0.08956376, z: 0.04141197}
+      rotation: {x: 0.088093944, y: 0.23000449, z: 0.2946565, w: 0.9233174}
+      scale: {x: 0.99999505, y: 1.0000063, z: 1.0000008}
+    - name: J_L_HeadRibbon_01
+      parentName: 
+      position: {x: -0.085066356, y: 0.000012490898, z: -0.000008567744}
+      rotation: {x: 0.5562991, y: 0.41471606, z: 0.1179632, w: 0.71037084}
+      scale: {x: 0.99999166, y: 0.9999949, z: 1.0000126}
+    - name: J_L_HeadRibbon_02
+      parentName: 
+      position: {x: -0.14173304, y: 0.000006508082, z: 0.000016869919}
+      rotation: {x: -0.858846, y: -0.15508033, z: 0.007265358, w: 0.48814029}
+      scale: {x: 0.9999898, y: 1.000011, z: 1.0000008}
+    - name: J_R_HairFront_00
+      parentName: 
+      position: {x: -0.11864734, y: 0.109952524, z: -0.0072766272}
+      rotation: {x: -0.113701016, y: 0.9781275, z: -0.16029827, w: -0.06814059}
+      scale: {x: 0.9999976, y: 1.0000036, z: 1.0000018}
+    - name: J_R_HairFront_01
+      parentName: 
+      position: {x: -0.06283534, y: -0.00004607998, z: -0.0014895638}
+      rotation: {x: -0.05115728, y: -0.011405304, z: 0.009748399, w: 0.99857795}
+      scale: {x: 1.0000027, y: 0.9999988, z: 1.0000015}
+    - name: J_R_HairSide_00
+      parentName: 
+      position: {x: -0.097991996, y: 0.07704464, z: -0.08779522}
+      rotation: {x: 0.16318324, y: 0.97231275, z: -0.025657624, w: -0.16529027}
+      scale: {x: 1.0000029, y: 0.9999951, z: 1.0000015}
+    - name: J_R_HairSide_01
+      parentName: 
+      position: {x: -0.071907185, y: -0.000000099651515, z: 0.00000027965365}
+      rotation: {x: -0.008649498, y: -0.046946228, z: -0.006230563, w: 0.9988406}
+      scale: {x: 1.0000037, y: 1.0000026, z: 0.99999976}
+    - name: J_R_HairSide_02
+      parentName: 
+      position: {x: -0.07074304, y: 0.0000012554228, z: -0.0000027259812}
+      rotation: {x: 0.38952276, y: -0.5901459, z: 0.51284444, w: 0.48681676}
+      scale: {x: 0.9999978, y: 1.000002, z: 0.9999982}
+    - name: J_R_HairTail_00
+      parentName: 
+      position: {x: -0.033492964, y: -0.07271476, z: -0.05859681}
+      rotation: {x: 0.10083267, y: 0.026525304, z: 0.9770472, w: 0.18576309}
+      scale: {x: 1.0000067, y: 0.99999493, z: 1.0000018}
+    - name: J_R_HairTail_01
+      parentName: 
+      position: {x: -0.11597424, y: 0.00000029616058, z: -0.00000021792948}
+      rotation: {x: 0.0001221001, y: -0.0005176812, z: 0.0027444211, w: 0.99999607}
+      scale: {x: 1.000002, y: 1.0000036, z: 1.0000005}
+    - name: J_R_HairTail_02
+      parentName: 
+      position: {x: -0.1365603, y: 0.0000004898757, z: -0.00000037817628}
+      rotation: {x: -0.0043137367, y: 0.020318849, z: -0.019809527, w: -0.99958795}
+      scale: {x: 0.9999988, y: 0.99999726, z: 1.0000013}
+    - name: J_R_HairTail_03
+      parentName: 
+      position: {x: -0.13228983, y: -0.0000004246831, z: 0.0000004824251}
+      rotation: {x: -0.0056374073, y: 0.033802807, z: 0.024109721, w: 0.9991218}
+      scale: {x: 0.99999785, y: 0.9999995, z: 0.9999981}
+    - name: J_R_HairTail_04
+      parentName: 
+      position: {x: -0.13752653, y: -0.00000028125942, z: 0.00000027008355}
+      rotation: {x: 0.0080168685, y: -0.097346485, z: -0.058641218, w: -0.9934891}
+      scale: {x: 1.0000029, y: 0.99999934, z: 0.99999917}
+    - name: J_R_HairTail_05
+      parentName: 
+      position: {x: -0.14597744, y: 0.0000004898757, z: -0.000000293894}
+      rotation: {x: 0.00013139844, y: 0.013670072, z: 0.032817125, w: 0.99936795}
+      scale: {x: 1.0000032, y: 1.000005, z: 1.0000029}
+    - name: J_R_HairTail_06
+      parentName: 
+      position: {x: -0.15477814, y: 0.00000008335337, z: -0.000000060238996}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1}
+    - name: J_R_HeadRibbon_00
+      parentName: 
+      position: {x: -0.18103476, y: 0.08604604, z: -0.043055195}
+      rotation: {x: -0.12178335, y: -0.20300743, z: 0.3053038, w: 0.92235917}
+      scale: {x: 0.9999963, y: 1.0000062, z: 1.0000024}
+    - name: J_R_HeadRibbon_01
+      parentName: 
+      position: {x: -0.08506714, y: 0.000010501593, z: 0.000007122755}
+      rotation: {x: 0.55629134, y: 0.41471907, z: -0.11797884, w: -0.71037245}
+      scale: {x: 0.9999857, y: 0.99999183, z: 1.0000113}
+    - name: J_R_HeadRibbon_02
+      parentName: 
+      position: {x: -0.14173374, y: 0.000014387071, z: -0.000037888065}
+      rotation: {x: -0.22437507, y: -0.67056394, z: 0.5067234, w: 0.4931849}
+      scale: {x: 1.0000033, y: 1.00001, z: 0.9999973}
+    - name: MTH_DEF
+      parentName: 
+      position: {x: 1.289459, y: -0.16328037, z: -0.013468142}
+      rotation: {x: -0.47192204, y: 0.5467805, z: 0.45703653, w: 0.51907444}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000006}
+    - name: Character1_RightShoulder
+      parentName: 
+      position: {x: -0.12245947, y: -0.00014831126, z: -0.041993756}
+      rotation: {x: 0.10604024, y: 0.6971031, z: 0.11625052, w: -0.69949174}
+      scale: {x: 1.0000013, y: 0.99999857, z: 1.0000026}
+    - name: Character1_RightArm
+      parentName: 
+      position: {x: -0.055437285, y: -0.00000000838152, z: -0.0000044438452}
+      rotation: {x: -0.0002810657, y: -0.023859998, z: -0.000022475608, w: 0.9997153}
+      scale: {x: 1.0000013, y: 1.0000015, z: 0.9999982}
+    - name: Character1_RightForeArm
+      parentName: 
+      position: {x: -0.23377904, y: 0.00000864586, z: -0.000006567673}
+      rotation: {x: 0.00012394786, y: -0.0010357946, z: -0.0004208088, w: 0.9999994}
+      scale: {x: 0.9999991, y: 0.9999989, z: 1.0000006}
+    - name: Character1_RightHand
+      parentName: 
+      position: {x: -0.16248137, y: -0.000000325992, z: -0.00000026519558}
+      rotation: {x: 0.001661092, y: -0.08512211, z: 0.0005071461, w: 0.996369}
+      scale: {x: 1.0000019, y: 1.0000017, z: 0.9999979}
+    - name: Character1_RightHandIndex1
+      parentName: 
+      position: {x: -0.07745907, y: 0.024773542, z: 0.023876539}
+      rotation: {x: -0.9959055, y: 0.019340336, z: 0.04160802, w: 0.07789129}
+      scale: {x: 0.9999973, y: 0.999997, z: 0.99999905}
+    - name: Character1_RightHandIndex2
+      parentName: 
+      position: {x: -0.024233084, y: -0.0022300342, z: -0.0020087278}
+      rotation: {x: -0.028341332, y: 0.03408704, z: 0.0011823728, w: 0.9990163}
+      scale: {x: 1.0000002, y: 0.9999978, z: 0.9999993}
+    - name: Character1_RightHandIndex3
+      parentName: 
+      position: {x: -0.015885618, y: 0.0000010817312, z: -0.0026427596}
+      rotation: {x: -0.038566172, y: -0.014419854, z: -0.0068944544, w: 0.9991282}
+      scale: {x: 1.0000051, y: 1.0000044, z: 1.0000021}
+    - name: Character1_RightHandIndex4
+      parentName: 
+      position: {x: -0.02107418, y: -0.00070424256, z: -0.0032560113}
+      rotation: {x: 0.061804116, y: -0.113891736, z: -0.0007837266, w: 0.9915687}
+      scale: {x: 0.99999595, y: 0.9999978, z: 1.0000011}
+    - name: Character1_RightHandMiddle1
+      parentName: 
+      position: {x: -0.07734031, y: 0.0043600225, z: 0.024111496}
+      rotation: {x: -0.9922197, y: -0.012770598, z: 0.09727648, w: 0.076644234}
+      scale: {x: 0.9999984, y: 0.9999982, z: 1.0000006}
+    - name: Character1_RightHandMiddle2
+      parentName: 
+      position: {x: -0.025354676, y: -0.0006799713, z: 0.00116817}
+      rotation: {x: -0.016843826, y: 0.03880194, z: -0.0114875585, w: 0.99903893}
+      scale: {x: 1.0000035, y: 1.0000019, z: 1.0000013}
+    - name: Character1_RightHandMiddle3
+      parentName: 
+      position: {x: -0.019416917, y: -0.00041648117, z: -0.000702074}
+      rotation: {x: 0.004265575, y: 0.05716538, z: 0.000994302, w: 0.99835515}
+      scale: {x: 0.9999999, y: 0.9999984, z: 0.9999968}
+    - name: Character1_RightHandMiddle4
+      parentName: 
+      position: {x: -0.021438137, y: -0.0004710392, z: -0.005065241}
+      rotation: {x: 0.024370968, y: -0.06598209, z: -0.008131713, w: 0.99749005}
+      scale: {x: 0.99999887, y: 1.0000006, z: 0.9999981}
+    - name: Character1_RightHandPinky1
+      parentName: 
+      position: {x: -0.06501881, y: -0.027721472, z: 0.010366236}
+      rotation: {x: -0.9688588, y: 0.0020314148, z: 0.09168497, w: 0.23000516}
+      scale: {x: 1.0000027, y: 0.99999833, z: 0.99999917}
+    - name: Character1_RightHandPinky2
+      parentName: 
+      position: {x: -0.01809843, y: -0.00014389353, z: -0.000051612267}
+      rotation: {x: 0.024406375, y: -0.040521886, z: -0.01308594, w: 0.99879485}
+      scale: {x: 0.99999934, y: 1.0000014, z: 0.9999988}
+    - name: Character1_RightHandPinky3
+      parentName: 
+      position: {x: -0.0138841905, y: 0.00026623718, z: 0.00082572317}
+      rotation: {x: 0.017632276, y: 0.014270663, z: -0.00057289377, w: 0.99974257}
+      scale: {x: 1.0000023, y: 1.0000007, z: 1.0000033}
+    - name: Character1_RightHandPinky4
+      parentName: 
+      position: {x: -0.019204488, y: 0.0005195462, z: -0.00024772133}
+      rotation: {x: -0.014208436, y: -0.008251816, z: -0.017708782, w: 0.9997082}
+      scale: {x: 0.999997, y: 0.9999999, z: 0.9999966}
+    - name: Character1_RightHandRing1
+      parentName: 
+      position: {x: -0.07430447, y: -0.013710699, z: 0.01965504}
+      rotation: {x: -0.97558486, y: 0.020292388, z: 0.017075188, w: 0.21801572}
+      scale: {x: 0.99999934, y: 0.99999774, z: 0.99999785}
+    - name: Character1_RightHandRing2
+      parentName: 
+      position: {x: -0.023458358, y: -0.0000075646676, z: -0.0035071592}
+      rotation: {x: -0.021567253, y: -0.07821601, z: -0.015808051, w: 0.99657774}
+      scale: {x: 1.0000025, y: 1.000002, z: 0.99999905}
+    - name: Character1_RightHandRing3
+      parentName: 
+      position: {x: -0.015893504, y: -0.0010326842, z: 0.00037771487}
+      rotation: {x: -0.0095822755, y: 0.035671093, z: 0.027115008, w: 0.9989497}
+      scale: {x: 0.99999964, y: 1.0000004, z: 1.0000004}
+    - name: Character1_RightHandRing4
+      parentName: 
+      position: {x: -0.0251252, y: -0.00003517093, z: -0.0032750983}
+      rotation: {x: 0.012591956, y: -0.04324947, z: -0.003224417, w: 0.99897975}
+      scale: {x: 1.0000015, y: 1.0000018, z: 1.0000017}
+    - name: Character1_RightHandThumb1
+      parentName: 
+      position: {x: -0.02633762, y: 0.020861294, z: -0.0045251786}
+      rotation: {x: 0.463462, y: -0.16276082, z: -0.33506823, w: 0.80401564}
+      scale: {x: 1.0000033, y: 1.0000017, z: 1.0000006}
+    - name: Character1_RightHandThumb2
+      parentName: 
+      position: {x: -0.032030016, y: 0.0011272603, z: 0.0006023124}
+      rotation: {x: 0.032968394, y: 0.011079717, z: 0.0001296997, w: 0.999395}
+      scale: {x: 1.0000012, y: 0.9999997, z: 0.99999857}
+    - name: Character1_RightHandThumb3
+      parentName: 
+      position: {x: -0.017587895, y: 0.00050901785, z: 0.00015181396}
+      rotation: {x: -0.00955949, y: 0.0117786415, z: -0.014041871, w: 0.9997864}
+      scale: {x: 0.9999969, y: 1.0000001, z: 0.99999666}
+    - name: Character1_RightHandThumb4
+      parentName: 
+      position: {x: -0.026286427, y: 0.0015899548, z: -0.000030022115}
+      rotation: {x: 0.096980505, y: -0.016514802, z: -0.06892809, w: 0.9927593}
+      scale: {x: 0.9999996, y: 0.99999887, z: 1.0000024}
+    - name: J_R_Sode_A00
+      parentName: 
+      position: {x: -0.04704422, y: 0.03601107, z: -0.0010309}
+      rotation: {x: 0.00677827, y: 0.0029413998, z: -0.0938766, w: 0.9955564}
+      scale: {x: 1.0000019, y: 1.0000025, z: 0.9999999}
+    - name: J_R_Sode_A01
+      parentName: 
+      position: {x: -0.14900674, y: -0.013332164, z: 0.007246995}
+      rotation: {x: 0, y: 0.00000004470348, z: 0.000000014901159, w: 1}
+      scale: {x: 1.0000018, y: 1.0000018, z: 1.0000021}
+    - name: J_R_Sode_B00
+      parentName: 
+      position: {x: -0.044248052, y: 0.00025338508, z: 0.0377331}
+      rotation: {x: 0.7049216, y: 0.054471385, z: -0.053725258, w: 0.7051468}
+      scale: {x: 1.0000043, y: 1.0000018, z: 1.0000069}
+    - name: J_R_Sode_B01
+      parentName: 
+      position: {x: -0.15067105, y: -0.0078100003, z: 0.0000000205182}
+      rotation: {x: 2.6193445e-10, y: 0.0000000028740028, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1.0000015}
+    - name: J_R_Sode_C00
+      parentName: 
+      position: {x: -0.041388515, y: -0.048911702, z: -0.012788022}
+      rotation: {x: 0.9905085, y: 0.13556996, z: 0.022448512, w: 0.0031374993}
+      scale: {x: 0.99999887, y: 1.0000007, z: 1.0000001}
+    - name: J_R_Sode_C01
+      parentName: 
+      position: {x: -0.16287845, y: 0.00000022351742, z: -0.0000011880111}
+      rotation: {x: 0, y: -0.000000014901161, z: -0.000000014901161, w: 1}
+      scale: {x: 1.0000026, y: 1.0000027, z: 1.0000005}
+    - name: J_R_Sode_D00
+      parentName: 
+      position: {x: -0.043954805, y: 0.0027083408, z: -0.038983956}
+      rotation: {x: -0.70603216, y: -0.08470847, z: -0.03796553, w: 0.7020697}
+      scale: {x: 1.0000001, y: 0.999999, z: 1.0000008}
+    - name: J_R_Sode_D01
+      parentName: 
+      position: {x: -0.14476326, y: 0.000000070240276, z: -0.000000027008355}
+      rotation: {x: -0.0000000074505797, y: 0.0000000037252899, z: 0.00000003003515,
+        w: 1}
+      scale: {x: 0.9999999, y: 0.99999803, z: 0.99999964}
+    - name: J_Mune_root_00
+      parentName: 
+      position: {x: -0.087664925, y: -0.00030453235, z: 0.0000000034668801}
+      rotation: {x: -0.49678358, y: 0.5031958, z: 0.49678382, w: 0.50319564}
+      scale: {x: 1.0000006, y: 1.0000008, z: 1.0000012}
+    - name: J_L_Mune_00
+      parentName: 
+      position: {x: -0.029250143, y: 0.026848568, z: 0.00061885663}
+      rotation: {x: -0.051588558, y: 0.5376023, z: -0.033113092, w: 0.84096724}
+      scale: {x: 1, y: 0.99999833, z: 0.9999987}
+    - name: J_L_Mune_01
+      parentName: 
+      position: {x: -0.18568486, y: 0.007430818, z: 0.00000009685755}
+      rotation: {x: -0.017483847, y: -0.9998472, z: -0.000000007450581, w: -0.000000091735274}
+      scale: {x: 1.0000026, y: 1.0000001, z: 1.0000033}
+    - name: J_L_Mune_02
+      parentName: 
+      position: {x: -0.16301534, y: -0.0000029224902, z: 0.00000010803342}
+      rotation: {x: 0.056542825, y: 0.7048425, z: -0.056542963, w: 0.70484245}
+      scale: {x: 0.9999983, y: 1.000003, z: 0.9999975}
+    - name: J_Mune_root_01
+      parentName: 
+      position: {x: -0.000000009867053, y: 0.03743732, z: 0.039560296}
+      rotation: {x: -0.0000000029103884, y: 7.7841125e-15, z: 0.0000000010913084,
+        w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_R_Mune_00
+      parentName: 
+      position: {x: 0.029250015, y: 0.026848303, z: 0.0006188658}
+      rotation: {x: 0.84096724, y: 0.03311324, z: 0.5376023, w: 0.051588748}
+      scale: {x: 0.9999995, y: 0.9999958, z: 0.9999972}
+    - name: J_R_Mune_01
+      parentName: 
+      position: {x: 0.18568355, y: -0.0074266326, z: 0.0000004172325}
+      rotation: {x: 0.01748383, y: 0.9998472, z: -0.000000009313226, w: 0}
+      scale: {x: 0.9999989, y: 1.0000017, z: 1.000002}
+    - name: J_R_Mune_02
+      parentName: 
+      position: {x: 0.1630145, y: 0.0000031590462, z: 0.00000013783574}
+      rotation: {x: -0.05654283, y: -0.70484245, z: 0.05654298, w: -0.7048425}
+      scale: {x: 0.999999, y: 1.0000062, z: 1.0000017}
+    - name: J_L_SusoSide_00
+      parentName: 
+      position: {x: -0.055433583, y: 0.0017306809, z: 0.09865368}
+      rotation: {x: 0.09374656, y: -0.6978552, z: -0.70746905, w: -0.060806785}
+      scale: {x: 1.0000019, y: 1.000002, z: 1.0000015}
+    - name: J_L_SusoSide_01
+      parentName: 
+      position: {x: -0.099313974, y: 0.009804595, z: 0.0015692438}
+      rotation: {x: -0.0000000018626451, y: 0, z: -0.000000059590093, w: 1}
+      scale: {x: 0.9999965, y: 0.9999975, z: 0.9999989}
+    - name: J_R_SusoSide_00
+      parentName: 
+      position: {x: -0.05543472, y: 0.0017306586, z: -0.09865361}
+      rotation: {x: -0.69785506, y: -0.09374714, z: 0.06080737, w: -0.7074689}
+      scale: {x: 1.0000029, y: 1.0000019, z: 1.0000026}
+    - name: J_R_SusoSide_01
+      parentName: 
+      position: {x: 0.099313796, y: -0.009804888, z: -0.0015692574}
+      rotation: {x: -0.000000006519258, y: 0.0000000018626451, z: 0, w: 1}
+      scale: {x: 1.0000005, y: 1, z: 0.9999988}
+    - name: J_L_Skirt_00
+      parentName: 
+      position: {x: -0.068877876, y: 0.07501748, z: 0.05685659}
+      rotation: {x: 0.022119477, y: 0.99870825, z: 0.0010128617, w: 0.045733005}
+      scale: {x: 1.0000023, y: 1.0000006, z: 1.0000004}
+    - name: J_L_Skirt_01
+      parentName: 
+      position: {x: -0.14190912, y: 0.00000008335337, z: -0.00000025331974}
+      rotation: {x: 0.0022216141, y: 0.033948302, z: 0.021045804, w: 0.9991995}
+      scale: {x: 0.99999726, y: 0.99999917, z: 1.0000013}
+    - name: J_L_Skirt_02
+      parentName: 
+      position: {x: -0.10291511, y: 0.000000013038516, z: -0.00000009080395}
+      rotation: {x: 0.0008595139, y: -0.000000059604645, z: 0.000000014901161, w: 0.99999964}
+      scale: {x: 0.9999991, y: 1.0000025, z: 1.0000012}
+    - name: J_L_SusoFront_00
+      parentName: 
+      position: {x: 0.00000070812155, y: -0.000000001550899, z: -0.00000011730492}
+      rotation: {x: 0.000108107924, y: -0.007353395, z: -0.05896038, w: 0.99823326}
+      scale: {x: 0.9999993, y: 0.99999875, z: 1}
+    - name: J_L_SusoFront_01
+      parentName: 
+      position: {x: -0.123437345, y: -0.000000173226, z: 0.00000016763806}
+      rotation: {x: -0.5071907, y: -0.49270433, z: -0.45401898, w: 0.5420949}
+      scale: {x: 0.9999999, y: 0.9999988, z: 1.0000001}
+    - name: J_L_SkirtBack_00
+      parentName: 
+      position: {x: -0.07235072, y: -0.041271057, z: 0.053152256}
+      rotation: {x: -0.054846257, y: 0.0061852783, z: 0.99130034, w: 0.11948773}
+      scale: {x: 1.000001, y: 1.0000005, z: 1.000001}
+    - name: J_L_SkirtBack_01
+      parentName: 
+      position: {x: -0.14993013, y: 0.00000012665987, z: 0.00000007415656}
+      rotation: {x: -0.005350858, y: -0.06250699, z: 0.1216059, w: 0.99059397}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: J_L_SkirtBack_02
+      parentName: 
+      position: {x: -0.18333417, y: -2.910383e-10, z: -5.125287e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.9999992, z: 1}
+    - name: J_L_SusoBack_00
+      parentName: 
+      position: {x: 0.0000012103031, y: 0.00000028288488, z: 0.00000014944561}
+      rotation: {x: 0.0033064187, y: 0.044775084, z: -0.021614179, w: 0.9987578}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000006}
+    - name: J_L_SusoBack_01
+      parentName: 
+      position: {x: -0.102069095, y: 0.000000057742, z: 0.000000019441359}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999997, y: 1, z: 1.0000001}
+    - name: J_R_Skirt_00
+      parentName: 
+      position: {x: -0.06847134, y: 0.07501738, z: -0.057344373}
+      rotation: {x: 0.022122681, y: 0.9988644, z: -0.0009343773, w: -0.042185694}
+      scale: {x: 1.0000008, y: 0.9999994, z: 0.9999993}
+    - name: J_R_Skirt_01
+      parentName: 
+      position: {x: -0.14190714, y: 0.00000018673018, z: 0.00000057816897}
+      rotation: {x: -0.0022216141, y: -0.033948183, z: 0.021046638, w: 0.9991995}
+      scale: {x: 1.0000013, y: 1.0000015, z: 1.0000044}
+    - name: J_R_Skirt_02
+      parentName: 
+      position: {x: -0.102916375, y: 0.000000020489097, z: -0.00000011721917}
+      rotation: {x: 0.00000014901161, y: -0.0008596033, z: -0.99999964, w: -0.0000004917383}
+      scale: {x: 0.99999475, y: 0.9999971, z: 0.9999984}
+    - name: J_R_SusoFront_00
+      parentName: 
+      position: {x: 0.0000021933838, y: 0.00000014890544, z: 0.00000033814314}
+      rotation: {x: -0.00010818243, y: 0.007353261, z: -0.058960184, w: 0.99823326}
+      scale: {x: 0.9999989, y: 1.0000001, z: 1.0000023}
+    - name: J_R_SusoFront_01
+      parentName: 
+      position: {x: -0.1234387, y: -0.0000004246831, z: -0.00000042561442}
+      rotation: {x: -0.43375257, y: -0.5621338, z: -0.4848864, w: 0.5106364}
+      scale: {x: 0.9999988, y: 1, z: 0.99999964}
+    - name: J_R_SkirtBack_00
+      parentName: 
+      position: {x: -0.07196856, y: -0.04127106, z: -0.053664688}
+      rotation: {x: 0.006609693, y: 0.051325202, z: -0.11946501, w: 0.9914889}
+      scale: {x: 1.0000006, y: 0.9999994, z: 0.9999975}
+    - name: J_R_SkirtBack_01
+      parentName: 
+      position: {x: 0.14992964, y: -0.000000074505806, z: -0.000000063853804}
+      rotation: {x: -0.005350888, y: 0.061189607, z: -0.12227404, w: -0.9905939}
+      scale: {x: 1.0000004, y: 0.9999999, z: 1.0000001}
+    - name: J_R_SkirtBack_02
+      parentName: 
+      position: {x: 0.1833335, y: 0.000000042491592, z: 0.00000007195558}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999946, z: 0.99999994}
+    - name: J_R_SusoBack_00
+      parentName: 
+      position: {x: -0.0000034694942, y: -0.00000095082424, z: -0.0000005769477}
+      rotation: {x: 0.0033062547, y: 0.04477486, z: -0.021614015, w: 0.99875784}
+      scale: {x: 1.000001, y: 1.0000027, z: 1.0000043}
+    - name: J_R_SusoBack_01
+      parentName: 
+      position: {x: 0.1020697, y: 0.00000025704503, z: 0.00000011478551}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.9999998, z: 0.99999887}
+    - name: mesh_root
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: button
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hair_accce
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hair_front
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hair_frontside
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hairband
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: kutu
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shirts
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: shirts_sode
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: skin
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: tail
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: tail_bottom
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: uwagi
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: uwagi_perker
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: e2538d48c03da46a8b0c3b59d39a4cab,
+    type: 3}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
