@@ -52,6 +52,7 @@ ModelImporter:
     100088: Torso
     100090: Torus
     100092: Torus_001
+    100094: Spine
     400000: Arm_L
     400002: Arm_R
     400004: Capture_Armature
@@ -99,6 +100,7 @@ ModelImporter:
     400088: Torso
     400090: Torus
     400092: Torus_001
+    400094: Spine
     2100000: Material_001__Untitled_001
     2100002: Material_001__short01_diffuse_001
     2100004: Dr_strange_2_Eyebrow012_Eyebrow012
@@ -177,6 +179,9 @@ ModelImporter:
     13700034: Plane_017
     13700036: Plane_018
     13700038: Torus
+    13700040: Plane_007
+    13700042: Plane_010
+    13700044: Torus_001
   externalObjects: {}
   materials:
     importMaterials: 1
