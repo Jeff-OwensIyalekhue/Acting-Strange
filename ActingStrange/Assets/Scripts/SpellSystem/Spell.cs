@@ -6,10 +6,14 @@ public class Spell : MonoBehaviour {
 
     //members
     private string name;
-    private int subID; //accepts 0-3
-    private int pointsToUnlock;
+    private int ID;
+    private int upgradeID;
+    private int subID; //accepts 0-7
+    private int pointsToUnlockNext;
     private int currPoints;
     private bool unlocked = false;
+    private string subtext;
+    private Sprite icon;
 
     //spell attributes
     private float cd;       //cooldown
@@ -58,14 +62,24 @@ public class Spell : MonoBehaviour {
         return name;
     }
 
+    public int getID()
+    {
+        return ID;
+    }
+
     public int getSubID()
     {
         return subID;
     }
 
-    public float getPointsToUnlock()
+    public int getUpgradeID()
     {
-        return pointsToUnlock;
+        return upgradeID;
+    }
+
+    public float getPointsToUnlockNext()
+    {
+        return pointsToUnlockNext;
     }
 
     public int getCurrPoints()
@@ -86,6 +100,16 @@ public class Spell : MonoBehaviour {
     public void unlock()
     {
         unlocked = true;
+    }
+
+    public string getSubtext()
+    {
+        return subtext;
+    }
+
+    public Sprite getIcon()
+    {
+        return icon;
     }
 
     public float getCd()
@@ -117,7 +141,5 @@ public class Spell : MonoBehaviour {
     {
         return duration;
     }
-
-
 
 }
