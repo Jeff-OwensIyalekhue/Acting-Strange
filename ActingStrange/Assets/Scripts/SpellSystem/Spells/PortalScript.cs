@@ -36,7 +36,7 @@ public class PortalScript : MonoBehaviour {
         //dummy distance, ganz weit weg gesetzt...
         float maxdistance = 100000000f;
 
-        //findet nächsten enemy und setzt ihn als target
+        //findet nächsten enemy und setzt ihn als target --- zu spell scripten hinzufügen
         foreach (GameObject t in targets)
         {
             float distance = Vector3.Distance(t.transform.position, transform.position);

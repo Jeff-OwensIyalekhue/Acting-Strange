@@ -12,19 +12,20 @@ public class Spell : MonoBehaviour {
     private int pointsToUnlockNext;
     private int currPoints;
     private bool unlocked = false;
+
+    private GameObject spellObject;         //for projectileSpell the physical projectile, for aoe the physical aoe
+
+    //spell visuals
     private string subtext;
     private Sprite icon;
 
-    //spell attributes
-    private float cd;       //cooldown
-    private float cdRemaining;
+    //spell attributes          --- may add these to own obj and after casting, put these on spell Object!?
+    protected float cd;       //cooldown
+    protected float cdRemaining;
     private float dmg;  
     private float dot;      //damageOverTime
     private float slow;     //btw 0 & 1
     private float duration;
-
-    //spell visuals
-    //TODO
 
     //base functions
     void Start () {
@@ -33,16 +34,20 @@ public class Spell : MonoBehaviour {
 	
 	void Update () {
 
-        //TODO
-        calcCd();   //add: if(ingame)
+        if (gameObject.GetComponent<WaveManager>().state.Equals(WaveManager.WaveState.RUNNING))
+        {
+            calcCd();
+        }
+
 	}
 
     //methods
-    void cast()
+    void cast(Transform position)
     {
         if (cdRemaining <= 0)
         {
-            //TODO
+            //TODO: find target
+            Instantiate(spellObject, position); //add spellobject and rotation(vector strangePosition - target)
             cdRemaining = cd;
         }
     }
@@ -122,7 +127,7 @@ public class Spell : MonoBehaviour {
         return cdRemaining;
     }
 
-    float getDmg()
+    public float getDmg()
     {
         return dmg;
     }

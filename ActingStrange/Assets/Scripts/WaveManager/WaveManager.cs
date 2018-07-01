@@ -9,16 +9,18 @@ public class WaveManager : MonoBehaviour {
     private float time = 0;
     private int enemyCount;
     private int currEnemies;
+    private int currLane;   //0 >> left, 1 >> mid, 2 >> right
 
     private Spellbook spellbook;
 
     public enum WaveState { RUNNING, PAUSED, FINISHED, STARTING };
-    WaveState state;
+    public WaveState state;
 
     // Use this for initialization
     void Start () {
-        spellbook = GameObject.GetComponent<Spellbook>();
+        spellbook = gameObject.GetComponent<Spellbook>();
         setStarting();
+        currLane = 1;
 	}
 	
 	// Update is called once per frame
@@ -35,7 +37,7 @@ public class WaveManager : MonoBehaviour {
 
         if (state.Equals(WaveState.RUNNING))
         {
-            //TODO: spawn enemies
+            //TODO: spawn enemies with tag = "Lane"+currLane.toString();
         }
 	}
 

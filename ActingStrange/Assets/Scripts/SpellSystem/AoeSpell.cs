@@ -21,7 +21,7 @@ public class AoeSpell : Spell {
     }
 
     //methods
-    void cast()
+    void cast(Transform position)
     {
 
     }
