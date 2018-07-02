@@ -18,9 +18,9 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         LoadSettings();
-        GameData.Instance.LoadHighscore();
         gameManager = FindObjectOfType<GameManager>();
         musicManager = FindObjectOfType<MusicManager>();
+        GameData.Instance.LoadHighscore();
         SetMusicLevel(GameData.Instance.musicVolume);
         SetSFXLevel(GameData.Instance.sfxVolume);
 
@@ -35,6 +35,14 @@ public class MainMenu : MonoBehaviour
         highscore3.text = GameData.Instance.nameList3[0] + ": " + GameData.Instance.highscoreLevel3[0] + "\n"
                             + GameData.Instance.nameList3[1] + ": " + GameData.Instance.highscoreLevel3[1] + "\n"
                             + GameData.Instance.nameList3[2] + ": " + GameData.Instance.highscoreLevel3[2] + "\n";
+    }
+
+    private void Update()
+    {
+        while (gameManager.Equals(null))
+            gameManager = FindObjectOfType<GameManager>();
+        while (musicManager.Equals(null))
+            musicManager = FindObjectOfType<MusicManager>();
     }
 
     public void StartGame(int x)
