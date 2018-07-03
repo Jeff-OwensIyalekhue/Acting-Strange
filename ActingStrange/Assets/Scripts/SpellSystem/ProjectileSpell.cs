@@ -49,7 +49,7 @@ public class ProjectileSpell : Spell {
                 maxdistance = distance;
             }
         }
-
+        //targetpos = getClosestEnemy(lane);
         //test speed, sollte auch gesetzt werden... 
 
         speed = 0.1f;

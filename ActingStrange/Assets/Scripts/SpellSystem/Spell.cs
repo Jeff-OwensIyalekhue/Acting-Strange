@@ -12,7 +12,13 @@ public class Spell : MonoBehaviour {
     private int pointsToUnlockNext;
     private int currPoints;
     private bool unlocked = false;
-
+    enum Lanes
+    {
+        lane1,
+        lane2,
+        lane3,
+        all
+    }
     private GameObject spellObject;         //for projectileSpell the physical projectile, for aoe the physical aoe
 
     //spell visuals
@@ -60,7 +66,46 @@ public class Spell : MonoBehaviour {
 
         }
     }
-    
+
+    /*
+    public Transform getClosestEnemy(Lanes lane)
+    {
+        //sollte vllt in cast() methode übertragen werden?!
+        GameObject[] targets = new GameObject[1000]();
+        Transform targetpos;
+        //setzt variablen
+        //überprüft auf welcher lane wir sind
+        switch (lane)
+        {
+            case Lanes.lane1:
+                targets = GameObject.FindGameObjectsWithTag("Lane_1");
+                break;
+            case Lanes.lane2:
+                targets = GameObject.FindGameObjectsWithTag("Lane_2");
+                break;
+            case Lanes.lane3:
+                targets = GameObject.FindGameObjectsWithTag("Lane_3");
+                break;
+            default:
+                break;
+        }
+        //dummy distance, ganz weit weg gesetzt...
+        float maxdistance = 100000000f;
+
+        //findet nächsten enemy und setzt ihn als target
+        foreach (GameObject t in targets)
+        {
+            float distance = Vector3.Distance(t.transform.position, transform.position);
+
+            if (distance <= maxdistance)
+            {
+                targetpos = t.transform;
+                maxdistance = distance;
+            }
+        }
+        return targetpos;
+    }
+    */
     //getter/setter
     public string getName()
     {
