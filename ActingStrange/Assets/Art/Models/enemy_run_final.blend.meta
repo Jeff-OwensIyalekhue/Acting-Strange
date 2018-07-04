@@ -801,6 +801,7 @@ ModelImporter:
     101586: WGT-rig_VIS_upper_arm_ik_pole_L
     101588: WGT-rig_VIS_upper_arm_ik_pole_R
     101590: WGTS_rig
+    101592: Enemy_tus_Male_casualsuit02_000
     400000: breast_L
     400002: breast_R
     400004: brow_B_L
@@ -1597,6 +1598,7 @@ ModelImporter:
     401586: WGT-rig_VIS_upper_arm_ik_pole_L
     401588: WGT-rig_VIS_upper_arm_ik_pole_R
     401590: WGTS_rig
+    401592: Enemy_tus_Male_casualsuit02_000
     2100000: skin
     2100002: gold
     2100004: oberkoerper_001
@@ -2669,6 +2671,7 @@ ModelImporter:
     4300712: Plane
     4300714: Enemy_tus_Teeth_shape04
     4300716: Enemy_tus_High-poly
+    4300718: Enemy_tus_Male_casualsuit02_000
     7400000: Default Take
     7400002: rigAction
     9500000: //RootNode
@@ -2682,6 +2685,7 @@ ModelImporter:
     13700014: Enemy_tus_Male_casualsuit02_010
     13700016: Enemy_tus_skin_Body
     13700018: Enemy_tus_skin_Body_001
+    13700020: Enemy_tus_Male_casualsuit02_000
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -2708,11 +2712,67 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Default Take
+      takeName: Default Take
+      firstFrame: 0
+      lastFrame: 19
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: rigAction
+      takeName: rigAction
+      firstFrame: -1
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0.1
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
