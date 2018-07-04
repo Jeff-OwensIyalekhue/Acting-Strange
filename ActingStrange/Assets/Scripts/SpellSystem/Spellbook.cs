@@ -5,13 +5,13 @@ using UnityEngine;
 public class Spellbook : MonoBehaviour {
 
     //members
-    private int pointsToSpend;
+    public int pointsToSpend;
 
     private GameObject selectedSpell;
 
-    private GameObject[] spellList;  //list of all spells in the game
-    private GameObject[] spellBook = new GameObject[8];   // list of spells shown in menu
-    private GameObject[] spellCache = new GameObject[4]; //list of 4 cosen spells
+    public GameObject[] spellList;  //list of all spells in the game
+    public GameObject[] spellBook = new GameObject[8];   // list of spells shown in menu
+    public GameObject[] spellCache = new GameObject[4]; //list of 4 cosen spells
 
     //base functions
     void Start() {

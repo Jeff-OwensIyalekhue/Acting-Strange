@@ -6,6 +6,8 @@ public class GameLogic : MonoBehaviour {
     public GestureController gc;
     public GameObject playerAvatar;
 
+    public Spellbook2 spellbook;
+
 	// Use this for initialization
 	void Start () {
         gc.GestureRecognizedInController += OnGestureRecognized;
@@ -95,28 +97,32 @@ public class GameLogic : MonoBehaviour {
         //    Debug.Log("pushFwrd Recognized");
 
         //}
+        if (e.GestureName == "Clap")
+        {
+            //spellbook.spellCache[0].cast();
+            Debug.Log("Clap Recognized");
+        }
         if (e.GestureName == "PunchDown")
         {
+            //spellbook.spellCache[1].cast();
             Debug.Log("PunchDown Recognized");
 
         }
         if (e.GestureName == "PullUp")
         {
+            //spellbook.spellCache[2].cast();
             Debug.Log("PullUp Recognized");
 
         }
         if (e.GestureName == "Circle")
         {
+            //spellbook.spellCache[3].cast();
             Debug.Log("Circle Recognized");
         }
         //if (e.GestureName == "Cross")
         //{
         //    Debug.Log("Cross Recognized");
         //}
-        if (e.GestureName == "Clap")
-        {
-            Debug.Log("Clap Recognized");
-        }
 
 
         //if (e.GestureName == "TurnLeft")

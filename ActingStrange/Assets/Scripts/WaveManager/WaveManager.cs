@@ -11,7 +11,7 @@ public class WaveManager : MonoBehaviour {
     private int enemyCount;
     private int currEnemies;
     private int currLane;   //1 >> left, 1 >> mid, 3 >> right
-    private float health;
+    public float health;
     private float currHealth;
 
     private Spellbook spellbook;
@@ -20,12 +20,17 @@ public class WaveManager : MonoBehaviour {
     public WaveState state;
 
     //UI elements
-    public Button exit;
     public GameObject inGameOverlay;
     public GameObject clearScreen;
     public Text timeText;
     public Text healthText;
     public Text waveText;
+    public Text spellText;
+    public Image slot1Image;
+    public Image slot2Image;
+    public Image slot3Image;
+    public Image slot4Image;
+
 
     // Use this for initialization
     void Start () {
@@ -133,5 +138,32 @@ public class WaveManager : MonoBehaviour {
     public void spawnEnemy(int lane)
     {
         //TODO: instanciate enemy on given lane(rdm pos)
+    }
+
+    public void setSpellText(string text)
+    {
+        spellText.text = text;
+    }
+
+    public void setImage(int slot, Sprite image)
+    {
+        switch (slot)
+        {
+            case 0:
+                slot1Image.sprite = image;
+                break;
+            case 1:
+                slot2Image.sprite = image;
+                break;
+            case 2:
+                slot3Image.sprite = image;
+                break;
+            case 3:
+                slot4Image.sprite = image;
+                break;
+            default:
+                Debug.Log("imgae slot out of bounds.");
+                break;
+        }
     }
 }
