@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WaveManager : MonoBehaviour {
 
@@ -9,18 +10,30 @@ public class WaveManager : MonoBehaviour {
     private float time = 0;
     private int enemyCount;
     private int currEnemies;
-    private int currLane;   //0 >> left, 1 >> mid, 2 >> right
+    private int currLane;   //1 >> left, 1 >> mid, 3 >> right
+    private float health;
+    private float currHealth;
 
     private Spellbook spellbook;
 
     public enum WaveState { RUNNING, PAUSED, FINISHED, STARTING };
     public WaveState state;
 
+    //UI elements
+    public Button exit;
+    public GameObject inGameOverlay;
+    public GameObject clearScreen;
+    public Text timeText;
+    public Text healthText;
+    public Text waveText;
+
     // Use this for initialization
     void Start () {
         spellbook = gameObject.GetComponent<Spellbook>();
         setStarting();
-        currLane = 1;
+        currLane=1;
+        currHealth = health;
+
 	}
 	
 	// Update is called once per frame
@@ -29,6 +42,8 @@ public class WaveManager : MonoBehaviour {
         {
             time += Time.deltaTime;
         }
+        timeText.text = "" + (int)time;
+        healthText.text = "" + (int)currHealth;
 
         if(currEnemies == 0)
         {
@@ -38,6 +53,14 @@ public class WaveManager : MonoBehaviour {
         if (state.Equals(WaveState.RUNNING))
         {
             //TODO: spawn enemies with tag = "Lane"+currLane.toString();
+            if (currHealth <= 0)
+            {
+                //TODO: ondeath stuff
+                GameManager gameManager = FindObjectOfType<GameManager>();
+                inGameOverlay.SetActive(false);
+                gameManager.LoadLevel(0);
+
+            }
         }
 	}
 
@@ -45,6 +68,7 @@ public class WaveManager : MonoBehaviour {
     {
         state = WaveState.STARTING;
         waveCount++;
+        waveText.text = "" + waveCount;
         enemyCount = calcEnemies(waveCount);
         currEnemies = enemyCount;
     }
@@ -52,6 +76,7 @@ public class WaveManager : MonoBehaviour {
     public void setRunning()             
     {
         state = WaveState.RUNNING;
+        
         //TODO
     }
 
@@ -64,7 +89,8 @@ public class WaveManager : MonoBehaviour {
     public void setFinished()
     {
         state = WaveState.FINISHED;
-        //TODO: show menu
+        clearScreen.SetActive(true);
+
     }
 
     int calcEnemies(int waves)
@@ -76,10 +102,36 @@ public class WaveManager : MonoBehaviour {
     public void gameOver()
     {
         //TODO: save waveCount-1 as score;
+        //GameData.SaveHighscore()
     }
 
     public void killedEnemies(int count)
     {
         currEnemies -= count;
+    }
+
+    public int getCurrLane()
+    {
+        return currLane;
+    }
+
+    public void reduceHealth(float dmg)
+    {
+        currHealth -= dmg;
+    }
+
+    public float getCurrHealth()
+    {
+        return currHealth;
+    }
+
+    public float getTime()
+    {
+        return time;
+    }
+
+    public void spawnEnemy(int lane)
+    {
+        //TODO: instanciate enemy on given lane(rdm pos)
     }
 }
