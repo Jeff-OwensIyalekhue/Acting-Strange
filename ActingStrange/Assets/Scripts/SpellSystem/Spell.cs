@@ -5,33 +5,34 @@ using UnityEngine;
 public class Spell : MonoBehaviour {
 
     //members
-    private string name;
-    private int ID;
-    private int upgradeID;
-    private int subID; //accepts 0-7
-    private int pointsToUnlockNext;
-    private int currPoints;
-    private bool unlocked = false;
-    enum Lanes
-    {
-        lane1,
-        lane2,
-        lane3,
-        all
-    }
-    private GameObject spellObject;         //for projectileSpell the physical projectile, for aoe the physical aoe
+    
+    public string name;
+    public int ID;
+    public int upgradeID;
+    public int subID; //accepts 0-7
+    public int pointsToUnlockNext;
+    public int currPoints;
+    public bool unlocked = false;
+
+    public GameObject spellObject;         //for projectileSpell the physical projectile, for aoe the physical aoe
 
     //spell visuals
-    private string subtext;
-    private Sprite icon;
+    public string subtext;
+    public Sprite icon;
 
     //spell attributes          --- may add these to own obj and after casting, put these on spell Object!?
-    protected float cd;       //cooldown
-    protected float cdRemaining;
-    private float dmg;  
-    private float dot;      //damageOverTime
-    private float slow;     //btw 0 & 1
-    private float duration;
+    public float cd;       //cooldown
+    public float cdRemaining;
+
+    [System.Serializable]
+    public class SpellStats:MonoBehaviour
+    {
+        public float dmg;
+        public float dot;
+        public float slow;
+        public float duration;
+    }
+    public SpellStats stats;
 
     //base functions
     void Start () {
@@ -53,7 +54,9 @@ public class Spell : MonoBehaviour {
         if (cdRemaining <= 0)
         {
             //TODO: find target
-            Instantiate(spellObject, position); //add spellobject and rotation(vector strangePosition - target)
+            GameObject spellInstance = Instantiate(spellObject, position); //add spellobject and rotation(vector strangePosition - target)
+            SpellStats instanceStats = spellInstance.AddComponent<SpellStats>();
+            instanceStats = stats;
             cdRemaining = cd;
         }
     }
@@ -174,22 +177,22 @@ public class Spell : MonoBehaviour {
 
     public float getDmg()
     {
-        return dmg;
+        return stats.dmg;
     }
 
     public float getDot()
     {
-        return dot;
+        return stats.dot;
     }
 
     public float getSlow()
     {
-        return slow;
+        return stats.slow;
     }
 
     public float getDuration()
     {
-        return duration;
+        return stats.duration;
     }
 
 }
