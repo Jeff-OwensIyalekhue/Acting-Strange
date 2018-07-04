@@ -55,6 +55,8 @@ public class Spellbook2 : MonoBehaviour {
 
     public void chooseSpell()
     {
+        if (selectedSpell == null)
+            return;
         spellCache[selectedSpell.getSubID()] = selectedSpell;
         waveManager.setImage(selectedSpell.getSubID(), selectedSpell.icon);
     }

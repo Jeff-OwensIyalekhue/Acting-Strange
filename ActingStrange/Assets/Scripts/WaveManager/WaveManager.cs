@@ -47,7 +47,7 @@ public class WaveManager : MonoBehaviour {
         {
             time += Time.deltaTime;
         }
-        timeText.text = "" + (int)time;
+        timeText.text = "" + (int)time + " sec.";
         healthText.text = "" + (int)currHealth;
 
         if(currEnemies == 0)

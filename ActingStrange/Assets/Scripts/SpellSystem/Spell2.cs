@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(TargetFinder))]
 public class Spell2 : MonoBehaviour
 {
 
