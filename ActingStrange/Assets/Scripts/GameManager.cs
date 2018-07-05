@@ -36,13 +36,13 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown("l"))
-        {
-            if (sceneToLoad == 0)
-                LoadLevel(1);
-            else
-                LoadLevel(0);
-        }
+        //if (Input.GetKeyDown("l"))
+        //{
+        //    if (sceneToLoad == 0)
+        //        LoadLevel(1);
+        //    else
+        //        LoadLevel(0);
+        //}
 	}
 
     // Start a level

@@ -69,6 +69,8 @@ public class GameData
     }
 
     #region Highscore
+    public String currentName = "Benedict Cumberbatch";
+
     public int[] highscoreLevel1;
     public int[] highscoreLevel2;
     public int[] highscoreLevel3;
