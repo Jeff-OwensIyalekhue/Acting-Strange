@@ -8,12 +8,19 @@ public class GameManager : MonoBehaviour {
 
     #region Vars
     public static GameManager instance;
-
+    [Header("FadeInOut")]
     public Animator fadeAnim;
     public AnimationClip fade;
+    [Header("Loading Screen")]
     public Slider loadingBar;
     public Text loadingText;
     public GameObject loadingBarObj;
+    [Header("Voice")]
+    AudioSource audioSource;
+    [Header("Intro")]
+    public AudioClip[] introClips;
+    [Header("Outro")]
+    public AudioClip[] outroClips;
 
     private MusicManager musicManager;
     private int sceneToLoad = 0;
@@ -30,8 +37,8 @@ public class GameManager : MonoBehaviour {
         {
             Destroy(gameObject);
         }
-
-        musicManager = GetComponent<MusicManager>();
+        audioSource = GetComponent<AudioSource>();
+        musicManager = GetComponentInChildren<MusicManager>();
     }
 	
 	// Update is called once per frame
@@ -51,6 +58,19 @@ public class GameManager : MonoBehaviour {
         sceneToLoad = x;
         // fades the music down regarding the lenght of the fade to black animation (fadeIn)
         musicManager.FadeDown(fade.length);
+        // plays intros/outros
+        if(x != 0)
+        {
+            int s = Random.Range(0, introClips.Length);
+            audioSource.clip = introClips[s];
+            audioSource.Play();
+        }
+        else
+        {
+            int s = Random.Range(0, outroClips.Length);
+            audioSource.clip = outroClips[s];
+            audioSource.Play();
+        }
         // triggers  the fade to black animation 
         fadeAnim.SetTrigger("FadeIn");
         // coroutinte so the scene starts loading after the screen faded to black
@@ -58,7 +78,7 @@ public class GameManager : MonoBehaviour {
     }
     IEnumerator LoadAsync()
     {
-        yield return new WaitForSeconds(fade.length);
+        yield return new WaitForSeconds((audioSource.clip.length * 3) / 4);
 
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneToLoad);
 

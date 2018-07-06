@@ -37,8 +37,8 @@ public class GameData
     #region Settings
     // Volume of SFX and music
     public float musicVolume = 0;
-
     public float sfxVolume = 0;
+    public float voiceVolume = 0;
     #endregion
 
     public void SaveSettings()
@@ -49,6 +49,7 @@ public class GameData
         SaveDataSettings data = new SaveDataSettings();
         data.musicVolume = musicVolume;
         data.sfxVolume = sfxVolume;
+        data.voiceVolume = voiceVolume;
 
         bF.Serialize(file, data);
         file.Close();
@@ -65,6 +66,7 @@ public class GameData
 
             musicVolume = data.musicVolume;
             sfxVolume = data.sfxVolume;
+            voiceVolume = data.voiceVolume;
         }
     }
 
@@ -136,6 +138,7 @@ class SaveDataSettings
 {
     public float musicVolume;
     public float sfxVolume;
+    public float voiceVolume;
 }
 
 [Serializable]
@@ -144,6 +147,7 @@ class SaveDataHighScore
     public HighScore[] highscoreLevel1 = new HighScore[3];
 }
 
+[Serializable]
 public class HighScore
 {
     public string name;

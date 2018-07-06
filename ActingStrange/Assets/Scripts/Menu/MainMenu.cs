@@ -14,6 +14,7 @@ public class MainMenu : MonoBehaviour
 
     public Slider musicSlider;
     public Slider sfxSlider;
+    public Slider voiceSlider;
 
     private void Start()
     {
@@ -59,6 +60,7 @@ public class MainMenu : MonoBehaviour
     {
         musicSlider.value = GameData.Instance.musicVolume;
         sfxSlider.value = GameData.Instance.sfxVolume;
+        voiceSlider.value = GameData.Instance.voiceVolume;
     }
     public void SetMusicLevel(float x)
     {
@@ -67,6 +69,10 @@ public class MainMenu : MonoBehaviour
     public void SetSFXLevel(float x)
     {
         musicManager.SetSfxLevel(x);
+    }
+    public void SetVoiceLevel(float x)
+    {
+        musicManager.SetVoiceLevel(x);
     }
 
     public void SaveSettings()

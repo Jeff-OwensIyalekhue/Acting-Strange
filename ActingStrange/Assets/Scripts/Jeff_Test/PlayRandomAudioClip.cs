@@ -7,8 +7,7 @@ public class PlayRandomAudioClip : MonoBehaviour {
 
     public AudioClip[] audioClips;
     public AudioSource audioSource;
-
-    public GameManager gameManager;
+    private int playingID;
 
     private void Awake()
     {
@@ -16,36 +15,19 @@ public class PlayRandomAudioClip : MonoBehaviour {
             audioSource = this.GetComponent<AudioSource>();
         audioSource.playOnAwake = false;
         audioSource.loop = false;
-
-        gameManager = FindObjectOfType<GameManager>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        while (gameManager.Equals(null))
-            gameManager = FindObjectOfType<GameManager>();
-    }
-
     public void PlayClip()
     {
         if (!audioSource.isPlaying)
         {
-            int x = Random.Range(0, audioClips.Length);
-            audioSource.clip = audioClips[x];
+            playingID = Random.Range(0, audioClips.Length);
+            audioSource.clip = audioClips[playingID];
             audioSource.Play();
 
         }
     }
-
-    public void PlayClipAndLoadScene(int x)
+    public float ClipLength()
     {
-        PlayClip();
-        StartCoroutine(LoadAfterClipWasPlayed(x));
-    }
-    IEnumerator LoadAfterClipWasPlayed(int x)
-    {
-        yield return new WaitForSeconds(audioSource.clip.length);
-        gameManager.LoadLevel(x);
+        return audioClips[playingID].length;
     }
 }
