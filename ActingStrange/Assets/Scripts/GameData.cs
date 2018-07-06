@@ -71,14 +71,31 @@ public class GameData
     #region Highscore
     public String currentName = "Benedict Cumberbatch";
 
-    public int[] highscoreLevel1;
-    public int[] highscoreLevel2;
-    public int[] highscoreLevel3;
-
-    public string[] nameList1;
-    public string[] nameList2;
-    public string[] nameList3;
+    public HighScore[] highscoreLevel1 = new HighScore[3];
     #endregion
+
+    public void AddHighScore(int candidatScore)
+    {
+        if(candidatScore > highscoreLevel1[2].score)
+        {
+            HighScore candidat = new HighScore(currentName, candidatScore);
+            if(candidatScore <= highscoreLevel1[1].score)
+            {
+                highscoreLevel1[2] = candidat;
+            }
+            else
+            {
+                if(candidatScore <= highscoreLevel1[0].score)
+                {
+                    highscoreLevel1[1] = candidat;
+                }
+                else
+                {
+                    highscoreLevel1[0] = candidat;
+                }
+            }
+        }
+    }
 
     public void SaveHighscore()
     {
@@ -88,13 +105,6 @@ public class GameData
         SaveDataHighScore data = new SaveDataHighScore();
 
         data.highscoreLevel1 = highscoreLevel1;
-        data.nameList1 = nameList1;
-
-        data.highscoreLevel2 = highscoreLevel2;
-        data.nameList2 = nameList2;
-
-        data.highscoreLevel3 = highscoreLevel3;
-        data.nameList3 = nameList3;
 
         bF.Serialize(file, data);
         file.Close();
@@ -108,27 +118,14 @@ public class GameData
             FileStream file = File.Open(Application.persistentDataPath + "/highscores.dat", FileMode.Open);
             SaveDataHighScore data = (SaveDataHighScore)bF.Deserialize(file);
             file.Close();
-
+            
             highscoreLevel1 = data.highscoreLevel1;
-            nameList1 = data.nameList1;
-
-            highscoreLevel2 = data.highscoreLevel2;
-            nameList2 = data.nameList2;
-
-            highscoreLevel3 = data.highscoreLevel3;
-            nameList3 = data.nameList3;
         }
         else
         {
-            highscoreLevel1 =  new int[] { 0, 0, 0};
-
-            nameList1 = new string[] { "default", "default", "default" };
-
-            highscoreLevel2 = new int[] { 0, 0, 0 };
-            nameList2 = new string[] { "default", "default", "default" };
-
-            highscoreLevel3 = new int[] { 0, 0, 0 };
-            nameList3 = new string[] { "default", "default", "default" };
+            highscoreLevel1 = new HighScore[] { new HighScore("Benedict Cumberbatch", 0),
+                                                new HighScore("Benerec Cumbersnatch", 0),
+                                                new HighScore("Fenedict Slumberwitch", 0) };
         }
     }
 
@@ -144,11 +141,17 @@ class SaveDataSettings
 [Serializable]
 class SaveDataHighScore
 {
-    public int[] highscoreLevel1;
-    public int[] highscoreLevel2;
-    public int[] highscoreLevel3;
+    public HighScore[] highscoreLevel1 = new HighScore[3];
+}
 
-    public string[] nameList1;
-    public string[] nameList2;
-    public string[] nameList3;
+public class HighScore
+{
+    public string name;
+    public int score;
+
+    public HighScore(string n, int s)
+    {
+        name = n;
+        score = s;
+    }
 }
