@@ -10,7 +10,7 @@ public class WaveManager : MonoBehaviour {
     private float time = 0;
     private int enemyCount;
     private int currEnemies;
-    private int currLane;   //1 >> left, 1 >> mid, 3 >> right
+    private int currLane;   //1 >> left, 2 >> mid, 3 >> right
     public float health;
     private float currHealth;
 

@@ -81,6 +81,7 @@ public class Spell2 : MonoBehaviour
             {
                 case 0:
                     spellInstance = Instantiate(objToInstance, transform.position, Quaternion.identity);
+                    spellInstance.GetComponent<SimpleProjectile>().target = target.transform;
                     break;
                 case 1:
                     spellInstance = Instantiate(objToInstance, target.transform.position, Quaternion.identity);

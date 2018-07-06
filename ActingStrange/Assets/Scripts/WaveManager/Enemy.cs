@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour {
     private NavMeshAgent agent;
     private Animator animator;
     //enemy attributes
-    private float health;
+    public float health;
     private float speed;
     private float slow;
     private float dot;
@@ -33,8 +33,11 @@ public class Enemy : MonoBehaviour {
     }
 
         // Update is called once per frame
-        void Update () {
-
+    void Update () {
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
         if (start)
         {
             GameObject[] targets = GameObject.FindGameObjectsWithTag("Player");
