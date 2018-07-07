@@ -10,17 +10,28 @@ public class Enemy : MonoBehaviour {
     private int ID;
     private NavMeshAgent agent;
     private Animator animator;
+    public float attackCd;
+    private float currCd;
+    public float attackDmg;
+
     //enemy attributes
     public float health;
     private float speed;
     private float slow;
     private float dot;
     private bool start = false;
-	// Use this for initialization
-	void Start () {
+
+    public WaveManager waveManager;
+    GameObject target;
+    GameObject bot;
+    // Use this for initialization
+    void Start () {
         agent = gameObject.GetComponent<NavMeshAgent>();
         animator = gameObject.GetComponent<Animator>();
-        Debug.Log("start couritine");
+        waveManager = FindObjectOfType<WaveManager>();
+        target = GameObject.FindGameObjectWithTag("Player");
+        currCd = attackCd;
+        //Debug.Log("start couritine");
         StartCoroutine(TestCoroutine());
 
     }
@@ -29,44 +40,61 @@ public class Enemy : MonoBehaviour {
     {
         yield return new WaitForSeconds(3.5f);
         start = true;
-        Debug.Log("back");
+        //Debug.Log("back");
     }
 
         // Update is called once per frame
     void Update () {
         if (health <= 0)
         {
+            waveManager.killedEnemies(1);
             Destroy(gameObject);
         }
         if (start)
         {
-            GameObject[] targets = GameObject.FindGameObjectsWithTag("Player");
-            GameObject target = null;
+            GameObject[] bots = GameObject.FindGameObjectsWithTag("Bot");
 
-            //select nearest
-            float maxdistance = 10000000f;
+            float maxDistance = Vector3.Distance(target.transform.position, transform.position);
+            float distance = maxDistance;
 
-            //findet nächsten enemy und setzt ihn als target
-            foreach (GameObject t in targets)
+            foreach(GameObject t in bots)
             {
-                float distance = Vector3.Distance(t.transform.position, transform.position);
-
-                if (distance <= maxdistance)
+                distance = Vector3.Distance(t.transform.position, transform.position);
+                if (distance < maxDistance)
                 {
                     target = t;
-                    maxdistance = distance;
-                    if (distance <= 2.5)
+                    maxDistance = distance;
+                }
+            }
+            
+
+            if (distance <= 2.5)
+            {
+                animator.SetBool("Attack", true);
+                if(currCd<= 0)
+                {
+                    if (target.tag.Equals("Player"))
                     {
+<<<<<<< HEAD
                         animator.SetBool("Attack", true);
                         transform.LookAt(target.transform);
+=======
+                        waveManager.reduceHealth(attackDmg);    //other setDmg call when attacking !strange
+>>>>>>> d628c67573e7625decf9b7e6192bf49ab51fb48e
                     }
                     else
                     {
-
-                        animator.SetBool("Attack", false);
+                        //TODO: attack bot
                     }
+                    currCd = attackCd;
                 }
+                currCd -= Time.deltaTime;
             }
+            else
+            {
+                animator.SetBool("Attack", false);
+            }
+                
             //TODO: movement
             agent.SetDestination(target.transform.position);
         }

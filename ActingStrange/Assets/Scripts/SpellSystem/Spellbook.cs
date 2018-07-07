@@ -148,4 +148,9 @@ public class Spellbook : MonoBehaviour {
     {
         return spellCache;
     }
+
+    public void addPointToSpend(int points)
+    {
+        pointsToSpend += points;
+    }
 }

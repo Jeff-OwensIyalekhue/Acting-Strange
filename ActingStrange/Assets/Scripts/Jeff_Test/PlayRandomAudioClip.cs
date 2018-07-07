@@ -30,4 +30,8 @@ public class PlayRandomAudioClip : MonoBehaviour {
     {
         return audioClips[playingID].length;
     }
+    public void MuteCLip()
+    {
+        audioSource.mute = true;
+    }
 }
