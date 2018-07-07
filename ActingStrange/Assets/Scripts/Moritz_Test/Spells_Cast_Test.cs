@@ -6,7 +6,7 @@ public class Spells_Cast_Test : MonoBehaviour {
     public GestureController gc;
     public GameObject playerAvatar;
 
-    public Spellbook2 spellbook;
+    public Spellbook spellbook;
     // Use this for initialization
     void Start () {
 		

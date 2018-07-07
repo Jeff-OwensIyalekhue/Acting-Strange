@@ -6,7 +6,7 @@ public class GameLogic : MonoBehaviour {
     public GestureController gc;
     public GameObject playerAvatar;
 
-    public Spellbook2 spellbook;
+    public Spellbook spellbook;
 
 	// Use this for initialization
 	void Start () {

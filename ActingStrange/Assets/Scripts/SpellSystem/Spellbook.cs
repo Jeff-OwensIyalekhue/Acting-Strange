@@ -7,18 +7,18 @@ public class Spellbook : MonoBehaviour {
     //members
     public int pointsToSpend;
 
-    private GameObject selectedSpell;
+    public Spell selectedSpell;
+    private WaveManager waveManager;
 
-    public GameObject[] spellList;  //list of all spells in the game
-    public GameObject[] spellBook = new GameObject[8];   // list of spells shown in menu
-    public GameObject[] spellCache = new GameObject[4]; //list of 4 cosen spells
+    public Spell[] spellBook = new Spell[8];   // list of spells shown in menu
+    public Spell[] spellCache = new Spell[4]; //list of 4 cosen spells
+
+    //Jeff
+    int selectedID;
 
     //base functions
     void Start() {
-        for(int i = 0; i < spellBook.Length; i++)       //fill spellbook
-        {
-            spellBook[i] = spellList[i * 3];
-        }
+        waveManager = gameObject.GetComponent<WaveManager>();
         for (int i = 0; i < spellCache.Length; i++)       //fill spellcache
         {
             spellCache[i] = spellBook[i * 2];
@@ -30,22 +30,64 @@ public class Spellbook : MonoBehaviour {
     }
 
     //methods
-    void selectSpell(int id)
+    public void selectSpell(int id)
     {
+        selectedID = id;
         selectedSpell = spellBook[id];
-        //show buttons and subtext
+        string text = selectedSpell.subtext+"\n" + "\n";
+        switch (selectedSpell.getStage())
+        {
+            case 0:
+                text += "Upgrade: " + selectedSpell.upgradeText1+"\n Points to unlock: " + selectedSpell.currPoints + " / "+ selectedSpell.getPointsToUnlock1() + " [" + pointsToSpend + "]";
+                break;
+            case 1:
+                text += "Upgrade: " + selectedSpell.upgradeText2+"\n Points to unlock: " + selectedSpell.currPoints + " / " + + selectedSpell.getPointsToUnlock2() + " ["+ pointsToSpend+"]";
+                break;
+            case 2:
+                text += "Spell already fully upgraded.";
+                break;
+            default:
+                Debug.Log("spell state ouft of range.");
+                break;
+        }
+        waveManager.setSpellText(text);
     }
-    void spendPoint()
+
+    public void chooseSpell()
     {
-        if (selectedSpell != null) { 
-            if (selectedSpell.GetComponent<Spell>().getCurrPoints() < selectedSpell.GetComponent<Spell>().getPointsToUnlockNext())
+        if (selectedSpell == null)
+            return;
+        spellCache[selectedSpell.getSubID()] = selectedSpell;
+        waveManager.setImage(selectedSpell.getSubID(), selectedSpell.icon);
+    }
+
+    public void spendPoint()
+    {
+        if (selectedSpell != null && pointsToSpend > 0) { 
+            switch (selectedSpell.getStage())
             {
-                pointsToSpend--;
-                selectedSpell.GetComponent<Spell>().addCurrPoints(1);
-            }
-            else
-            {
-                Debug.Log("Point could not be spend. Already enough points.");
+                case 0:
+                    if (selectedSpell.getCurrPoints() < selectedSpell.getPointsToUnlock1())
+                    {
+                        pointsToSpend--;
+                        selectedSpell.addCurrPoints(1);
+                        selectSpell(selectedID);//fucking bad work around to update the ui...  sooooooorry
+                    }
+                    break;
+                case 1:
+                    if (selectedSpell.getCurrPoints() < selectedSpell.getPointsToUnlock2())
+                    {
+                        pointsToSpend--;
+                        selectedSpell.addCurrPoints(1);
+                        selectSpell(selectedID);//fucking bad work around to update the ui...  sooooooorry
+                    }
+                    break;
+                case 2:
+                    Debug.Log("Point could not be spend, Spell is at max level.");
+                    break;
+                default:
+                    Debug.Log("level of spell not in range of 0 - 2.");
+                    break;
             }
         }
         else
@@ -54,14 +96,15 @@ public class Spellbook : MonoBehaviour {
         }
     }
 
-    void returnPoint(Spell spell)
+    public void returnPoint()
     {
         if (selectedSpell != null)
         {
-            if (spell.getCurrPoints() > 0)
+            if (selectedSpell.getCurrPoints() > 0)
             {
-                spell.addCurrPoints(-1);
+                selectedSpell.addCurrPoints(-1);
                 pointsToSpend++;
+                selectSpell(selectedID);//fucking bad work around to update the ui...  sooooooorry
             }
             else
             {
@@ -74,45 +117,35 @@ public class Spellbook : MonoBehaviour {
         }
     }
 
-    void commitPoints()
+    public void commitPoints()
     {
         for (int i = 0; i < spellBook.Length; i++)
         {
-            GameObject spell = spellBook[i];
-            Spell spellScript = spell.GetComponent<Spell>();
-            if (spellScript.getCurrPoints() == spellScript.getPointsToUnlockNext())
+            Spell spell = spellBook[i];
+            if (spell.getCurrPoints() == spell.getPointsToUnlock1() && spell.getStage() == 0)
             {
-                getNextSpell(spell).GetComponent<Spell>().unlock();
-                spellScript.addCurrPoints((-1) * spellScript.getCurrPoints());
-                spellBook[i] = getNextSpell(spell);
-                for(int j = 0; j < spellCache.Length; j++)
-                {
-                    if (spellCache[j] == spell)
-                    {
-                        spellCache[j] = getNextSpell(spell);
-                    }
-                }
-                Debug.Log(spellScript.getName() + " successfully unlocked.");
+                spell.setStage(1);
+                spell.addCurrPoints((-1) * spell.getCurrPoints());
+                selectSpell(selectedID);//fucking bad work around to update the ui...  sooooooorry
+                Debug.Log(spell.getName() + " successfully upgraded.");
                 //TODO: popup
-                //TODO check if latest spell in cache
+            }else if (spell.getCurrPoints() == spell.getPointsToUnlock2() && spell.getStage() == 1)
+            {
+                spell.setStage(2);
+                spell.addCurrPoints((-1) * spell.getCurrPoints());
+                selectSpell(selectedID);//fucking bad work around to update the ui...  sooooooorry
+                Debug.Log(spell.getName() + " successfully upgraded.");
+                //TODO: popup
+            }
+            else
+            {
+                Debug.Log("stage of spell not btw. 0 - 2");
             }
         }
     }
 
-    public GameObject[] getSpellCache()
+    public Spell[] getSpellCache()
     {
         return spellCache;
-    }
-
-    public GameObject getNextSpell(GameObject spell)
-    {
-        if (spell.GetComponent<Spell>().getUpgradeID() != 0)
-        {
-            return spellList[spell.GetComponent<Spell>().getUpgradeID()];
-        }
-        else
-        {
-            return null;
-        }
     }
 }
