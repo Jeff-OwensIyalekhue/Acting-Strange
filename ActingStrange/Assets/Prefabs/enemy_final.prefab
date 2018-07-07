@@ -7159,9 +7159,12 @@ GameObject:
   - component: {fileID: 95285405043658848}
   - component: {fileID: 195822784180043178}
   - component: {fileID: 114166342616536212}
+  - component: {fileID: 54568739617096026}
+  - component: {fileID: 136048273124633914}
+  - component: {fileID: 114112736124866766}
   m_Layer: 0
   m_Name: enemy_final
-  m_TagString: Untagged
+  m_TagString: Lane_1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19029,8 +19032,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1570654847259226}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 608.24023, y: 338.96533, z: -1534.7002}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: -0.7814503, y: 0.15, z: -39.93}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 4956222385028380}
   - {fileID: 4826313830849868}
@@ -38170,6 +38173,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1960382748128618}
   m_Mesh: {fileID: 4300336, guid: 49fdc616ade8ae34bba87609aac7db97, type: 3}
+--- !u!54 &54568739617096026
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1570654847259226}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!95 &95285405043658848
 Animator:
   serializedVersion: 3
@@ -38187,6 +38205,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114112736124866766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1570654847259226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c3c23e6bd50ff641b60e161bf4955cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recordTime: 5
 --- !u!114 &114166342616536212
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -38198,10 +38228,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d49d17ee26c8eeb4289e5cbd6b58b488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCd: 1
-  attackDmg: 2
-  health: 5
+  attackCd: 0.5
+  attackDmg: 5
+  health: 100
   waveManager: {fileID: 0}
+--- !u!136 &136048273124633914
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1570654847259226}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.91
+  m_Height: 2.7
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.89, z: 0}
 --- !u!137 &137066994040463860
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
