@@ -91,8 +91,12 @@ public class Spell : MonoBehaviour
                                                       target.transform.position + target.transform.forward * 5,
                                                       Quaternion.Euler(target.transform.forward));
                     break;
+                case 3:
+                    //shockwave & burst
+                    spellInstance = Instantiate(objToInstance, transform.position, Quaternion.identity);
+                    break;
                 default:
-                    Debug.Log("type of spell not btw. 0 - 2");
+                    Debug.Log("type of spell not btw. 0 - 3");
                     break;
             }
         }

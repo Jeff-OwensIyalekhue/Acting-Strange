@@ -101,7 +101,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1193945951983660}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.906265, y: 2.0414572, z: -13.557247}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4076219073183430}
@@ -205,18 +205,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: 
-  ID: 0
-  upgradeID: 0
   subID: 0
-  pointsToUnlockNext: 0
+  spellType: 0
+  pointsToUnlock1: 0
+  pointsToUnlock2: 0
   currPoints: 0
-  unlocked: 0
-  spellObject: {fileID: 0}
+  stage: 0
+  spellObject1: {fileID: 0}
+  spellObject2: {fileID: 0}
+  spellObject3: {fileID: 0}
   subtext: 
+  upgradeText1: 
+  upgradeText2: 
   icon: {fileID: 0}
-  cd: 0
+  cd1: 0
+  cd2: 0
+  cd3: 0
   cdRemaining: 0
-  stats: {fileID: 0}
+  wM: {fileID: 0}
   target: {fileID: 0}
   damage: 10
   speed: 1

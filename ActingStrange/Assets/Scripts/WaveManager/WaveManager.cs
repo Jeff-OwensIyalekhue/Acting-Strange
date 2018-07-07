@@ -10,6 +10,7 @@ public class WaveManager : MonoBehaviour {
     private float time = 0;
     private float spawnTimer = 0;
     private int currLane;   //1 >> left, 2 >> mid, 3 >> right
+    public bool rewind;
     [Header("Player Stats")]
     public float health;
     private float currHealth;

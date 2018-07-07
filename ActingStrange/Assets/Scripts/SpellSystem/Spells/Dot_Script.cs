@@ -50,7 +50,6 @@ public class Dot_Script : MonoBehaviour {
             {
                 StartCoroutine(DoDamage());
             }
-            other.GetComponent<NavMeshAgent>().speed = other.GetComponent<NavMeshAgent>().speed * 0.5f;
         }
     }
     private void OnTriggerExit(Collider other)

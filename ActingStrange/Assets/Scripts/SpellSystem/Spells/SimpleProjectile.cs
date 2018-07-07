@@ -14,7 +14,7 @@ public class SimpleProjectile : Spell {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = Vector3.MoveTowards(transform.position, target.position, speed);
+        transform.position = Vector3.MoveTowards(transform.position, target.position+Vector3.up*2, speed);
         //vllt mit look at besser..
         transform.LookAt(target);
     }

@@ -99,7 +99,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1193945951983660}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -200,10 +200,31 @@ MonoBehaviour:
   m_GameObject: {fileID: 1193945951983660}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b64089e2fda27744c882aba6c7ec86a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 1eb87d9cb7acdb949953bb752a484a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lane: Lane_1
+  name: 
+  subID: 0
+  spellType: 0
+  pointsToUnlock1: 0
+  pointsToUnlock2: 0
+  currPoints: 0
+  stage: 0
+  spellObject1: {fileID: 0}
+  spellObject2: {fileID: 0}
+  spellObject3: {fileID: 0}
+  subtext: 
+  upgradeText1: 
+  upgradeText2: 
+  icon: {fileID: 0}
+  cd1: 0
+  cd2: 0
+  cd3: 0
+  cdRemaining: 0
+  wM: {fileID: 0}
+  target: {fileID: 0}
+  damage: 0
+  speed: 0.1
 --- !u!198 &198057839547720064
 ParticleSystem:
   m_ObjectHideFlags: 1

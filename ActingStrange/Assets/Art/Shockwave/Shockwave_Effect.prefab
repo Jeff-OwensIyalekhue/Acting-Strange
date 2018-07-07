@@ -268,7 +268,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1549337547093088}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.2683148, y: 0.23, z: -58.47611}
+  m_LocalPosition: {x: -1.2595856, y: 0.15, z: -115.89813}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4507628883158620}
@@ -296,10 +296,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1549337547093088}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b64089e2fda27744c882aba6c7ec86a5, type: 3}
+  m_Script: {fileID: 11500000, guid: d08ce0f74c3fd8148a65601a76d98f45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lane: Lane_2
+  speed: 1
+  damage: 10
 --- !u!198 &198027132653554420
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.002759312, g: 0.2145774, b: 0.5131166, a: 1}
+  m_IndirectSpecularColor: {r: 0.0027024557, g: 0.21460798, b: 0.5131253, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -285,9 +285,12 @@ MonoBehaviour:
   pointsToUnlock2: 6
   currPoints: 0
   stage: 0
-  spellObject1: {fileID: 0}
-  spellObject2: {fileID: 0}
-  spellObject3: {fileID: 0}
+  spellObject1: {fileID: 1448282933752210, guid: 67a8971b16c81284c8807a605259cf5d,
+    type: 2}
+  spellObject2: {fileID: 1448282933752210, guid: 67a8971b16c81284c8807a605259cf5d,
+    type: 2}
+  spellObject3: {fileID: 1448282933752210, guid: 67a8971b16c81284c8807a605259cf5d,
+    type: 2}
   subtext: Erschaffe ein Hindernis, das Gegner behindert.
   upgradeText1: Die Portale verschlucken einen Gegner.
   upgradeText2: Mehere Gegner werden verschluckt.
@@ -4303,14 +4306,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Shockwave
   subID: 1
-  spellType: 0
+  spellType: 3
   pointsToUnlock1: 4
   pointsToUnlock2: 6
   currPoints: 0
   stage: 0
-  spellObject1: {fileID: 0}
-  spellObject2: {fileID: 0}
-  spellObject3: {fileID: 0}
+  spellObject1: {fileID: 1549337547093088, guid: e86ac08763ac59a41b73327608ae207e,
+    type: 2}
+  spellObject2: {fileID: 1549337547093088, guid: e86ac08763ac59a41b73327608ae207e,
+    type: 2}
+  spellObject3: {fileID: 1549337547093088, guid: e86ac08763ac59a41b73327608ae207e,
+    type: 2}
   subtext: Eine Schockwelle die sich ihren Weg in eiene Richtung bahnt.
   upgradeText1: Steigert die Werte der Schockwelle.
   upgradeText2: Mother of all Shockwaves!
@@ -9327,9 +9333,12 @@ MonoBehaviour:
   pointsToUnlock2: 4
   currPoints: 0
   stage: 0
-  spellObject1: {fileID: 0}
-  spellObject2: {fileID: 0}
-  spellObject3: {fileID: 0}
+  spellObject1: {fileID: 1193945951983660, guid: af96172e12657bc43a8bc3877bc7957c,
+    type: 2}
+  spellObject2: {fileID: 1193945951983660, guid: af96172e12657bc43a8bc3877bc7957c,
+    type: 2}
+  spellObject3: {fileID: 1193945951983660, guid: af96172e12657bc43a8bc3877bc7957c,
+    type: 2}
   subtext: Dies ist eine einfache Missile.
   upgradeText1: "Die Missile wird st\xE4rker"
   upgradeText2: Die ultimative Missile!
@@ -9456,6 +9465,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveCount: 0
+  rewind: 0
   health: 25
   scoreFactor: 1000
   state: 0
@@ -9661,10 +9671,6 @@ Prefab:
     - target: {fileID: 4547861332866092, guid: dec4b2bc3969db34f8936f9a38414ec2, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1570654847259226, guid: dec4b2bc3969db34f8936f9a38414ec2, type: 2}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dec4b2bc3969db34f8936f9a38414ec2, type: 2}
@@ -10081,15 +10087,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Burst
-  subID: 0
-  spellType: 0
+  subID: 1
+  spellType: 3
   pointsToUnlock1: 4
   pointsToUnlock2: 6
   currPoints: 0
   stage: 0
-  spellObject1: {fileID: 0}
-  spellObject2: {fileID: 0}
-  spellObject3: {fileID: 0}
+  spellObject1: {fileID: 1522404687458626, guid: ff37e6c29b09a8d49af21421b55d639f,
+    type: 2}
+  spellObject2: {fileID: 1522404687458626, guid: ff37e6c29b09a8d49af21421b55d639f,
+    type: 2}
+  spellObject3: {fileID: 1522404687458626, guid: ff37e6c29b09a8d49af21421b55d639f,
+    type: 2}
   subtext: Ein Schuss der mehrere Gegner angreift
   upgradeText1: "Erh\xF6hter Schaden, l\xE4ngere Abklingzeit"
   upgradeText2: Angriff gegen alle Gegner
@@ -14030,7 +14039,7 @@ Prefab:
     - target: {fileID: 224895112417926496, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -107.5
       objectReference: {fileID: 0}
     - target: {fileID: 224895112417926496, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14040,7 +14049,7 @@ Prefab:
     - target: {fileID: 224895112417926496, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 215
       objectReference: {fileID: 0}
     - target: {fileID: 224040400915509240, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14060,7 +14069,7 @@ Prefab:
     - target: {fileID: 224040400915509240, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -107.5
       objectReference: {fileID: 0}
     - target: {fileID: 224040400915509240, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14070,7 +14079,7 @@ Prefab:
     - target: {fileID: 224040400915509240, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 215
       objectReference: {fileID: 0}
     - target: {fileID: 224020521270768908, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14090,7 +14099,7 @@ Prefab:
     - target: {fileID: 224020521270768908, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -107.5
       objectReference: {fileID: 0}
     - target: {fileID: 224020521270768908, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14100,7 +14109,7 @@ Prefab:
     - target: {fileID: 224020521270768908, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 215
       objectReference: {fileID: 0}
     - target: {fileID: 224907927369792114, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14120,7 +14129,7 @@ Prefab:
     - target: {fileID: 224907927369792114, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -107.5
       objectReference: {fileID: 0}
     - target: {fileID: 224907927369792114, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14130,7 +14139,7 @@ Prefab:
     - target: {fileID: 224907927369792114, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 215
       objectReference: {fileID: 0}
     - target: {fileID: 224312457436014654, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14150,7 +14159,7 @@ Prefab:
     - target: {fileID: 224312457436014654, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -107.5
       objectReference: {fileID: 0}
     - target: {fileID: 224312457436014654, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14160,7 +14169,7 @@ Prefab:
     - target: {fileID: 224312457436014654, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 215
       objectReference: {fileID: 0}
     - target: {fileID: 224706602848031344, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14180,7 +14189,7 @@ Prefab:
     - target: {fileID: 224706602848031344, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -107.5
       objectReference: {fileID: 0}
     - target: {fileID: 224706602848031344, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14190,7 +14199,7 @@ Prefab:
     - target: {fileID: 224706602848031344, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 215
       objectReference: {fileID: 0}
     - target: {fileID: 224574290333720138, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14210,7 +14219,7 @@ Prefab:
     - target: {fileID: 224574290333720138, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -107.5
       objectReference: {fileID: 0}
     - target: {fileID: 224574290333720138, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14220,7 +14229,7 @@ Prefab:
     - target: {fileID: 224574290333720138, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 215
       objectReference: {fileID: 0}
     - target: {fileID: 224682857704855512, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14240,7 +14249,7 @@ Prefab:
     - target: {fileID: 224682857704855512, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -107.5
       objectReference: {fileID: 0}
     - target: {fileID: 224682857704855512, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14250,7 +14259,7 @@ Prefab:
     - target: {fileID: 224682857704855512, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 215
       objectReference: {fileID: 0}
     - target: {fileID: 224512814505752974, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14270,7 +14279,7 @@ Prefab:
     - target: {fileID: 224512814505752974, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -107.5
       objectReference: {fileID: 0}
     - target: {fileID: 224512814505752974, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14280,7 +14289,7 @@ Prefab:
     - target: {fileID: 224512814505752974, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 215
       objectReference: {fileID: 0}
     - target: {fileID: 224061224613576274, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14300,7 +14309,7 @@ Prefab:
     - target: {fileID: 224061224613576274, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -107.5
       objectReference: {fileID: 0}
     - target: {fileID: 224061224613576274, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14310,7 +14319,7 @@ Prefab:
     - target: {fileID: 224061224613576274, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 215
       objectReference: {fileID: 0}
     - target: {fileID: 224682969716728206, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14330,7 +14339,7 @@ Prefab:
     - target: {fileID: 224682969716728206, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -107.5
       objectReference: {fileID: 0}
     - target: {fileID: 224682969716728206, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14340,7 +14349,7 @@ Prefab:
     - target: {fileID: 224682969716728206, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 215
       objectReference: {fileID: 0}
     - target: {fileID: 224734484808131986, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14360,7 +14369,7 @@ Prefab:
     - target: {fileID: 224734484808131986, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -107.5
       objectReference: {fileID: 0}
     - target: {fileID: 224734484808131986, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14370,7 +14379,7 @@ Prefab:
     - target: {fileID: 224734484808131986, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 215
       objectReference: {fileID: 0}
     - target: {fileID: 224689949141778104, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14385,22 +14394,22 @@ Prefab:
     - target: {fileID: 224689949141778104, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 500.6329
+      value: 500.8333
       objectReference: {fileID: 0}
     - target: {fileID: 224689949141778104, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 224689949141778104, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 401.2658
+      value: 401.66663
       objectReference: {fileID: 0}
     - target: {fileID: 224689949141778104, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 224359179081230324, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14420,17 +14429,17 @@ Prefab:
     - target: {fileID: 224359179081230324, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 224359179081230324, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 417.46835
+      value: 416.66663
       objectReference: {fileID: 0}
     - target: {fileID: 224359179081230324, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 224115748681604722, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
@@ -14445,22 +14454,22 @@ Prefab:
     - target: {fileID: 224115748681604722, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 1419.3671
+      value: 1419.1665
       objectReference: {fileID: 0}
     - target: {fileID: 224115748681604722, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 224115748681604722, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 401.2658
+      value: 401.66663
       objectReference: {fileID: 0}
     - target: {fileID: 224115748681604722, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1202060621902026, guid: f869fbcbc19c5b9418cad83cd40a5089, type: 2}
       propertyPath: m_IsActive
@@ -22160,9 +22169,12 @@ MonoBehaviour:
   pointsToUnlock2: 4
   currPoints: 0
   stage: 0
-  spellObject1: {fileID: 0}
-  spellObject2: {fileID: 0}
-  spellObject3: {fileID: 0}
+  spellObject1: {fileID: 1130448146967368, guid: 9d4e284b06076f44db7f6bb0c3f4c47a,
+    type: 2}
+  spellObject2: {fileID: 1130448146967368, guid: 9d4e284b06076f44db7f6bb0c3f4c47a,
+    type: 2}
+  spellObject3: {fileID: 1130448146967368, guid: 9d4e284b06076f44db7f6bb0c3f4c47a,
+    type: 2}
   subtext: "BEschw\xF6rt einen Gehilfen."
   upgradeText1: Macht Gegner zu Helfern.
   upgradeText2: HULK SMASH !!!!!1111ELFsdfa
@@ -22348,9 +22360,12 @@ MonoBehaviour:
   pointsToUnlock2: 0
   currPoints: 0
   stage: 0
-  spellObject1: {fileID: 0}
-  spellObject2: {fileID: 0}
-  spellObject3: {fileID: 0}
+  spellObject1: {fileID: 1306795981457328, guid: f2a84b58a8a58b24d8537c8c9515db7f,
+    type: 2}
+  spellObject2: {fileID: 1306795981457328, guid: f2a84b58a8a58b24d8537c8c9515db7f,
+    type: 2}
+  spellObject3: {fileID: 1306795981457328, guid: f2a84b58a8a58b24d8537c8c9515db7f,
+    type: 2}
   subtext: "Drehe die Zeit zur\xFCck (Jetzt DLC vorbestellen!)"
   upgradeText1: KAUF ES
   upgradeText2: tba
@@ -47627,9 +47642,12 @@ MonoBehaviour:
   pointsToUnlock2: 4
   currPoints: 0
   stage: 0
-  spellObject1: {fileID: 0}
-  spellObject2: {fileID: 0}
-  spellObject3: {fileID: 0}
+  spellObject1: {fileID: 1901574785441328, guid: e913e144050ae2349bf5c055ff86914f,
+    type: 2}
+  spellObject2: {fileID: 1901574785441328, guid: e913e144050ae2349bf5c055ff86914f,
+    type: 2}
+  spellObject3: {fileID: 1901574785441328, guid: e913e144050ae2349bf5c055ff86914f,
+    type: 2}
   subtext: Dieser Zauber verlangsamt Gegner im Wirkungsradius.
   upgradeText1: "St\xE4rkere Verlangsamung und gr\xF6\xDFerer Wirkungsbereich."
   upgradeText2: Kompletter Stillstand der getroffenen Gegner.

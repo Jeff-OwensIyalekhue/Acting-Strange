@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 137146303411179418}
   m_Layer: 0
   m_Name: 40_herohulkbuster01s0202_1_0_0
-  m_TagString: Untagged
+  m_TagString: PlayerAllies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -747,9 +747,11 @@ GameObject:
   - component: {fileID: 136054047527633700}
   - component: {fileID: 114522981423216320}
   - component: {fileID: 195889610537065736}
+  - component: {fileID: 114596159658411064}
+  - component: {fileID: 114945352613446794}
   m_Layer: 0
   m_Name: hulk_jumpin
-  m_TagString: Player
+  m_TagString: Bot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -776,7 +778,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1498877510154482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -101.69}
+  m_LocalPosition: {x: 3.9198058, y: -2.5375292, z: -55.307983}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4991349853057062}
@@ -1636,7 +1638,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3614fb3822c9004099e440aeecb283b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  damage: 5
+--- !u!114 &114596159658411064
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1979484703161438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c3c23e6bd50ff641b60e161bf4955cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recordTime: 5
+--- !u!114 &114945352613446794
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1979484703161438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62d11e59688a0854ba760ed3e337c7a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 500
 --- !u!136 &136054047527633700
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -1646,10 +1672,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5
+  m_Radius: 1.62
   m_Height: 2.22
   m_Direction: 1
-  m_Center: {x: 0, y: 1.21, z: 0}
+  m_Center: {x: 0, y: 0.77, z: 0}
 --- !u!137 &137146303411179418
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

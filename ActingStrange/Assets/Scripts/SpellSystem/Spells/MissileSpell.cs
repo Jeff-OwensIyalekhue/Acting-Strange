@@ -13,44 +13,40 @@ public class MissileSpell : Spell {
     private Transform targetpos;
     //die missiles die initiert werden sollen
     public GameObject missile;
-    //falls enum nicht funktioniert mit zugriff geht natürlich auch strings
-    enum Lanes{
-        lane1,
-        lane2,
-        lane3,
-        all
-    }
-    Lanes choice;
     //legt fest welche lane wir gerade sind, sollte beim aufrufen des scripts gesetzt werden
     public string lane;
     //base functions
     void Start()
     {
         //sollte vllt in cast() methode übertragen werden?!
-
+        Debug.Log(FindObjectOfType<WaveManager>().getCurrLane() + "curr lane");
+        int currlane = 1;
         //setzt variablen
         //überprüft auf welcher lane wir sind oder ob wir alle lanes angreifen
-        switch (choice)
+        if (stage < 2)
         {
-            case Lanes.lane1:
-                targets.Add(GameObject.FindGameObjectsWithTag("Lane_1"));
-                break;
-            case Lanes.lane2:
-                targets.Add(GameObject.FindGameObjectsWithTag("Lane_2"));
-                break;
-            case Lanes.lane3:
-                targets.Add(GameObject.FindGameObjectsWithTag("Lane_3"));
-                break;
-            case Lanes.all:
-                targets.Add(GameObject.FindGameObjectsWithTag("Lane_1"));
-                targets.Add(GameObject.FindGameObjectsWithTag("Lane_2"));
-                targets.Add(GameObject.FindGameObjectsWithTag("Lane_3"));
-                break;
-            default:
-                Debug.Log("Nix");
-                break;
+            switch (currlane)//FindObjectOfType<WaveManager>().getCurrLane())
+            {
+                case 1:
+                    targets.Add(GameObject.FindGameObjectsWithTag("Lane_1"));
+                    break;
+                case 2:
+                    targets.Add(GameObject.FindGameObjectsWithTag("Lane_2"));
+                    break;
+                case 3:
+                    targets.Add(GameObject.FindGameObjectsWithTag("Lane_3"));
+                    break;
+                default:
+                    Debug.Log("Nix");
+                    break;
+            }
         }
-
+        else
+        {
+            targets.Add(GameObject.FindGameObjectsWithTag("Lane_1"));
+            targets.Add(GameObject.FindGameObjectsWithTag("Lane_2"));
+            targets.Add(GameObject.FindGameObjectsWithTag("Lane_3"));
+        }
         //findet nächsten enemy und setzt ihn als target
         foreach (GameObject[] t in targets)
         {
@@ -60,10 +56,6 @@ public class MissileSpell : Spell {
                         prefab.GetComponent<SimpleProjectile>().target=target.transform;
                     }
         }
-
-        //test speed, sollte auch gesetzt werden... 
-
-        speed = 0.1f;
     }
 
     void Update()

@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour {
     public float attackCd;
     private float currCd;
     public float attackDmg;
-
+    bool coroutineStarted;
     //enemy attributes
     public float health;
     private float speed;
@@ -29,7 +29,7 @@ public class Enemy : MonoBehaviour {
         agent = gameObject.GetComponent<NavMeshAgent>();
         animator = gameObject.GetComponent<Animator>();
         waveManager = FindObjectOfType<WaveManager>();
-        target = GameObject.FindGameObjectWithTag("Player");
+        
         currCd = attackCd;
         //Debug.Log("start couritine");
         StartCoroutine(TestCoroutine());
@@ -52,6 +52,7 @@ public class Enemy : MonoBehaviour {
         }
         if (start)
         {
+            target = GameObject.FindGameObjectWithTag("Player");
             GameObject[] bots = GameObject.FindGameObjectsWithTag("Bot");
 
             float maxDistance = Vector3.Distance(target.transform.position, transform.position);
@@ -75,16 +76,17 @@ public class Enemy : MonoBehaviour {
                 {
                     if (target.tag.Equals("Player"))
                     {
-<<<<<<< HEAD
                         animator.SetBool("Attack", true);
                         transform.LookAt(target.transform);
-=======
-                        waveManager.reduceHealth(attackDmg);    //other setDmg call when attacking !strange
->>>>>>> d628c67573e7625decf9b7e6192bf49ab51fb48e
+                        coroutineStarted = true;
+                        StartCoroutine(DoDamage(target));
                     }
                     else
                     {
-                        //TODO: attack bot
+                        animator.SetBool("Attack", true);
+                        transform.LookAt(target.transform);
+                        coroutineStarted = true;
+                        StartCoroutine(DoDamage(target));
                     }
                     currCd = attackCd;
                 }
@@ -93,10 +95,30 @@ public class Enemy : MonoBehaviour {
             else
             {
                 animator.SetBool("Attack", false);
+                coroutineStarted = false;
             }
                 
             //TODO: movement
             agent.SetDestination(target.transform.position);
         }
+    }
+    IEnumerator DoDamage(GameObject other)
+    {
+
+        while (coroutineStarted)
+        {
+            if (other.tag == "Bot")
+            {
+
+                other.GetComponent<PlayerAlliesHealthScript>().health -= attackDmg;
+            }
+            if (other.tag == "Player")
+            {
+
+                waveManager.reduceHealth(attackDmg);
+            }
+            yield return new WaitForSeconds(attackCd);
+        }
+
     }
 }

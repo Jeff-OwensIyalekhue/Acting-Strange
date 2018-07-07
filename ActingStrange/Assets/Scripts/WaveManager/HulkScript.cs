@@ -7,14 +7,14 @@ public class HulkScript : MonoBehaviour {
 
     //members
     private string name;
+    bool coroutineStarted;
     private int ID;
     private NavMeshAgent agent;
     private Animator animator;
     //enemy attributes
-    public float health;
     private float speed;
     private float slow;
-    private float dot;
+    public float damage;
     private bool start = false;
 	// Use this for initialization
 	void Start () {
@@ -34,10 +34,6 @@ public class HulkScript : MonoBehaviour {
 
         // Update is called once per frame
     void Update () {
-        if (health <= 0)
-        {
-            Destroy(gameObject);
-        }
         if (start)
         {
             GameObject[] targets = GameObject.FindGameObjectsWithTag("Lane_" + GameObject.FindObjectOfType<WaveManager>().getCurrLane());
@@ -59,10 +55,15 @@ public class HulkScript : MonoBehaviour {
                     {
                         animator.SetBool("Attack", true);
                         transform.LookAt(target.transform);
+                        if (!coroutineStarted)
+                        {
+                            coroutineStarted = true;
+                            StartCoroutine(DoDamage(target));
+                        }
                     }
                     else
                     {
-
+                        coroutineStarted = false;
                         animator.SetBool("Attack", false);
                     }
                 }
@@ -76,4 +77,16 @@ public class HulkScript : MonoBehaviour {
             transform.position += new Vector3(0.5f,0f,-0.5f) * Time.deltaTime * 4;
         }
     }
+    IEnumerator DoDamage(GameObject other)
+    {
+
+        while (coroutineStarted)
+        {
+            other.GetComponent<Enemy>().health -= damage;
+            
+            yield return new WaitForSeconds(0.5f);
+        }
+
+    }
+    
 }

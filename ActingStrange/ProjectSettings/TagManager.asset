@@ -9,6 +9,7 @@ TagManager:
   - Lane_3
   - all
   - Bot
+  - PlayerAllies
   layers:
   - Default
   - TransparentFX
