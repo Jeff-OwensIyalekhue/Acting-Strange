@@ -6,11 +6,12 @@ using UnityEngine.UI;
 public class WaveManager : MonoBehaviour {
 
     //members
-    private int waveCount = 0;
+    public int waveCount = 0;
     private float time = 0;
     private int enemyCount;
     private int currEnemies;
     private int currLane;   //1 >> left, 2 >> mid, 3 >> right
+    [Header("Player Stats")]
     public float health;
     private float currHealth;
 
@@ -20,6 +21,7 @@ public class WaveManager : MonoBehaviour {
     public WaveState state;
 
     //UI elements
+    [Header("UI Elements")]
     public GameObject inGameOverlay;
     public GameObject clearScreen;
     public Text timeText;

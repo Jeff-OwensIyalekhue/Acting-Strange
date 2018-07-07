@@ -57,6 +57,7 @@ public class GameData
 
     public void LoadSettings()
     {
+        //Debug.Log(Application.persistentDataPath);
         if (File.Exists(Application.persistentDataPath + "/gameSettings.dat"))
         {
             BinaryFormatter bF = new BinaryFormatter();
@@ -89,10 +90,13 @@ public class GameData
             {
                 if(candidatScore <= highscoreLevel1[0].score)
                 {
+                    highscoreLevel1[2] = highscoreLevel1[1];
                     highscoreLevel1[1] = candidat;
                 }
                 else
                 {
+                    highscoreLevel1[2] = highscoreLevel1[1];
+                    highscoreLevel1[1] = highscoreLevel1[0];
                     highscoreLevel1[0] = candidat;
                 }
             }

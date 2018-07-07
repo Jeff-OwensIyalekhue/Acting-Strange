@@ -61,13 +61,14 @@ public class GameManager : MonoBehaviour {
         // plays intros/outros
         if(x != 0)
         {
-            int s = Random.Range(0, introClips.Length);
+            int s = Random.RandomRange(0, introClips.Length);
+            Debug.Log(introClips.Length + "  " + s);
             audioSource.clip = introClips[s];
             audioSource.Play();
         }
         else
         {
-            int s = Random.Range(0, outroClips.Length);
+            int s = Random.RandomRange(0, outroClips.Length);
             audioSource.clip = outroClips[s];
             audioSource.Play();
         }
@@ -78,7 +79,7 @@ public class GameManager : MonoBehaviour {
     }
     IEnumerator LoadAsync()
     {
-        yield return new WaitForSeconds((audioSource.clip.length * 3) / 4);
+        yield return new WaitForSeconds(audioSource.clip.length);
 
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneToLoad);
 
