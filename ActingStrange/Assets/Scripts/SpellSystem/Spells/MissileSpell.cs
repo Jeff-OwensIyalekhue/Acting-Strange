@@ -19,8 +19,7 @@ public class MissileSpell : Spell {
     void Start()
     {
         //sollte vllt in cast() methode übertragen werden?!
-        Debug.Log(FindObjectOfType<WaveManager>().getCurrLane() + "curr lane");
-        int currlane = 1;
+        int currlane = FindObjectOfType<WaveManager>().getCurrLane();
         //setzt variablen
         //überprüft auf welcher lane wir sind oder ob wir alle lanes angreifen
         if (stage < 2)
