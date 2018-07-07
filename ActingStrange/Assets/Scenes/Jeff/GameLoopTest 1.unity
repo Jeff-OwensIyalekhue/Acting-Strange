@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0027024557, g: 0.21460798, b: 0.5131253, a: 1}
+  m_IndirectSpecularColor: {r: 0.002759312, g: 0.2145774, b: 0.5131166, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -4651,6 +4651,12 @@ Prefab:
       propertyPath: Mute
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 82561528429084612, guid: 6bdf99fb402e08545b90fcbf3f04f5d8,
+        type: 2}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 243665271326883610, guid: f5a6a221b596e954e98819d1d27e7b97,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6bdf99fb402e08545b90fcbf3f04f5d8, type: 2}
   m_IsPrefabParent: 0
@@ -9450,7 +9456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveCount: 0
-  health: 10
+  health: 25
   scoreFactor: 1000
   state: 0
   inGameOverlay: {fileID: 479194472}
@@ -9539,7 +9545,7 @@ AudioSource:
   m_GameObject: {fileID: 953195237}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 243222740918518860, guid: 6c952b3948b11954780e803524db718c,
+  OutputAudioMixerGroup: {fileID: 243665271326883610, guid: f5a6a221b596e954e98819d1d27e7b97,
     type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1

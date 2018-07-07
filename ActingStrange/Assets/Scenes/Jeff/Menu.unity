@@ -3717,6 +3717,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114902808609213642, guid: 6bdf99fb402e08545b90fcbf3f04f5d8,
+        type: 2}
+      propertyPath: mainMusic.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4020746168936624, guid: 6bdf99fb402e08545b90fcbf3f04f5d8, type: 2}
       propertyPath: m_LocalPosition.x
       value: 3.324315
@@ -3758,7 +3763,7 @@ Prefab:
         type: 2}
       propertyPath: OutputAudioMixerGroup
       value: 
-      objectReference: {fileID: 243222740918518860, guid: 6c952b3948b11954780e803524db718c,
+      objectReference: {fileID: 243665271326883610, guid: f5a6a221b596e954e98819d1d27e7b97,
         type: 2}
     - target: {fileID: 82561528429084612, guid: 6bdf99fb402e08545b90fcbf3f04f5d8,
         type: 2}
@@ -3773,6 +3778,37 @@ Prefab:
     - target: {fileID: 82561528429084612, guid: 6bdf99fb402e08545b90fcbf3f04f5d8,
         type: 2}
       propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114902808609213642, guid: 6bdf99fb402e08545b90fcbf3f04f5d8,
+        type: 2}
+      propertyPath: titleMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 69a30f81230d7384eaeca48491f0dcef, type: 3}
+    - target: {fileID: 114902808609213642, guid: 6bdf99fb402e08545b90fcbf3f04f5d8,
+        type: 2}
+      propertyPath: mainMusic
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 114902808609213642, guid: 6bdf99fb402e08545b90fcbf3f04f5d8,
+        type: 2}
+      propertyPath: mainMusic.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 43b144eb5d11b7a4293890e9daa496a2, type: 3}
+    - target: {fileID: 114902808609213642, guid: 6bdf99fb402e08545b90fcbf3f04f5d8,
+        type: 2}
+      propertyPath: mainMusic.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: e8d0285fcba10a64ca78e592fb7e45fa, type: 3}
+    - target: {fileID: 114902808609213642, guid: 6bdf99fb402e08545b90fcbf3f04f5d8,
+        type: 2}
+      propertyPath: voiceMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: f5a6a221b596e954e98819d1d27e7b97,
+        type: 2}
+    - target: {fileID: 82387510540916348, guid: 6bdf99fb402e08545b90fcbf3f04f5d8,
+        type: 2}
+      propertyPath: Mute
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

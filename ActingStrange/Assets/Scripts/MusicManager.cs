@@ -12,11 +12,12 @@ public class MusicManager : MonoBehaviour
     public static MusicManager instance;
 
     public AudioClip titleMusic;                    //Assign Audioclip for title music loop
-    public AudioClip mainMusic;                     //Assign Audioclip for main 
+    public AudioClip[] mainMusic;                     //Assign Audioclip for main 
     public AudioMixerSnapshot volumeDown;           //Reference to Audio mixer snapshot in which the master volume of main mixer is turned down
     public AudioMixerSnapshot volumeUp;             //Reference to Audio mixer snapshot in which the master volume of main mixer is turned up
 
     public AudioMixer mainMixer;
+    public AudioMixer voiceMixer;
 
     private AudioSource musicSource;                //Reference to the AudioSource which plays music
     private float resetTime = 1f;                 //Very short time used to fade in near instantly without a click
@@ -63,10 +64,12 @@ public class MusicManager : MonoBehaviour
                 musicSource.clip = titleMusic;
                 break;
             //If scene index is 1 (usually main scene) assign the clip mainMusic to musicSource
-            case 1:
-                musicSource.clip = mainMusic;
-                break;
+            //case 1:
+            //    musicSource.clip = mainMusic;
+            //    break;
             default:
+                int r = Random.Range(0, 2);
+                musicSource.clip = mainMusic[r];
                 break;
         }
         //Fade up the volume very quickly, over resetTime seconds (.01 by default)
@@ -88,7 +91,7 @@ public class MusicManager : MonoBehaviour
                 break;
             //if musicChoice is 1 assigns main_Music to audio source
             case 1:
-                musicSource.clip = mainMusic;
+                musicSource.clip = mainMusic[0];
                 break;
         }
         //Play the selected clip
@@ -111,7 +114,7 @@ public class MusicManager : MonoBehaviour
 
     public void SetVoiceLevel(float voiceLevel)
     {
-        mainMixer.SetFloat("voiceVol", voiceLevel);
+        voiceMixer.SetFloat("voiceVol", voiceLevel);
         GameData.Instance.voiceVolume = voiceLevel;
 
     }
@@ -121,6 +124,7 @@ public class MusicManager : MonoBehaviour
     {
         //call the TransitionTo function of the audioMixerSnapshot volume_Up;
         volumeUp.TransitionTo(fadeTime);
+        Debug.Log("Fade down");
     }
 
     // Call this function to fade the volume to silence over the length of fade_Time
