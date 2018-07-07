@@ -43,14 +43,14 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //if (Input.GetKeyDown("l"))
-        //{
-        //    if (sceneToLoad == 0)
-        //        LoadLevel(1);
-        //    else
-        //        LoadLevel(0);
-        //}
-	}
+        if (Input.anyKeyDown && audioSource.isPlaying)
+        {
+            audioSource.Pause();
+            StopAllCoroutines();
+            SceneManager.LoadScene(sceneToLoad);
+            fadeAnim.SetTrigger("FadeOut");
+        }
+    }
 
     // Start a level
     public void LoadLevel(int x)
@@ -61,14 +61,13 @@ public class GameManager : MonoBehaviour {
         // plays intros/outros
         if(x != 0)
         {
-            int s = Random.RandomRange(0, introClips.Length);
-            Debug.Log(introClips.Length + "  " + s);
+            int s = Random.Range(0, introClips.Length);
             audioSource.clip = introClips[s];
             audioSource.Play();
         }
         else
         {
-            int s = Random.RandomRange(0, outroClips.Length);
+            int s = Random.Range(0, outroClips.Length);
             audioSource.clip = outroClips[s];
             audioSource.Play();
         }
@@ -80,6 +79,7 @@ public class GameManager : MonoBehaviour {
     IEnumerator LoadAsync()
     {
         yield return new WaitForSeconds(audioSource.clip.length);
+        //yield return new WaitForSeconds(fade.length);
 
         AsyncOperation asyncOperation = SceneManager.LoadSceneAsync(sceneToLoad);
 

@@ -18,8 +18,9 @@ public class SwipeToRightSegment1 : IRelativeGestureSegment
         Vector3 shoulderCenter = skeleton.getRawWorldPosition(JointType.SpineShoulder);
         Vector3 handRight = skeleton.getRawWorldPosition(JointType.HandRight);
         Vector3 elbowLeft = skeleton.getRawWorldPosition(JointType.ElbowLeft);
+        Vector3 hip = skeleton.getRawWorldPosition(JointType.SpineBase);
 
-        if (handLeft.z > elbowLeft.z && handRight.y < shoulderCenter.y)
+        if (handLeft.z > elbowLeft.z && handRight.y < hip.y)
         {
             // right hand below shoulder height but above hip height
             Vector3 head = skeleton.getRawWorldPosition(JointType.Head);
@@ -59,15 +60,14 @@ public class SwipeToRightSegment2 : IRelativeGestureSegment
         Vector3 shoulderCenter = skeleton.getRawWorldPosition(JointType.SpineShoulder);
         Vector3 handRight = skeleton.getRawWorldPosition(JointType.HandRight);
         Vector3 elbowLeft = skeleton.getRawWorldPosition(JointType.ElbowLeft);
+        Vector3 hip = skeleton.getRawWorldPosition(JointType.SpineBase);
 
-        if (handLeft.z > elbowLeft.z && handRight.y < shoulderCenter.y)
+        if (handLeft.z > elbowLeft.z && handRight.y < hip.y)
         {
             // right hand below shoulder height but above hip height
             Vector3 head = skeleton.getRawWorldPosition(JointType.Head);
-            Vector3 hipCenter = skeleton.getRawWorldPosition(JointType.SpineBase);
 
-
-            if (handLeft.y < head.y && handLeft.y > hipCenter.y)
+            if (handLeft.y < head.y && handLeft.y > hip.y)
             {
                 // right hand left of right shoulder & right of left shoulder
                 Vector3 shoulderRight = skeleton.getRawWorldPosition(JointType.ShoulderRight);
@@ -103,17 +103,17 @@ public class SwipeToRightSegment3 : IRelativeGestureSegment
         Vector3 shoulderCenter = skeleton.getRawWorldPosition(JointType.SpineShoulder);
         Vector3 handRight = skeleton.getRawWorldPosition(JointType.HandRight);
         Vector3 elbowLeft = skeleton.getRawWorldPosition(JointType.ElbowLeft);
+        Vector3 hip = skeleton.getRawWorldPosition(JointType.SpineBase);
 
-        if (handLeft.z > elbowLeft.z && handRight.y < shoulderCenter.y)
+        if (handLeft.z > elbowLeft.z && handRight.y < hip.y)
         {
             // right hand below shoulder height but above hip height
             Vector3 head = skeleton.getRawWorldPosition(JointType.Head);
-            Vector3 hipCenter = skeleton.getRawWorldPosition(JointType.SpineBase);
 
-            if (handLeft.y < head.y && handLeft.y > hipCenter.y)
+            if (handLeft.y < head.y && handLeft.y > hip.y)
             {
                 // //right hand left of center hip              
-                if (handLeft.x > hipCenter.x)
+                if (handLeft.x > hip.x)
                 {
                     //Debug.Log("SwipeRight3 Success");
                     return GesturePartResult.Succeed;

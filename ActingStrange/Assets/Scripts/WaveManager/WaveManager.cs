@@ -8,12 +8,12 @@ public class WaveManager : MonoBehaviour {
     //members
     public int waveCount = 0;
     private float time = 0;
-    private int enemyCount;
-    private int currEnemies;
+    private float spawnTimer = 0;
     private int currLane;   //1 >> left, 2 >> mid, 3 >> right
     [Header("Player Stats")]
     public float health;
     private float currHealth;
+    public int scoreFactor = 1000;
 
     private Spellbook spellbook;
 
@@ -33,51 +33,94 @@ public class WaveManager : MonoBehaviour {
     public Image slot3Image;
     public Image slot4Image;
 
+    [Header("EnemySpawn")]
+    public Transform spawn1;
+    public Transform spawn2;
+    public Transform spawn3;
+    public GameObject enemy;
+    private int enemyCount;
+    private int[] enemiesToSpawn = new int[3];
+    private int currEnemies;
 
     // Use this for initialization
     void Start () {
         spellbook = gameObject.GetComponent<Spellbook>();
-        setStarting();
         currLane=1;
-        currHealth = health;
+        setStarting();
+    }
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        if (state.Equals(WaveState.STARTING))
-        {
-            time += Time.deltaTime;
-        }
+    //for spawn testing
+    public GameObject enem1 = null;
+    public GameObject enem2 = null;
+    public GameObject enem3 = null;
+
+    // Update is called once per frame
+    void Update () {
+        //Debug.Log(state.ToString());
+        
         timeText.text = "" + (int)time + " sec.";
         healthText.text = "" + (int)currHealth;
 
-        if(currEnemies == 0)
-        {
-            setFinished();
-        }
-
         if (state.Equals(WaveState.RUNNING))
         {
-            //TODO: spawn enemies with tag = "Lane"+currLane.toString();
+            if(currEnemies == 0)
+            {
+                setFinished();
+            }
+
+            if (time >= spawnTimer)
+            {
+                for(int i = 0; i < 3; i++)
+                {
+                    if (enemiesToSpawn[i] > 0)
+                    {
+                        enemiesToSpawn[i]--;
+                        spawnEnemy(i + 1);
+                    }
+                }
+                spawnTimer = time + Random.Range(1f, 3f);
+            }
+
             if (currHealth <= 0)
             {
                 //TODO: ondeath stuff
+                setFinished();
+                gameOver();
                 GameManager gameManager = FindObjectOfType<GameManager>();
                 inGameOverlay.SetActive(false);
                 gameManager.LoadLevel(0);
 
             }
+            time += Time.deltaTime;
         }
-	}
+
+
+        //test for enemy spawning
+        //for (int i = 0; i < 10000; i++)
+        //{
+        //    if (i % 30 == 0)
+        //    {
+        //        Destroy(enem1);
+        //        Destroy(enem2);
+        //        Destroy(enem3);
+        //        enem1 = spawnEnemy(1);
+        //        enem2 = spawnEnemy(2);
+        //        enem3 = spawnEnemy(3);
+        //    }
+        //}
+    }
 
     public void setStarting()           //state STARTING may be redundant; if, move this to setRunning()
     {
         state = WaveState.STARTING;
         waveCount++;
+        currHealth = health;
         waveText.text = "" + waveCount;
         enemyCount = calcEnemies(waveCount);
         currEnemies = enemyCount;
+        time = 0;
+        spawnTimer = time + Random.Range(0f, 3f);
+        setRunning();
     }
 
     public void setRunning()             
@@ -96,20 +139,34 @@ public class WaveManager : MonoBehaviour {
     public void setFinished()
     {
         state = WaveState.FINISHED;
+        spellbook.addPointToSpend(1);
         clearScreen.SetActive(true);
 
     }
 
     int calcEnemies(int waves)
     {
-        //TODO: calc enemies to spawn this wave
-        return waves;
+        int enemyCount = 1 + (int)( waves * 3 + (Mathf.Pow(2,waves/5)));
+        int rdm = Random.Range(0, 3);
+        int main = (int)((enemyCount / 3) + Random.Range(0f, enemyCount / 12));
+        for (int i = 0; i < 3; i++)
+        {
+            if(i == rdm)
+            {
+                enemiesToSpawn[i] = main;
+            }
+            else
+            {
+                enemiesToSpawn[i] = (enemyCount - main) / 2;
+            }
+        }
+        return enemyCount;
     }
 
     public void gameOver()
     {
-        //TODO: save waveCount-1 as score;
-        //GameData.SaveHighscore()
+        this.GetComponent<PlayRandomAudioClip>().MuteCLip();
+        GameData.Instance.AddHighScore((int)(((waveCount-1) + ((enemyCount-currEnemies)/(float)enemyCount)) * scoreFactor));
     }
 
     public void killedEnemies(int count)
@@ -124,6 +181,7 @@ public class WaveManager : MonoBehaviour {
 
     public void reduceHealth(float dmg)
     {
+        this.GetComponent<PlayRandomAudioClip>().PlayClip();
         currHealth -= dmg;
     }
 
@@ -137,9 +195,28 @@ public class WaveManager : MonoBehaviour {
         return time;
     }
 
-    public void spawnEnemy(int lane)
+    public GameObject spawnEnemy(int lane)
     {
-        //TODO: instanciate enemy on given lane(rdm pos)
+        GameObject spawn = null;
+        switch (lane)
+        {
+            case 1:
+                spawn = Instantiate(enemy, randCircle(spawn1, 3), spawn1.rotation);
+                
+                break;
+            case 2:
+                spawn = Instantiate(enemy, randCircle(spawn2, 3), spawn2.rotation);
+                break;
+            case 3:
+                spawn = Instantiate(enemy, randCircle(spawn3, 3), spawn3.rotation);
+                break;
+            default:
+                Debug.Log("Enemy could not be spawned at wave: " + lane);
+                break;
+        }
+        spawn.tag = "Lane_" + lane;
+        Debug.Log("Enemie spawned");
+        return spawn;
     }
 
     public void setSpellText(string text)
@@ -167,5 +244,16 @@ public class WaveManager : MonoBehaviour {
                 Debug.Log("imgae slot out of bounds.");
                 break;
         }
+    }
+
+    public Vector3 randCircle(Transform center, float maxRadius)
+    {
+        float radius = Random.RandomRange(0, maxRadius);
+        float ang = Random.value * 360;
+        Vector3 pos;
+        pos.x = center.position.x + radius * Mathf.Sin(ang * Mathf.Deg2Rad);
+        pos.z = center.position.z + radius * Mathf.Cos(ang * Mathf.Deg2Rad);
+        pos.y = center.position.y;
+        return pos;
     }
 }

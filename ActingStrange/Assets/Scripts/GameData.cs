@@ -57,7 +57,7 @@ public class GameData
 
     public void LoadSettings()
     {
-        //Debug.Log(Application.persistentDataPath);
+        Debug.Log(Application.persistentDataPath);
         if (File.Exists(Application.persistentDataPath + "/gameSettings.dat"))
         {
             BinaryFormatter bF = new BinaryFormatter();
@@ -79,12 +79,15 @@ public class GameData
 
     public void AddHighScore(int candidatScore)
     {
+        //Debug.Log("adding score attempt");
         if(candidatScore > highscoreLevel1[2].score)
         {
             HighScore candidat = new HighScore(currentName, candidatScore);
             if(candidatScore <= highscoreLevel1[1].score)
             {
                 highscoreLevel1[2] = candidat;
+                SaveHighscore();
+                //Debug.Log("add at 3");
             }
             else
             {
@@ -92,13 +95,16 @@ public class GameData
                 {
                     highscoreLevel1[2] = highscoreLevel1[1];
                     highscoreLevel1[1] = candidat;
+                    //Debug.Log("add at 2");
                 }
                 else
                 {
                     highscoreLevel1[2] = highscoreLevel1[1];
                     highscoreLevel1[1] = highscoreLevel1[0];
                     highscoreLevel1[0] = candidat;
+                    //Debug.Log("add at 1");
                 }
+                SaveHighscore();
             }
         }
     }

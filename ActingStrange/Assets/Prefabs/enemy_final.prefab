@@ -19029,8 +19029,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1570654847259226}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.525699, y: 0.032, z: -17.588896}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 608.24023, y: 338.96533, z: -1534.7002}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 4956222385028380}
   - {fileID: 4826313830849868}
@@ -38198,6 +38198,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d49d17ee26c8eeb4289e5cbd6b58b488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackCd: 1
+  attackDmg: 2
+  health: 5
+  waveManager: {fileID: 0}
 --- !u!137 &137066994040463860
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -40480,7 +40484,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 6
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
