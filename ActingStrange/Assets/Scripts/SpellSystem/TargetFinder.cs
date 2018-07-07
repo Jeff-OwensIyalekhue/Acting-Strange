@@ -17,7 +17,7 @@ public class TargetFinder : MonoBehaviour {
    public GameObject FindTarget()
    {
         WaveManager waveManager = gameObject.GetComponent<WaveManager>();
-        GameObject[] targets = GameObject.FindGameObjectsWithTag("Lane_" + "1");//waveManager.getCurrLane().ToString());
+        GameObject[] targets = GameObject.FindGameObjectsWithTag("Lane_" + GameObject.FindObjectOfType<WaveManager>().getCurrLane());
         GameObject target = null;
         //select nearest
         float maxdistance = 100000f;

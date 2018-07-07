@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class Enemy : MonoBehaviour {
+public class HulkScript : MonoBehaviour {
 
     //members
     private string name;
@@ -20,16 +20,16 @@ public class Enemy : MonoBehaviour {
 	void Start () {
         agent = gameObject.GetComponent<NavMeshAgent>();
         animator = gameObject.GetComponent<Animator>();
-        Debug.Log("start couritine");
         StartCoroutine(TestCoroutine());
 
     }
 
     IEnumerator TestCoroutine()
     {
-        yield return new WaitForSeconds(3.5f);
+        yield return new WaitForSeconds(1f);
         start = true;
-        Debug.Log("back");
+        yield return new WaitForSeconds(20f);
+        Destroy(gameObject);
     }
 
         // Update is called once per frame
@@ -40,7 +40,7 @@ public class Enemy : MonoBehaviour {
         }
         if (start)
         {
-            GameObject[] targets = GameObject.FindGameObjectsWithTag("Player");
+            GameObject[] targets = GameObject.FindGameObjectsWithTag("Lane_" + GameObject.FindObjectOfType<WaveManager>().getCurrLane());
             GameObject target = null;
 
             //select nearest
@@ -55,7 +55,7 @@ public class Enemy : MonoBehaviour {
                 {
                     target = t;
                     maxdistance = distance;
-                    if (distance <= 2.5)
+                    if (distance <= 1.5)
                     {
                         animator.SetBool("Attack", true);
                         transform.LookAt(target.transform);
@@ -69,6 +69,11 @@ public class Enemy : MonoBehaviour {
             }
             //TODO: movement
             agent.SetDestination(target.transform.position);
+        }
+
+        else
+        {
+            transform.position += new Vector3(0.5f,0f,-0.5f) * Time.deltaTime * 4;
         }
     }
 }

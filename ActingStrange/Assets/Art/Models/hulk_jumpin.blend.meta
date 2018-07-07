@@ -1,0 +1,180 @@
+fileFormatVersion: 2
+guid: a63576e5e1c4f7147afbaffe089f0665
+timeCreated: 1530955335
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: 40_herohulkbuster01s0201_1_0_0
+    100002: 40_herohulkbuster01s0202_1_0_0
+    100004: Armature
+    100006: Bip001
+    100008: Bip001_Head
+    100010: Bip001_L_Calf
+    100012: Bip001_L_Clavicle
+    100014: Bip001_L_Finger0
+    100016: Bip001_L_Finger01
+    100018: Bip001_L_Finger1
+    100020: Bip001_L_Finger11
+    100022: Bip001_L_Foot
+    100024: Bip001_L_Forearm
+    100026: Bip001_L_ForeTwist9
+    100028: Bip001_L_Hand
+    100030: Bip001_L_Thigh
+    100032: Bip001_L_Toe0
+    100034: Bip001_L_UpperArm
+    100036: Bip001_LUpArmTwist
+    100038: Bip001_Neck
+    100040: Bip001_Pelvis
+    100042: Bip001_R_Calf
+    100044: Bip001_R_Clavicle
+    100046: Bip001_R_Finger0
+    100048: Bip001_R_Finger01
+    100050: Bip001_R_Finger1
+    100052: Bip001_R_Finger11
+    100054: Bip001_R_Foot
+    100056: Bip001_R_Forearm
+    100058: Bip001_R_ForeTwist9
+    100060: Bip001_R_Hand
+    100062: Bip001_R_Thigh
+    100064: Bip001_R_Toe0
+    100066: Bip001_R_UpperArm
+    100068: Bip001_RUpArmTwist
+    100070: Bip001_Spine
+    100072: Bip001_Spine1
+    100074: eff_Bone
+    100076: eff_Bone02
+    100078: hero_hulkbuster01_s02
+    100080: //RootNode
+    100082: root_ground
+    400000: 40_herohulkbuster01s0201_1_0_0
+    400002: 40_herohulkbuster01s0202_1_0_0
+    400004: Armature
+    400006: Bip001
+    400008: Bip001_Head
+    400010: Bip001_L_Calf
+    400012: Bip001_L_Clavicle
+    400014: Bip001_L_Finger0
+    400016: Bip001_L_Finger01
+    400018: Bip001_L_Finger1
+    400020: Bip001_L_Finger11
+    400022: Bip001_L_Foot
+    400024: Bip001_L_Forearm
+    400026: Bip001_L_ForeTwist9
+    400028: Bip001_L_Hand
+    400030: Bip001_L_Thigh
+    400032: Bip001_L_Toe0
+    400034: Bip001_L_UpperArm
+    400036: Bip001_LUpArmTwist
+    400038: Bip001_Neck
+    400040: Bip001_Pelvis
+    400042: Bip001_R_Calf
+    400044: Bip001_R_Clavicle
+    400046: Bip001_R_Finger0
+    400048: Bip001_R_Finger01
+    400050: Bip001_R_Finger1
+    400052: Bip001_R_Finger11
+    400054: Bip001_R_Foot
+    400056: Bip001_R_Forearm
+    400058: Bip001_R_ForeTwist9
+    400060: Bip001_R_Hand
+    400062: Bip001_R_Thigh
+    400064: Bip001_R_Toe0
+    400066: Bip001_R_UpperArm
+    400068: Bip001_RUpArmTwist
+    400070: Bip001_Spine
+    400072: Bip001_Spine1
+    400074: eff_Bone
+    400076: eff_Bone02
+    400078: hero_hulkbuster01_s02
+    400080: //RootNode
+    400082: root_ground
+    2100000: 40_herohulkbuster01s0202_1_0_0__hero_hulkbuster01_s02_02_png
+    2100002: 40_herohulkbuster01s0201_1_0_0__hero_hulkbuster01_s02_01_png
+    4300000: 40_herohulkbuster01s0202_1_0_0
+    4300002: 40_herohulkbuster01s0201_1_0_0
+    7400000: Default Take
+    7400002: ArmatureAction
+    9500000: //RootNode
+    13700000: 40_herohulkbuster01s0201_1_0_0
+    13700002: 40_herohulkbuster01s0202_1_0_0
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
