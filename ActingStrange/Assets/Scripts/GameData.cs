@@ -57,7 +57,7 @@ public class GameData
 
     public void LoadSettings()
     {
-        Debug.Log(Application.persistentDataPath);
+        //Debug.Log(Application.persistentDataPath);
         if (File.Exists(Application.persistentDataPath + "/gameSettings.dat"))
         {
             BinaryFormatter bF = new BinaryFormatter();

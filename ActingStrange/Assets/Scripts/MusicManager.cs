@@ -124,7 +124,7 @@ public class MusicManager : MonoBehaviour
     {
         //call the TransitionTo function of the audioMixerSnapshot volume_Up;
         volumeUp.TransitionTo(fadeTime);
-        Debug.Log("Fade down");
+        //Debug.Log("Fade down");
     }
 
     // Call this function to fade the volume to silence over the length of fade_Time
