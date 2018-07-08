@@ -8,6 +8,8 @@ public class GameLogic : MonoBehaviour {
 
     public Spellbook spellbook;
 
+    public WaveManager waveManager;
+
 	// Use this for initialization
 	void Start () {
         gc.GestureRecognizedInController += OnGestureRecognized;
@@ -58,10 +60,11 @@ public class GameLogic : MonoBehaviour {
         if (e.GestureName == "SwipeLeft")
         {
             Debug.Log("SwipeLeft Recognized");
-            if (playerAvatar.transform.position.x > -5)
+            if (playerAvatar.transform.position.x > -3)
             {
-                playerAvatar.transform.position += new Vector3(-5, 0, 0);
-                playerAvatar.transform.Rotate(0, -45, 0);
+                waveManager.setCurrLane(-1);
+                playerAvatar.transform.position += new Vector3(-3, 0, 0);
+                playerAvatar.transform.Rotate(0, -35, 0);
             }
             else
             {
@@ -72,10 +75,11 @@ public class GameLogic : MonoBehaviour {
         if (e.GestureName == "SwipeRight")
         {
             Debug.Log("SwipeRight Recognized");
-            if (playerAvatar.transform.position.x < 5)
+            if (playerAvatar.transform.position.x < 3)
             {
-                playerAvatar.transform.position += new Vector3(5, 0, 0);
-                playerAvatar.transform.Rotate(0, 45, 0);
+                waveManager.setCurrLane(1);
+                playerAvatar.transform.position += new Vector3(3, 0, 0);
+                playerAvatar.transform.Rotate(0, 35, 0);
             }
             else
             {
@@ -83,23 +87,9 @@ public class GameLogic : MonoBehaviour {
             }
 
         }
-        //if (e.GestureName == "PullLeft")
-        //{
-        //    Debug.Log("PullLeft Recognized");
-        //}
-        //if (e.GestureName == "SwipeLeftBack")
-        //{
-        //    Debug.Log("SwipeBack Recognized");
-
-        //}
-        //if (e.GestureName == "PushFwrd")
-        //{
-        //    Debug.Log("pushFwrd Recognized");
-
-        //}
         if (e.GestureName == "Clap")
         {
-            //spellbook.spellCache[0].cast();
+            spellbook.spellCache[0].cast();
             Debug.Log("Clap Recognized");
         }
         if (e.GestureName == "PunchDown")
@@ -119,6 +109,20 @@ public class GameLogic : MonoBehaviour {
             //spellbook.spellCache[3].cast();
             Debug.Log("Circle Recognized");
         }
+        //if (e.GestureName == "PullLeft")
+        //{
+        //    Debug.Log("PullLeft Recognized");
+        //}
+        //if (e.GestureName == "SwipeLeftBack")
+        //{
+        //    Debug.Log("SwipeBack Recognized");
+
+        //}
+        //if (e.GestureName == "PushFwrd")
+        //{
+        //    Debug.Log("pushFwrd Recognized");
+
+        //}
         //if (e.GestureName == "Cross")
         //{
         //    Debug.Log("Cross Recognized");

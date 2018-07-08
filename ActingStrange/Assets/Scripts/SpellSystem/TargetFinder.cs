@@ -4,21 +4,30 @@ using UnityEngine;
 
 public class TargetFinder : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    Transform target;
+    GameObject[] targets;
+    WaveManager waveManager;
+
+    string currentSearchedTag;
+
+    // Use this for initialization
+    void Start () {
+        waveManager = this.GetComponent<WaveManager>();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (Input.GetKeyDown(KeyCode.KeypadEnter))
+            FindTarget();
+            
 	}
 
-   public GameObject FindTarget()
+   public Transform FindTarget()
    {
-        WaveManager waveManager = gameObject.GetComponent<WaveManager>();
-        GameObject[] targets = GameObject.FindGameObjectsWithTag("Lane_" + GameObject.FindObjectOfType<WaveManager>().getCurrLane());
-        GameObject target = null;
+        currentSearchedTag = "Lane_" + waveManager.getCurrLane();
+        Debug.Log(currentSearchedTag);
+        targets = GameObject.FindGameObjectsWithTag(currentSearchedTag);
         //select nearest
         float maxdistance = 100000f;
 
@@ -29,12 +38,26 @@ public class TargetFinder : MonoBehaviour {
 
             if (distance <= maxdistance)
             {
-                target = t;
+                target = t.transform;
                 maxdistance = distance;
             }
         }
         if (target == null)
         {
+            switch (waveManager.getCurrLane())
+            {
+                case 1:
+                    target = waveManager.spawn1;
+                    break;
+                case 2:
+                    target = waveManager.spawn2;
+                    break;
+                case 3:
+                    target = waveManager.spawn3;
+                    break;
+                default:
+                    break;
+            }
             Debug.Log("No target found!");
         }
         return target;

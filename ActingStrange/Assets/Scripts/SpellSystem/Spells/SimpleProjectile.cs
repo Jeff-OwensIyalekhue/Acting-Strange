@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SimpleProjectile : Spell {
+public class SimpleProjectile : MonoBehaviour {
 
     public Transform target;
     public float damage;

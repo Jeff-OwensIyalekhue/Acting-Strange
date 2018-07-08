@@ -46,7 +46,7 @@ public class WaveManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         spellbook = gameObject.GetComponent<Spellbook>();
-        currLane=1;
+        currLane=2;
         setStarting();
     }
 
@@ -75,8 +75,8 @@ public class WaveManager : MonoBehaviour {
                 {
                     if (enemiesToSpawn[i] > 0)
                     {
-                        enemiesToSpawn[i]--;
-                        spawnEnemy(i + 1);
+                        //enemiesToSpawn[i]--;
+                        //spawnEnemy(i + 1);
                     }
                 }
                 spawnTimer = time + Random.Range(1f, 3f);
@@ -178,6 +178,10 @@ public class WaveManager : MonoBehaviour {
     public int getCurrLane()
     {
         return currLane;
+    }
+    public void setCurrLane(int x)
+    {
+        currLane += x;
     }
 
     public void reduceHealth(float dmg)

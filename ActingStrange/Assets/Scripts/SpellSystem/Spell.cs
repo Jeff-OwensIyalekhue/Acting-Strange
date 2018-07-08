@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(TargetFinder))]
 public class Spell : MonoBehaviour
 {
 
@@ -35,11 +34,13 @@ public class Spell : MonoBehaviour
 
     //Jeff
     public WaveManager wM;
+    TargetFinder targetFinder;
 
     //base functions
     void Start()
     {
         //TODO
+        targetFinder = FindObjectOfType<TargetFinder>();
     }
 
     void Update()
@@ -56,7 +57,7 @@ public class Spell : MonoBehaviour
     {
         if (cdRemaining <= 0)
         {
-            GameObject target = gameObject.GetComponent<TargetFinder>().FindTarget();
+            Transform target = targetFinder.FindTarget();
             GameObject spellInstance;
             GameObject objToInstance = null;
             switch (stage)
@@ -82,6 +83,7 @@ public class Spell : MonoBehaviour
                 case 0:
                     spellInstance = Instantiate(objToInstance, transform.position, Quaternion.identity);
                     spellInstance.GetComponent<SimpleProjectile>().target = target.transform;
+                    Debug.Log("SpellType 1 castet");
                     break;
                 case 1:
                     spellInstance = Instantiate(objToInstance, target.transform.position, Quaternion.identity);
