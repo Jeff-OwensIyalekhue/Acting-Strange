@@ -38230,7 +38230,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCd: 0.5
   attackDmg: 0.3
-  health: 100
+  health: 10
   waveManager: {fileID: 0}
 --- !u!136 &136048273124633914
 CapsuleCollider:

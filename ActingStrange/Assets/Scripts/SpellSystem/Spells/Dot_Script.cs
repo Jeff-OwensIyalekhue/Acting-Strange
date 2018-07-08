@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+
 public class Dot_Script : MonoBehaviour {
     private List<GameObject> enemies = new List<GameObject>();
     public float damage;
+    public float intervalOfDamage = 0.5f;
+    public float ownLifeSpan = 5f;
     private bool coroutineStarted;
     // Use this for initialization
     void Start()
@@ -16,7 +19,7 @@ public class Dot_Script : MonoBehaviour {
 
     IEnumerator Destroy()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(ownLifeSpan);
         Destroy(gameObject);
     }
 
@@ -28,7 +31,7 @@ public class Dot_Script : MonoBehaviour {
             foreach(GameObject t in enemies)
             {
                 t.GetComponent<Enemy>().health -= damage;
-                yield return new WaitForSeconds(0.5f);
+                yield return new WaitForSeconds(intervalOfDamage);
             }
         }
         coroutineStarted = false;

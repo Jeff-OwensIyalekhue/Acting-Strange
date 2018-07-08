@@ -94,19 +94,19 @@ public class GameLogic : MonoBehaviour {
         }
         if (e.GestureName == "PunchDown")
         {
-            //spellbook.spellCache[1].cast();
+            spellbook.spellCache[1].cast();
             Debug.Log("PunchDown Recognized");
 
         }
         if (e.GestureName == "PullUp")
         {
-            //spellbook.spellCache[2].cast();
+            spellbook.spellCache[2].cast();
             Debug.Log("PullUp Recognized");
 
         }
         if (e.GestureName == "Circle")
         {
-            //spellbook.spellCache[3].cast();
+            spellbook.spellCache[3].cast();
             Debug.Log("Circle Recognized");
         }
         //if (e.GestureName == "PullLeft")

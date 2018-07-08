@@ -4,16 +4,17 @@ using UnityEngine.AI;
 using UnityEngine;
 
 public class Slow_Script : MonoBehaviour {
-    private float speed = 3.5f;
+    public float slowFactor= 0.5f;
+    public float lifeSpan = 11f;
 	// Use this for initialization
 	void Start () {
-        StartCoroutine(TestCoroutine());
+        StartCoroutine(Die());
 
     }
 
-    IEnumerator TestCoroutine()
+    IEnumerator Die()
     {
-        yield return new WaitForSeconds(11f);
+        yield return new WaitForSeconds(lifeSpan);
         Destroy(gameObject);
     }
 
@@ -28,7 +29,7 @@ public class Slow_Script : MonoBehaviour {
         if(other.tag == "Lane_1" || other.tag == "Lane_2"||other.tag == "Lane_3")
         {
             Debug.Log("got_Enemy");
-            other.GetComponent<NavMeshAgent>().speed = other.GetComponent<NavMeshAgent>().speed*0.5f;
+            other.GetComponent<NavMeshAgent>().speed = other.GetComponent<NavMeshAgent>().speed * slowFactor;
         }
     }
     private void OnTriggerExit(Collider other)
@@ -36,7 +37,7 @@ public class Slow_Script : MonoBehaviour {
         if (other.tag == "Lane_1" || other.tag == "Lane_2" || other.tag == "Lane_3")
         {
             Debug.Log("got_Enemy");
-            other.GetComponent<NavMeshAgent>().speed = other.GetComponent<NavMeshAgent>().speed * 2f;
+            other.GetComponent<NavMeshAgent>().speed = other.GetComponent<NavMeshAgent>().speed / slowFactor;
         }
     }
 }

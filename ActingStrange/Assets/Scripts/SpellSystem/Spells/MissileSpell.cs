@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-public class MissileSpell : Spell {
+public class MissileSpell : MonoBehaviour {
 
     //members
 
@@ -15,6 +15,9 @@ public class MissileSpell : Spell {
     public GameObject missile;
     //legt fest welche lane wir gerade sind, sollte beim aufrufen des scripts gesetzt werden
     public string lane;
+
+    public bool simple;
+
     //base functions
     void Start()
     {
@@ -22,7 +25,7 @@ public class MissileSpell : Spell {
         int currlane = FindObjectOfType<WaveManager>().getCurrLane();
         //setzt variablen
         //überprüft auf welcher lane wir sind oder ob wir alle lanes angreifen
-        if (stage < 2)
+        if (simple)
         {
             switch (currlane)//FindObjectOfType<WaveManager>().getCurrLane())
             {

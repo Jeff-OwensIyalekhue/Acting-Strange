@@ -39,8 +39,9 @@ GameObject:
   - component: {fileID: 198881884867445730}
   - component: {fileID: 199838906569730386}
   - component: {fileID: 114334537632601670}
+  - component: {fileID: 114062894616876312}
   m_Layer: 0
-  m_Name: Skill_circle_big
+  m_Name: Burst_Stage_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104,6 +105,18 @@ Transform:
   m_Father: {fileID: 4331557661188438}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &114062894616876312
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1522404687458626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7fef05490c559c48be24733e583bb58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 8
 --- !u!114 &114334537632601670
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -115,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdd6efbe6f5d9b24eb47ef6e3e0d182e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 1193945951983660, guid: af96172e12657bc43a8bc3877bc7957c, type: 2}
+  missile: {fileID: 1193945951983660, guid: 6eaa9c025f7944f458b4a02b3a4f35d8, type: 2}
   lane: Lanes.Lane1
   simple: 1
 --- !u!198 &198026979034258014

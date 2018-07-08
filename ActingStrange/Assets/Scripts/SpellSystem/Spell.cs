@@ -83,7 +83,7 @@ public class Spell : MonoBehaviour
                 case 0:
                     spellInstance = Instantiate(objToInstance, transform.position, Quaternion.identity);
                     spellInstance.GetComponent<SimpleProjectile>().target = target.transform;
-                    Debug.Log("SpellType 1 castet");
+                    //Debug.Log("SpellType 1 castet");
                     break;
                 case 1:
                     spellInstance = Instantiate(objToInstance, target.transform.position, Quaternion.identity);
@@ -96,6 +96,9 @@ public class Spell : MonoBehaviour
                 case 3:
                     //shockwave & burst
                     spellInstance = Instantiate(objToInstance, transform.position, Quaternion.identity);
+                    break;
+                case 4: //for obstacle
+                    spellInstance = Instantiate(objToInstance, target.transform.position + target.transform.forward * 2 + target.transform.up * 2, Quaternion.identity);
                     break;
                 default:
                     Debug.Log("type of spell not btw. 0 - 3");

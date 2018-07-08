@@ -25,7 +25,6 @@ public class ShockwaveScript : MonoBehaviour {
         if (other.tag == "Lane_1" || other.tag == "Lane_2" || other.tag == "Lane_3")
         {
             other.GetComponent<Enemy>().health -= damage;
-            DestroyObject(gameObject);
         }
     }
 }

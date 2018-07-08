@@ -51,9 +51,9 @@ public class WaveManager : MonoBehaviour {
     }
 
     //for spawn testing
-    public GameObject enem1 = null;
-    public GameObject enem2 = null;
-    public GameObject enem3 = null;
+    //public GameObject enem1 = null;
+    //public GameObject enem2 = null;
+    //public GameObject enem3 = null;
 
     // Update is called once per frame
     void Update () {
@@ -75,8 +75,8 @@ public class WaveManager : MonoBehaviour {
                 {
                     if (enemiesToSpawn[i] > 0)
                     {
-                        //enemiesToSpawn[i]--;
-                        //spawnEnemy(i + 1);
+                        enemiesToSpawn[i]--;
+                        spawnEnemy(i + 1);
                     }
                 }
                 spawnTimer = time + Random.Range(1f, 3f);
