@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0027024557, g: 0.21460798, b: 0.5131253, a: 1}
+  m_IndirectSpecularColor: {r: 0.002759312, g: 0.2145774, b: 0.5131166, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -13910,6 +13910,11 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 114199538555649214, guid: f869fbcbc19c5b9418cad83cd40a5089,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 224931419306839964, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -15022,6 +15027,31 @@ Prefab:
     - target: {fileID: 114260484829917948, guid: f869fbcbc19c5b9418cad83cd40a5089,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[11].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114199538555649214, guid: f869fbcbc19c5b9418cad83cd40a5089,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114199538555649214, guid: f869fbcbc19c5b9418cad83cd40a5089,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114199538555649214, guid: f869fbcbc19c5b9418cad83cd40a5089,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 953195239}
+    - target: {fileID: 114199538555649214, guid: f869fbcbc19c5b9418cad83cd40a5089,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: gameOver
+      objectReference: {fileID: 0}
+    - target: {fileID: 114199538555649214, guid: f869fbcbc19c5b9418cad83cd40a5089,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
