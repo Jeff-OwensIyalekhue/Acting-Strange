@@ -60,7 +60,7 @@ public class GameLogic : MonoBehaviour {
         if (e.GestureName == "SwipeLeft")
         {
             Debug.Log("SwipeLeft Recognized");
-            if (playerAvatar.transform.position.x > -3)
+            if (playerAvatar.transform.position.x > -2)
             {
                 waveManager.setCurrLane(-1);
                 playerAvatar.transform.position += new Vector3(-2, 0, 0);
@@ -75,7 +75,7 @@ public class GameLogic : MonoBehaviour {
         if (e.GestureName == "SwipeRight")
         {
             Debug.Log("SwipeRight Recognized");
-            if (playerAvatar.transform.position.x < 3)
+            if (playerAvatar.transform.position.x < 2)
             {
                 waveManager.setCurrLane(1);
                 playerAvatar.transform.position += new Vector3(2, 0, 0);
