@@ -60,7 +60,7 @@ public class WaveManager : MonoBehaviour {
         //Debug.Log(state.ToString());
         
         timeText.text = "" + (int)time + " sec.";
-        healthText.text = "" + (int)currHealth;
+        healthText.text = "L:" + (int)currHealth;
 
         if (state.Equals(WaveState.RUNNING))
         {
@@ -116,7 +116,7 @@ public class WaveManager : MonoBehaviour {
         state = WaveState.STARTING;
         waveCount++;
         currHealth = health;
-        waveText.text = "" + waveCount;
+        waveText.text = "Scene " + waveCount;
         enemyCount = calcEnemies(waveCount);
         currEnemies = enemyCount;
         time = 0;
@@ -166,7 +166,7 @@ public class WaveManager : MonoBehaviour {
 
     public void gameOver()
     {
-        this.GetComponent<PlayRandomAudioClip>().MuteCLip();
+        this.GetComponent<PlayRandomAudioClip>().MuteClip();
         GameData.Instance.AddHighScore((int)(((waveCount-1) + ((enemyCount-currEnemies)/(float)enemyCount)) * scoreFactor));
     }
 
