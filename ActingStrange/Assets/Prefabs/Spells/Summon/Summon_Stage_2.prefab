@@ -156,6 +156,7 @@ GameObject:
   - component: {fileID: 4991349853057062}
   - component: {fileID: 54591272616727364}
   - component: {fileID: 82929038539633796}
+  - component: {fileID: 114083411316718214}
   m_Layer: 0
   m_Name: Portal_Effect
   m_TagString: Untagged
@@ -928,8 +929,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1979484703161438}
   m_LocalRotation: {x: -0, y: 0.8932168, z: -0, w: 0.44962633}
-  m_LocalPosition: {x: -6.1, y: 1.5599995, z: -0.5699978}
-  m_LocalScale: {x: 1.5000005, y: 1.5, z: 1.5000005}
+  m_LocalPosition: {x: -3.08, y: 2.6299996, z: -1.1899978}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4558568266266504}
   - {fileID: 4205583434532578}
@@ -1507,7 +1508,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1130448146967368}
   m_LocalRotation: {x: -0.17006348, y: -0.43751922, z: -0.12679546, w: 0.87382966}
-  m_LocalPosition: {x: -6.52, y: 4.99, z: -0.2}
+  m_LocalPosition: {x: -3.5, y: 6.06, z: -0.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4780343980057822}
@@ -1927,6 +1928,18 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &114083411316718214
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1130448146967368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7fef05490c559c48be24733e583bb58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 2
 --- !u!114 &114270952591921078
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2012,7 +2025,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1979484703161438}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 1.62
   m_Height: 2.22
   m_Direction: 1

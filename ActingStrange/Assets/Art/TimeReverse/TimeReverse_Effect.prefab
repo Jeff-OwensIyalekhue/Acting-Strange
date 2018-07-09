@@ -37,6 +37,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4031669547860740}
   - component: {fileID: 114768099275801462}
+  - component: {fileID: 114961626996100166}
   m_Layer: 0
   m_Name: TimeReverse_Effect
   m_TagString: Untagged
@@ -114,6 +115,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duration: 3
+--- !u!114 &114961626996100166
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1306795981457328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 535f7adbbd3d0d04eb16839281d26e59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 3
 --- !u!198 &198120071766241514
 ParticleSystem:
   m_ObjectHideFlags: 1

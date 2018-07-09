@@ -16,11 +16,13 @@ public class HulkScript : MonoBehaviour {
     private float slow;
     public float damage;
     private bool start = false;
+    int lane;
 	// Use this for initialization
 	void Start () {
         agent = gameObject.GetComponent<NavMeshAgent>();
         animator = gameObject.GetComponent<Animator>();
         StartCoroutine(TestCoroutine());
+        lane = GameObject.FindObjectOfType<WaveManager>().getCurrLane();
 
     }
 
@@ -36,11 +38,11 @@ public class HulkScript : MonoBehaviour {
     void Update () {
         if (start)
         {
-            GameObject[] targets = GameObject.FindGameObjectsWithTag("Lane_" + GameObject.FindObjectOfType<WaveManager>().getCurrLane());
+            GameObject[] targets = GameObject.FindGameObjectsWithTag("Lane_" + lane);
             GameObject target = null;
 
             //select nearest
-            float maxdistance = 10000000f;
+            float maxdistance = 1000000f;
 
             //findet nächsten enemy und setzt ihn als target
             foreach (GameObject t in targets)
@@ -51,7 +53,7 @@ public class HulkScript : MonoBehaviour {
                 {
                     target = t;
                     maxdistance = distance;
-                    if (distance <= 1.5)
+                    if (distance <= 2.5)
                     {
                         animator.SetBool("Attack", true);
                         transform.LookAt(target.transform);

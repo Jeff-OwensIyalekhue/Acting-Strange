@@ -9,12 +9,19 @@ public class SimpleProjectile : MonoBehaviour {
     public float speed=0.1f;
     // Use this for initialization
     void Start () {
-		
+        WaveManager wm = FindObjectOfType<WaveManager>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = Vector3.MoveTowards(transform.position, target.position+Vector3.up*2, speed);
+        if (target != null)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, target.position+Vector3.up*2, speed);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
         //vllt mit look at besser..
         transform.LookAt(target);
     }

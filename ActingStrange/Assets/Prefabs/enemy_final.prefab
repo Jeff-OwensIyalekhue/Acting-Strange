@@ -7165,7 +7165,7 @@ GameObject:
   - component: {fileID: 82050023061899642}
   m_Layer: 0
   m_Name: enemy_final
-  m_TagString: Lane_1
+  m_TagString: Lane_2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19033,8 +19033,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1570654847259226}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.525699, y: 0.032, z: -17.588896}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalPosition: {x: -0.525699, y: 0.032, z: -23.59}
+  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
   m_Children:
   - {fileID: 4956222385028380}
   - {fileID: 4826313830849868}
@@ -38293,7 +38293,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1570654847259226}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c3c23e6bd50ff641b60e161bf4955cc, type: 3}
   m_Name: 
@@ -38313,6 +38313,7 @@ MonoBehaviour:
   attackCd: 0.5
   attackDmg: 0.3
   health: 10
+  lane_0: 0
   waveManager: {fileID: 0}
   audioSource: {fileID: 82050023061899642}
   attackClips:
@@ -40618,7 +40619,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 2.6
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

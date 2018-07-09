@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour {
     private float slow;
     private float dot;
     private bool start = false;
-
+    public bool lane_0;
     public WaveManager waveManager;
     GameObject target;
     GameObject bot;
@@ -50,6 +50,10 @@ public class Enemy : MonoBehaviour {
 
         // Update is called once per frame
     void Update () {
+        if (lane_0)
+        {
+            gameObject.tag = "Lane_" + FindObjectOfType<WaveManager>().getCurrLane();
+        }
         if (health <= 0)
         {
             waveManager.killedEnemies(1);

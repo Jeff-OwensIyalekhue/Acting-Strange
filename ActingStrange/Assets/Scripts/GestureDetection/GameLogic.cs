@@ -63,8 +63,8 @@ public class GameLogic : MonoBehaviour {
             if (playerAvatar.transform.position.x > -3)
             {
                 waveManager.setCurrLane(-1);
-                playerAvatar.transform.position += new Vector3(-3, 0, 0);
-                playerAvatar.transform.Rotate(0, -35, 0);
+                playerAvatar.transform.position += new Vector3(-2, 0, 0);
+                playerAvatar.transform.Rotate(0, -20, 0);
             }
             else
             {
@@ -78,8 +78,8 @@ public class GameLogic : MonoBehaviour {
             if (playerAvatar.transform.position.x < 3)
             {
                 waveManager.setCurrLane(1);
-                playerAvatar.transform.position += new Vector3(3, 0, 0);
-                playerAvatar.transform.Rotate(0, 35, 0);
+                playerAvatar.transform.position += new Vector3(2, 0, 0);
+                playerAvatar.transform.Rotate(0, 20, 0);
             }
             else
             {

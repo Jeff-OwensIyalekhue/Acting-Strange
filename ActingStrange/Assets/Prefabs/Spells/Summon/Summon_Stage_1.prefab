@@ -156,6 +156,7 @@ GameObject:
   - component: {fileID: 4991349853057062}
   - component: {fileID: 54591272616727364}
   - component: {fileID: 82717182856400410}
+  - component: {fileID: 114915899946414922}
   m_Layer: 0
   m_Name: Portal_Effect
   m_TagString: Untagged
@@ -785,7 +786,6 @@ GameObject:
   - component: {fileID: 195889610537065736}
   - component: {fileID: 114596159658411064}
   - component: {fileID: 114945352613446794}
-  - component: {fileID: 54458864587947084}
   - component: {fileID: 82761454537327346}
   m_Layer: 0
   m_Name: hulk_jumpin
@@ -928,8 +928,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1979484703161438}
   m_LocalRotation: {x: -0, y: 0.8932168, z: -0, w: 0.44962633}
-  m_LocalPosition: {x: -6.1, y: 1.5599995, z: -0.5699978}
-  m_LocalScale: {x: 1.5000005, y: 1.5, z: 1.5000005}
+  m_LocalPosition: {x: -3.08, y: 2.6299996, z: -1.1899978}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4558568266266504}
   - {fileID: 4205583434532578}
@@ -1507,7 +1507,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1130448146967368}
   m_LocalRotation: {x: -0.17006348, y: -0.43751922, z: -0.12679546, w: 0.87382966}
-  m_LocalPosition: {x: -6.52, y: 4.99, z: -0.2}
+  m_LocalPosition: {x: -3.5, y: 6.06, z: -0.82}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4780343980057822}
@@ -1655,21 +1655,6 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 48
-  m_CollisionDetection: 0
---- !u!54 &54458864587947084
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1979484703161438}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!54 &54591272616727364
 Rigidbody:
@@ -1965,7 +1950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3614fb3822c9004099e440aeecb283b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 5
+  damage: 0.5
 --- !u!114 &114596159658411064
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1978,6 +1963,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   recordTime: 5
+--- !u!114 &114915899946414922
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1130448146967368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7fef05490c559c48be24733e583bb58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeSpan: 2
 --- !u!114 &114945352613446794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2012,7 +2009,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1979484703161438}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 1.62
   m_Height: 2.22
   m_Direction: 1
