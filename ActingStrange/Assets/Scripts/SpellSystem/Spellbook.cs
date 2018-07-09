@@ -126,6 +126,7 @@ public class Spellbook : MonoBehaviour {
             {
                 spell.setStage(1);
                 spell.addCurrPoints((-1) * spell.getCurrPoints());
+                spell.cd = spell.cd2;
                 selectSpell(selectedID);//fucking bad work around to update the ui...  sooooooorry
                 Debug.Log(spell.getName() + " successfully upgraded.");
                 //TODO: popup
@@ -133,6 +134,7 @@ public class Spellbook : MonoBehaviour {
             {
                 spell.setStage(2);
                 spell.addCurrPoints((-1) * spell.getCurrPoints());
+                spell.cd = spell.cd3;
                 selectSpell(selectedID);//fucking bad work around to update the ui...  sooooooorry
                 Debug.Log(spell.getName() + " successfully upgraded.");
                 //TODO: popup

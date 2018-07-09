@@ -27,7 +27,7 @@ public class Spell : MonoBehaviour
     public Sprite icon;     //nice to have: 3 icons
 
     //spell attributes          --- may add these to own obj and after casting, put these on spell Object!?
-    public float cd1;       //cooldown
+    public float cd;       //cooldown
     public float cd2;
     public float cd3;
     public float cdRemaining;
@@ -64,20 +64,18 @@ public class Spell : MonoBehaviour
             {
                 case 0:
                     objToInstance = spellObject1;
-                    cdRemaining = cd1;
                     break;
                 case 1:
                     objToInstance = spellObject2;
-                    cdRemaining = cd2;
                     break;
                 case 2:
                     objToInstance = spellObject3;
-                    cdRemaining = cd3;
                     break;
                 default:
                     Debug.Log("stage of spell not btw. 0 - 2");
                     break;
             }
+            cdRemaining = cd;
             switch (spellType)
             {
                 case 0:

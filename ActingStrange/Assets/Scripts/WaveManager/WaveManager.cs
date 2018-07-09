@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class WaveManager : MonoBehaviour {
 
     //members
-    public int waveCount = 0;
+    public int waveCount = 5;
     private float time = 0;
     private float spawnTimer = 0;
     private int currLane;   //1 >> left, 2 >> mid, 3 >> right
@@ -42,11 +42,13 @@ public class WaveManager : MonoBehaviour {
     private int enemyCount;
     private int[] enemiesToSpawn = new int[3];
     private int currEnemies;
+    private int spawnedEnemies;
 
     // Use this for initialization
     void Start () {
         spellbook = gameObject.GetComponent<Spellbook>();
         currLane=2;
+        spawnedEnemies = 0;
         setStarting();
     }
 
@@ -64,22 +66,30 @@ public class WaveManager : MonoBehaviour {
 
         if (state.Equals(WaveState.RUNNING))
         {
-            if(currEnemies == 0)
+
+            slot1Image.fillAmount = (spellbook.getSpellCache()[0].cd - spellbook.getSpellCache()[0].cdRemaining) / spellbook.getSpellCache()[0].cd;
+            slot2Image.fillAmount = (spellbook.getSpellCache()[1].cd - spellbook.getSpellCache()[1].cdRemaining) / spellbook.getSpellCache()[1].cd;
+            slot3Image.fillAmount = (spellbook.getSpellCache()[2].cd - spellbook.getSpellCache()[2].cdRemaining) / spellbook.getSpellCache()[2].cd;
+            slot4Image.fillAmount = (spellbook.getSpellCache()[3].cd - spellbook.getSpellCache()[3].cdRemaining) / spellbook.getSpellCache()[3].cd;
+
+            if (currEnemies == 0)
             {
                 setFinished();
             }
 
-            if (time >= spawnTimer)
+            if (time >= spawnTimer && spawnedEnemies < 13)
             {
                 for(int i = 0; i < 3; i++)
                 {
-                    if (enemiesToSpawn[i] > 0)
+                    float r = Random.value;
+                    if (enemiesToSpawn[i] > 0 && r > 0.4)
                     {
                         enemiesToSpawn[i]--;
-                        spawnEnemy(i + 1);
+                        spawnedEnemies++;
+                        spawnEnemy(i + 1);                        
                     }
                 }
-                spawnTimer = time + Random.Range(1f, 3f);
+                spawnTimer = time + Random.Range(2f, 4f);
             }
 
             if (currHealth <= 0)
@@ -147,9 +157,11 @@ public class WaveManager : MonoBehaviour {
 
     int calcEnemies(int waves)
     {
-        int enemyCount = 1 + (int)( waves * 3 + (Mathf.Pow(2,waves/5)));
+        int enemyCount = (int)( waves * 3 + (Mathf.Pow(2,waves/7)));
         int rdm = Random.Range(0, 3);
         int main = (int)((enemyCount / 3) + Random.Range(0f, enemyCount / 12));
+        int other = (enemyCount - main)/2;
+        enemyCount = main + 2 * other;
         for (int i = 0; i < 3; i++)
         {
             if(i == rdm)
@@ -158,7 +170,7 @@ public class WaveManager : MonoBehaviour {
             }
             else
             {
-                enemiesToSpawn[i] = (enemyCount - main) / 2;
+                enemiesToSpawn[i] = other;
             }
         }
         return enemyCount;
@@ -173,6 +185,7 @@ public class WaveManager : MonoBehaviour {
     public void killedEnemies(int count)
     {
         currEnemies -= count;
+        spawnedEnemies -= count;
     }
 
     public int getCurrLane()
