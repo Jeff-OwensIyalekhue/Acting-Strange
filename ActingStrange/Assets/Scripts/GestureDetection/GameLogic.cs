@@ -37,7 +37,7 @@ public class GameLogic : MonoBehaviour {
         IRelativeGestureSegment[] pullUp = { new PullUpSegment1(), new PullUpSegment2(), new PullUpSegment3() };
         gc.AddGesture("PullUp", pullUp);
 
-        IRelativeGestureSegment[] circle = { new CircleSegment1(), new CircleSegment2(), new CircleSegment3() ,new CircleSegment4(), new CircleSegment1() };
+        IRelativeGestureSegment[] circle = { new CircleSegment1(), new CircleSegment4(), new CircleSegment3() ,new CircleSegment2(), new CircleSegment1() };
         gc.AddGesture("Circle", circle);
 
         //IRelativeGestureSegment[] cross = { new CrossSegment1(), new CrossSegment2()};
