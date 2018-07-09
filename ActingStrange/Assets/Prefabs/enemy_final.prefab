@@ -7162,6 +7162,7 @@ GameObject:
   - component: {fileID: 54568739617096026}
   - component: {fileID: 136048273124633914}
   - component: {fileID: 114112736124866766}
+  - component: {fileID: 82050023061899642}
   m_Layer: 0
   m_Name: enemy_final
   m_TagString: Lane_1
@@ -38188,6 +38189,87 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!82 &82050023061899642
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1570654847259226}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24301952, guid: 6c952b3948b11954780e803524db718c,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95285405043658848
 Animator:
   serializedVersion: 3
@@ -38232,6 +38314,15 @@ MonoBehaviour:
   attackDmg: 0.3
   health: 10
   waveManager: {fileID: 0}
+  audioSource: {fileID: 82050023061899642}
+  attackClips:
+  - {fileID: 8300000, guid: b6dc8991fb6db054aaa04b1edf8e8453, type: 3}
+  - {fileID: 8300000, guid: d71d5f1fd232320488312b74a7cad4ef, type: 3}
+  - {fileID: 8300000, guid: 79e477a0e78d51e438822db6407cf30f, type: 3}
+  walkClips:
+  - {fileID: 8300000, guid: 0d26c71c892eb1f4c947310efd1eac97, type: 3}
+  - {fileID: 8300000, guid: a49ce21eb97a46e479770602d35bd4e9, type: 3}
+  - {fileID: 8300000, guid: b4518fbef461bf94893258daa95e3902, type: 3}
 --- !u!136 &136048273124633914
 CapsuleCollider:
   m_ObjectHideFlags: 1

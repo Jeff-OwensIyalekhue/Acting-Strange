@@ -24,6 +24,11 @@ public class Enemy : MonoBehaviour {
     public WaveManager waveManager;
     GameObject target;
     GameObject bot;
+
+    public AudioSource audioSource;
+    public AudioClip[] attackClips;
+    public AudioClip[] walkClips;
+
     // Use this for initialization
     void Start () {
         agent = gameObject.GetComponent<NavMeshAgent>();
@@ -96,6 +101,13 @@ public class Enemy : MonoBehaviour {
             {
                 animator.SetBool("Attack", false);
                 coroutineStarted = false;
+
+                if (!audioSource.loop)
+                    audioSource.loop = true;
+                audioSource.clip = walkClips[Random.Range(0, walkClips.Length)];
+                if (!audioSource.isPlaying)
+                    audioSource.Play();
+
             }
                 
             //TODO: movement
@@ -104,6 +116,8 @@ public class Enemy : MonoBehaviour {
     }
     IEnumerator DoDamage(GameObject other)
     {
+        if (audioSource.loop)
+            audioSource.loop = false;
 
         while (coroutineStarted)
         {
@@ -117,8 +131,14 @@ public class Enemy : MonoBehaviour {
 
                 waveManager.reduceHealth(attackDmg);
             }
+
+            audioSource.clip = attackClips[Random.Range(0,attackClips.Length)];
+            if (!audioSource.isPlaying)
+                audioSource.Play();
+
             yield return new WaitForSeconds(attackCd);
         }
+        yield return 0;
 
     }
 }
